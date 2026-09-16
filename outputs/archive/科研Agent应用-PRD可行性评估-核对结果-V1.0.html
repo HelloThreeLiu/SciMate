@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PRD 可行性评估报告 · 逐条核对结果</title>
+<style>
+:root{
+  --ink:#16202e; --ink-2:#3b4859; --muted:#6c7889;
+  --line:#e3e9f1; --line-2:#eef3f9;
+  --bg:#eef2f7; --card:#ffffff;
+  --brand:#1e5fa8; --brand-2:#2f7fd1; --brand-soft:#ebf3fc; --brand-deep:#123f70;
+  --p0:#b3261e; --p0-bg:#fdecea;
+  --p1:#8a5a00; --p1-bg:#fdf5e4;
+  --p2:#2b6b4c; --p2-bg:#e9f6ef;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; padding:38px 18px 72px; background:var(--bg); color:var(--ink);
+  font-family:"Segoe UI","Microsoft YaHei","PingFang SC","Hiragino Sans GB","Source Han Sans SC",sans-serif;
+  font-size:15.5px; line-height:1.85; font-feature-settings:"kern" 1;
+}
+.sheet{
+  max-width:960px; margin:0 auto; background:var(--card);
+  border:1px solid var(--line); border-radius:14px;
+  padding:0 0 56px; box-shadow:0 10px 34px rgba(23,52,86,.09); overflow:hidden;
+}
+.sheet-head{
+  padding:44px 62px 34px; background:linear-gradient(135deg,#123f70 0%,#1e5fa8 55%,#2f7fd1 100%);
+  color:#fff;
+}
+.sheet-head .eyebrow{
+  font-size:11px; letter-spacing:.24em; text-transform:uppercase;
+  color:#bcd8f5; font-weight:600; margin-bottom:14px;
+}
+.sheet-head h1{
+  margin:0 0 12px; font-size:31px; line-height:1.35; font-weight:700;
+  color:#fff; border:0; padding:0; letter-spacing:.01em;
+}
+.sheet-head .sub{margin:0; color:#d6e8fa; font-size:14.5px}
+.inner{padding:8px 62px 0}
+
+h1,h2,h3,h4,h5{line-height:1.45; color:var(--brand-deep); font-weight:700}
+h2{
+  font-size:22px; margin:52px 0 18px; padding:0 0 10px 14px;
+  border-bottom:1px solid var(--line); border-left:5px solid var(--brand-2); border-radius:2px;
+}
+h3{font-size:17.5px; margin:34px 0 10px; color:#1b548f}
+h3::before{content:""; display:inline-block; width:8px; height:8px; margin-right:9px;
+  background:var(--brand-2); border-radius:2px; transform:translateY(-2px)}
+h4{font-size:16px; margin:24px 0 8px; color:#21568c}
+h5{font-size:15px; margin:0 0 6px}
+p{margin:11px 0}
+strong{color:#0d2a4a; font-weight:700}
+a{color:var(--brand); text-decoration:none}
+a:hover{text-decoration:underline; color:var(--brand-2)}
+ul,ol{padding-left:24px; margin:12px 0}
+li{margin:7px 0}
+hr{border:0; border-top:1px dashed #d8e3ef; margin:44px 0}
+
+blockquote{
+  margin:20px 0; padding:16px 22px; background:var(--brand-soft);
+  border-left:4px solid var(--brand-2); border-radius:0 10px 10px 0; color:var(--ink-2);
+}
+blockquote p{margin:8px 0}
+blockquote strong{color:#123f70}
+
+table{
+  width:100%; border-collapse:separate; border-spacing:0; margin:20px 0 26px;
+  font-size:14.3px; border:1px solid var(--line); border-radius:10px; overflow:hidden;
+}
+thead th{
+  background:#e9f1fb; color:#123f70; text-align:left; font-weight:700;
+  padding:11px 13px; border-bottom:1px solid #d5e3f3;
+}
+tbody td{padding:10px 13px; border-bottom:1px solid var(--line-2); vertical-align:top; line-height:1.7}
+tbody tr:nth-child(even) td{background:#fafcfe}
+tbody tr:last-child td{border-bottom:0}
+code{background:#f1f5fa; border:1px solid #e2eaf3; border-radius:5px;
+  padding:1px 6px; font-size:13.4px; color:#1b4d80;
+  font-family:Consolas,"Cascadia Mono",Menlo,monospace}
+
+.toc{
+  background:#fafcfe; border:1px solid var(--line); border-radius:12px;
+  padding:20px 24px 18px; margin:26px 0 10px;
+}
+.toc h4{margin:0 0 12px; font-size:11.5px; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--muted); font-weight:700}
+.toc ol{margin:0; padding-left:20px; columns:2; column-gap:34px}
+.toc li{margin:5px 0; font-size:14.3px; break-inside:avoid}
+.toc a{color:#1b548f}
+
+.chip{display:inline-block; padding:2px 9px; border-radius:999px; font-size:12px;
+  font-weight:700; letter-spacing:.04em}
+.chip-p0{background:var(--p0-bg); color:var(--p0)}
+.chip-p1{background:var(--p1-bg); color:var(--p1)}
+.chip-p2{background:var(--p2-bg); color:var(--p2)}
+
+.modmap{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:22px 0 12px}
+.modcard{border:1px solid var(--line); border-radius:12px; padding:18px 18px 16px;
+  background:linear-gradient(180deg,#fbfdff,#f4f9fe)}
+.modcard .num{display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.1em;
+  color:var(--brand); background:#fff; border:1px solid #cfe2f6;
+  padding:2px 9px; border-radius:999px; margin-bottom:11px}
+.modcard p{margin:0 0 12px; font-size:13.8px; color:var(--ink-2); line-height:1.65}
+.modcard-wide{grid-column:1/-1; background:linear-gradient(180deg,#f8fbfe,#eef5fc)}
+.mapnote{font-size:13.8px; color:var(--muted); margin:0 0 26px;
+  padding-left:14px; border-left:3px solid #dce8f5}
+
+.flow{display:flex; flex-wrap:wrap; align-items:center; gap:7px; margin:20px 0 6px}
+.flow .st{background:#fff; border:1px solid #d3e3f5; border-radius:999px;
+  padding:7px 15px; font-size:13.6px; color:#1b548f; font-weight:600}
+.flow .ar{color:#9ebcdc; font-weight:700}
+
+.tl{position:relative; margin:24px 0 10px; padding-left:30px}
+.tl::before{content:""; position:absolute; left:7px; top:8px; bottom:14px; width:2px;
+  background:linear-gradient(180deg,var(--brand-2),#d7e6f6)}
+.tl-item{position:relative; margin-bottom:22px}
+.tl-item:last-child{margin-bottom:0}
+.tl-item::before{content:""; position:absolute; left:-30px; top:6px; width:12px; height:12px;
+  border-radius:50%; background:#fff; border:3px solid var(--brand-2)}
+.tl-d{font-size:12.5px; color:var(--muted); font-weight:600; letter-spacing:.05em}
+.tl-h{font-size:15.5px; font-weight:700; color:#123f70; margin:2px 0 4px}
+.tl-b{font-size:14.2px; color:var(--ink-2); line-height:1.7}
+
+.foot{margin-top:46px; padding-top:20px; border-top:1px solid var(--line);
+  font-size:13px; color:var(--muted); text-align:center}
+
+@media (max-width:820px){
+  body{padding:14px 8px 44px; font-size:15px}
+  .sheet-head{padding:30px 24px 26px}
+  .sheet-head h1{font-size:24px}
+  .inner{padding:6px 24px 0}
+  .modmap{grid-template-columns:1fr}
+  .toc ol{columns:1}
+  table{font-size:13.4px}
+  thead th,tbody td{padding:8px 9px}
+}
+@media print{
+  body{background:#fff; padding:0; font-size:11.5pt}
+  .sheet{box-shadow:none; border:0; border-radius:0; max-width:none}
+  .sheet-head{background:#123f70 !important; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+  h2,h3,h4{page-break-after:avoid; break-after:avoid}
+  table,.modcard,.tl-item,blockquote{page-break-inside:avoid; break-inside:avoid}
+  .toc{page-break-after:always; break-after:page}
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+<header class="sheet-head">
+  <div class="eyebrow">Cross-Check Verification</div>
+  <h1>PRD 可行性评估报告 · 逐条核对结果</h1>
+  <p class="sub">核对对象：可行性评估报告 V1.0 &nbsp;·&nbsp; 核对基准：PRD V1.5（1500 行） &nbsp;|&nbsp; V1.0 &nbsp;|&nbsp; 2026-09-16</p>
+</header>
+<div class="inner">
+
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>核对对象</strong></td>
+<td>《科研 Agent 应用 · PRD 方案可行性评估报告》<strong>V1.0</strong> 的全部判断</td>
+</tr>
+<tr>
+<td><strong>核对基准</strong></td>
+<td>《科研 Agent 应用 · 产品需求文档（PRD）》<strong>V1.5</strong>（<code>outputs/科研Agent应用-PRD需求文档.md</code>，共 1500 行）</td>
+</tr>
+<tr>
+<td><strong>核对方式</strong></td>
+<td>① 逐条回原文定位并标注行号；② 凡涉及数字的（功能条目数、优先级分布、风险条数）用脚本重算；③ 凡报告称"零命中"的（签名/公证/杀软、模型供给、撤稿数据源、团队人力）用关键词全量检索复核</td>
+</tr>
+<tr>
+<td><strong>核对日期</strong></td>
+<td>2026 年 9 月 16 日</td>
+</tr>
+<tr>
+<td><strong>总体结论</strong></td>
+<td>报告 <strong>47 条实质判断中，44 条成立、3 条为判断类无法证伪、0 条不成立</strong>；其中 <strong>1 条（统计失真的成因）需修正表述</strong>。此外发现 <strong>报告自身 3 处数据不准</strong>、<strong>报告遗漏一致性缺口 7 处</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>一句话结论</strong></p>
+<blockquote>
+<p><strong>报告对 PRD 的指控基本全部成立，没有冤枉任何一条。</strong> 报告的问题不在于"判错了"，而在于"数得还不够细"——它发现了 7 处文档不一致，实际有 14 处；它对 12.2 统计失真的成因推断有误。按报告开工前，建议连同本文第四节的 7 处遗漏一起修净。</p>
+</blockquote>
+<hr />
+<nav class="toc"><h4>本文档结构</h4><ol><li><a href="#sec-1">一、核对结论速览</a></li>
+<li><a href="#sec-2">二、逐条核对</a></li>
+<li><a href="#sec-3">三、报告自身需修正的 3 处</a></li>
+<li><a href="#sec-4">四、报告遗漏的一致性缺口（本次核对新发现 7 处）</a></li>
+<li><a href="#sec-5">五、按报告建议核对后的行动建议</a></li>
+<li><a href="#sec-6">六、核对声明</a></li></ol></nav>
+
+<h2 id="sec-1">一、核对结论速览</h2>
+<table>
+<thead>
+<tr>
+<th>报告章节</th>
+<th>判断数</th>
+<th>✅ 成立</th>
+<th>⚠️ 需修正表述</th>
+<th>— 判断类</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第二章 做对了什么</td>
+<td>8</td>
+<td>7</td>
+<td>1（风险条数）</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3.1 定位保留意见</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3.2 技术架构 5 个缺口</td>
+<td>5</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3.3 阶段划分与排期</td>
+<td>4</td>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3.4 资源与外部依赖</td>
+<td>5</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3.5 合规安全与分发</td>
+<td>5</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3.6 文档内部一致性</td>
+<td>7</td>
+<td>6</td>
+<td>1（成因推断）</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3.7 验证与度量</td>
+<td>3</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>第四章 未识别风险</td>
+<td>8</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>48</strong></td>
+<td><strong>45</strong></td>
+<td><strong>2</strong></td>
+<td><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>表中"判断类"指无法用文档比对证伪的估算（如"3 个月做不到 12 条工作流"），这类结论我倾向认同，但不作为核对结论。</p>
+</blockquote>
+<hr />
+<h2 id="sec-2">二、逐条核对</h2>
+<h3>2.1 报告认为"做对了"的 8 条（报告第二章）</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>报告判断</th>
+<th>核对证据（PRD 行号）</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>产品边界清晰，"不做什么"六条写在第一章</td>
+<td>L102–111 确为 6 条 ✕ 项；L758–764（5.8 学术诚信）；L577–585（M3-7）</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>2</td>
+<td>「工作台 + 技能宿主」形态有据，五件"技能做不到的事"确实是差异</td>
+<td>L113–133；L133 原文即列「课题空间、技能加载、技能编排、本机处理、任务恢复」五件</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>3</td>
+<td>验证顺序正确，阶段零用 1 个技能低成本验证</td>
+<td>L848–861；L861 明确写「两件事不能互相替代」</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>4</td>
+<td>自我纠错机制罕见地好</td>
+<td>L1059–1075 完整记录 V1.2→V1.3 的错误与教训，归档链完整（V1.0–V1.4 均在 archive/）</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>5</td>
+<td>技术选型落到可核验事实</td>
+<td>L1210（许可证逐条核对）、L1218（E2B 标准接口）、L1294–1300（三级降级）、L1300「不静默降级」</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>6</td>
+<td>风险表可用：<strong>14 条</strong>风险每条有表现与应对，含<strong>三条</strong> V1.5 新增的打包风险</td>
+<td>实际 16 行：<strong>15 条有效 + 1 条已划除</strong>（L957 已解除）；V1.5 新增 3 条中<strong>仅 2 条属打包</strong>（L960、L961），第 3 条是架构纪律（L962）</td>
+<td>⚠️ 计数与归类不准，实质判断成立</td>
+</tr>
+<tr>
+<td>7</td>
+<td>架构纪律明确（两套 Python / 内核轻量 / Rust 极薄）</td>
+<td>L1439–1451、L1453–1458、L1468–1477</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>8</td>
+<td>功能可测试性好，每点带实现方式与验收要点</td>
+<td>第三章 39 个功能点均含"实现方式 + 验收要点"</td>
+<td>✅ 成立</td>
+</tr>
+</tbody>
+</table>
+<h3>2.2 技术架构的 5 个缺口（报告 3.2）——全部成立</h3>
+<table>
+<thead>
+<tr>
+<th>缺口</th>
+<th>报告指控</th>
+<th>核对证据</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 桌面端「关窗即杀内核」</strong></td>
+<td>5.5 写"用户可关闭页面"，是网页+服务器语境的遗产；桌面形态下 Tauri 关窗默认退出并终止 sidecar，与"可中断可恢复"冲突；Rust 职责提了系统托盘但未与 5.5 关联</td>
+<td>L727「长任务随时可暂停，用户可关闭页面去做别的事」；L214、L661 均写「关掉浏览器」；L1475 Rust 四件事含「系统托盘」但全文未与 5.5 关联；<strong>且 L733 的技术支撑只讲云端沙箱暂停，未解决客户端会话生命周期</strong></td>
+<td>✅ 成立，且报告说轻了——这确实是 P0 承诺无着落</td>
+</tr>
+<tr>
+<td><strong>2 本机/云端无统一执行接口</strong></td>
+<td>E2B 标准接口只覆盖云端，microsandbox 用自己的 SDK，D1-4 编排层将面对两种后端，PRD 未定义抽象</td>
+<td>L1218 与 L1308（接口层按 E2B 标准）只覆盖云端；L1419 内核直接调 microsandbox 的 Python SDK；全文无统一执行抽象</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td><strong>3 本机沙箱覆盖率可能偏低</strong></td>
+<td>microsandbox 有硬件前置条件，Windows 用户可能只能拿到降级体验，"核心卖点对部分主力用户不生效"</td>
+<td>L958 风险表已有此条，但定性为「兼容性覆盖不全」；L1283 前置要求明确（Apple Silicon / WHP / KVM）；L1298–1300 降级路径第 3 档为「纯文本模式：不执行脚本」</td>
+<td>✅ 成立，量级判断合理</td>
+</tr>
+<tr>
+<td><strong>4 分发工程完全缺失</strong></td>
+<td>全文检索「签名 / 公证 / 杀软 / 误报」零命中；PyInstaller 产物是误报重灾区；macOS 需公证</td>
+<td><strong>实测：签名=0、公证=0、杀软=0、误报=0、SmartScreen=0、Gatekeeper=0、代码签名=0、发布渠道=0</strong>；L1475 提了「自动更新」但无更新通道方案</td>
+<td>✅ 成立，零命中属实</td>
+</tr>
+<tr>
+<td><strong>5 沙箱镜像分发与预热未评估</strong></td>
+<td>重型库放沙箱镜像，代价转移到运行时：首次跑数据技能要拉数百 MB 镜像</td>
+<td>L1456「重型科学计算库只存在于沙箱镜像与云端」；L960 同义；全文无镜像下载/预热/分层设计</td>
+<td>✅ 成立</td>
+</tr>
+</tbody>
+</table>
+<h3>2.3 阶段划分与排期（报告 3.3）</h3>
+<table>
+<thead>
+<tr>
+<th>报告判断</th>
+<th>核对证据</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>阶段一实为约 12 条工作流，"自研 5 件"掩盖了真实工作量</td>
+<td>L871「自研（护城河，5 件）」将"执行环境（文件+沙箱+网络）"并为 1 件；L872–874 另有 4 项自研 + 4 项借力 + 3 项混合；L876–883 阶段一后半段还可能并入本机执行层</td>
+<td>✅ 成立，报告 3.3 盘点表与实际条目可逐条对应</td>
+</tr>
+<tr>
+<td>「打包可行性验证」没排期——最优先的事不在里程碑表里</td>
+<td>L1184（B 组 #4）自称"新的最优先项"；L917–925 里程碑表 7 行<strong>无此项</strong>，无负责人无截止日</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>阶段三「第 12 个月机构版落地」过于乐观</td>
+<td>L925「第 12 个月｜机构版落地」；L924「第 9 个月｜协作能力上线」——中间仅 3 个月</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>阶段零 1 个月偏紧但可接受，前提是撤稿数据源申请立即启动</td>
+<td>L848–859；L859 成功标准仅"安装使用 + 10 条反馈"，未含数据源审批周期</td>
+<td>— 判断类，认同</td>
+</tr>
+</tbody>
+</table>
+<h3>2.4 四个"发动机级"前置依赖（报告 3.4）——全部成立且是全文最重要发现</h3>
+<table>
+<thead>
+<tr>
+<th>依赖</th>
+<th>报告指控</th>
+<th>核对证据</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 大模型供给</strong></td>
+<td>全文未提及；与"模型/Key"相关的只有 5.7 的技能凭证托管</td>
+<td><strong>实测：</strong>「模型供给」=0、BYOK=0、供应商=0、模型服务=0；「密钥/API Key」仅 4 处（L382、L755、L1222、L1279），<strong>全部是技能凭证托管语境</strong>，无产品自身模型供给方案</td>
+<td>✅ 成立，<strong>核对确认为最强发现</strong></td>
+</tr>
+<tr>
+<td><strong>2 云服务器资源与运维归属</strong></td>
+<td>12.3 B 组 #6 未拍板，但它挡在阶段一必经之路上</td>
+<td>L1186 确为待定；L350 云端沙箱层标"阶段一"；L1236 承认"对开发小白有门槛，需有人承担运维"</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td><strong>3 撤稿数据源</strong></td>
+<td>全文未点名任何撤稿数据来源</td>
+<td>「撤稿」出现 20 次<strong>全是功能描述与必要性论证</strong>；<strong>Retraction=0、Crossref=0、OpenAlex=0、Semantic Scholar=0、arXiv=0、PubMed=0</strong> —— 无一个数据源被点名</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td><strong>4 团队人力</strong></td>
+<td>PRD 从未写明团队规模，「排期可行性的分母缺失」</td>
+<td>「团队」11 次、「人手」3 次，<strong>全部是条件式表述</strong>（L1387「团队能接受少量 Rust」/ L1388「只有前端人手」/ L1276「没有运维人手的团队」）；档案头信息与全文均无人数、构成、工时</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td><strong>依赖时序问题</strong></td>
+<td>D1-6 排在阶段二，但阶段一第一个月就会遇到技能兼容问题</td>
+<td>L1123（12.2 表）D1-6 计划阶段=二；L873 阶段一即"借用技能"（M2-1/M1-4/M2-5/M3-5）</td>
+<td>✅ 成立</td>
+</tr>
+</tbody>
+</table>
+<h3>2.5 合规、安全与分发（报告 3.5）</h3>
+<table>
+<thead>
+<tr>
+<th>缺口</th>
+<th>核对证据</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 数据流向未图示</td>
+<td>全文无数据流向图；L737–738 有原则（"数据不离开用户电脑"）但未界定<strong>提示词是否仍发往模型 API</strong></td>
+<td>✅ 成立，且这是"数据不出本机"承诺真伪的关键</td>
+</tr>
+<tr>
+<td>2 生成式 AI 合规未评估</td>
+<td>无《生成式人工智能服务管理暂行办法》相关表述；全文无模型代理/网关的合规判断</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>3 5.6「账号」概念与桌面形态错位</td>
+<td><strong>L740「一键彻底删除账号与内容」、L739「不同用户、不同课题空间之间严格隔离」</strong> —— 全文「账号」仅此 1 处，标准多租户云服务语言</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>4 分发合规</td>
+<td>同 2.2 缺口 4，零命中属实</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>5 数据源条款核查未落实到项</td>
+<td>L990–992（10.3）有原则性提醒，但 M2-1（P0）接入的 arXiv/OpenAlex/Semantic Scholar/Crossref/PubMed <strong>逐家核查未留档</strong></td>
+<td>✅ 成立</td>
+</tr>
+</tbody>
+</table>
+<h3>2.6 文档内部一致性 7 处（报告 3.6）——6 处完全成立，1 处成因需修正</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>报告指控</th>
+<th>核对结果（附行号）</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>3.3 节内自相矛盾</strong>：D2-2 写"推迟至阶段二"，同节表格写"阶段一后半段"</td>
+<td><strong>L378「本机执行层单独设计，推迟至阶段二」</strong> vs <strong>L351「阶段一后半段（V1.3 提前）」</strong> —— 同一节，确凿矛盾</td>
+<td>✅ 完全成立</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5.9 仍列「浏览器：Chrome / Edge / Safari」「适配平板浏览器」</td>
+<td>L770、L771 原文一致；与 L1398「产品形态＝桌面应用」冲突</td>
+<td>✅ 完全成立</td>
+</tr>
+<tr>
+<td>3</td>
+<td>5.5 / 2.4 场景五 / 5.2 的网页时代表述</td>
+<td>L727「关闭页面」、L214 与 L661「关掉浏览器」、L692「页面打开 2 秒」、L700「允许离开页面稍后取回」</td>
+<td>✅ 完全成立（且叠加缺口 1 的设计缺失）</td>
+</tr>
+<tr>
+<td>4</td>
+<td>12.2 表 C-4 计划阶段列为「二」</td>
+<td>L1152 确为「二」；与 L351「阶段一后半段」不一致</td>
+<td>✅ 完全成立</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>12.2 统计失真</strong></td>
+<td><strong>脚本重算：明细表 39 行，P0=22 / P1=15 / P2=2 ✅ 报告数字全对</strong>；统计行 L1158 却写「P0 19 / P1 14 / P2 2」（合计 35）；实现方式实为 <strong>自研 25 + 纯借力 7 + 混合 7 = 39</strong>，L1159 写「混合 5」（合计 37）；3.7 的「对话式交互 / 多模态输入 / 权限与隐私」（均 P0）<strong>确未进入 12.2</strong></td>
+<td>✅ 数据失真成立，<strong>但成因推断需修正——见第三节</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>5.6「一键彻底删除账号」「不同用户严格隔离」隐含云端账号体系</td>
+<td>L740、L739</td>
+<td>✅ 完全成立</td>
+</tr>
+<tr>
+<td>7</td>
+<td>本机层排期在 3.3 是「已提前」、在 12.3 B#5 与 12.5 #4 仍是「待拍板」</td>
+<td>L351（陈述为事实）vs <strong>L1185（B 组 #5 列为待拍板）</strong> vs <strong>L1401（12.5 #4「待阶段一资源盘点后确定」）</strong>；另 L897 阶段二又写「视阶段一进度决定」，L883 还写「若紧张可延至阶段二」——<strong>实际是四种口径</strong></td>
+<td>✅ 完全成立，报告还少算了一种口径</td>
+</tr>
+</tbody>
+</table>
+<h3>2.7 验证与度量 3 点（报告 3.7）</h3>
+<table>
+<thead>
+<tr>
+<th>报告建议</th>
+<th>核对证据</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>精确定义「引用核验通过率 ≥98%」的分母口径</td>
+<td>L937 目标值；L902 阶段二又出现"文献小结的引用准确率经抽查 ≥98%"——<strong>同一数值两个不同口径</strong>，报告抓得准</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>阶段零增加转化意愿度量（waitlist）</td>
+<td>L859 成功标准仅"安装使用 + ≥10 条有效反馈"</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>补充试用用户招募方案</td>
+<td>L888 写"邀请 30–50 名目标用户"，全文无来源与筛选标准</td>
+<td>✅ 成立</td>
+</tr>
+</tbody>
+</table>
+<h3>2.8 报告第四章「未识别的 8 条风险」</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>风险</th>
+<th>核对结果</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>桌面端长任务生命周期未设计</td>
+<td>同 2.2 缺口 1</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>2</td>
+<td>分发层拦截</td>
+<td>同 2.2 缺口 4，关键词零命中</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>3</td>
+<td>模型供给未定义</td>
+<td>同 2.4 依赖 1</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>4</td>
+<td>撤稿数据源不可得或频控受限</td>
+<td>同 2.4 依赖 3</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>5</td>
+<td>沙箱镜像分发体验</td>
+<td>同 2.2 缺口 5</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>6</td>
+<td>「数据不出本机」与模型调用冲突</td>
+<td>同 2.5 缺口 1</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>7</td>
+<td>阶段零验证样本偏差</td>
+<td>L861 PRD 自认两件事不可替代，但无对冲设计</td>
+<td>✅ 成立</td>
+</tr>
+<tr>
+<td>8</td>
+<td>双沙箱栈维护成本</td>
+<td>L1413 定案本机 microsandbox + 云端 CubeSandbox 双栈；无统一接口</td>
+<td>✅ 成立</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="sec-3">三、报告自身需修正的 3 处</h2>
+<p>核对不是单向的。报告也有三处站不住，一并列出：</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>报告原文</th>
+<th>实际情况</th>
+<th>影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>「<strong>14 条</strong>风险每条有具体表现与应对，含<strong>三条</strong> V1.5 新增的<strong>打包</strong>风险」（报告第二章 #6）</td>
+<td>风险表实际 <strong>16 行 = 15 条有效 + 1 条已划除</strong>（L957）；V1.5 新增 3 条中<strong>仅 2 条</strong>与打包有关（L960 体积失控、L961 打包运行异常），L962「业务逻辑渗进 Rust 外壳」属架构纪律</td>
+<td>轻微。不影响"风险表可用"的结论，但评审引用时会数不对</td>
+</tr>
+<tr>
+<td>2</td>
+<td>12.2 统计数字「疑似停留在 <strong>V1.0 时代</strong>未随 V1.1 更新」（报告 3.6 #5）</td>
+<td><strong>推断不准确。</strong> V1.0 的统计行是「P0 11 / P1 6 / P2 2」；「P0 19 / P1 14 / P2 2 / 自研 25 / 借力 7 / 混合 5」这组数字<strong>首次出现在 V1.1</strong>，并被 V1.2 / V1.3 / V1.4 / V1.5 原样继承。即：<strong>这是 V1.1 引入的算术错误，沿用了四版</strong>，而非 V1.0 遗留</td>
+<td>中等。影响"责任归属"和修复范围的判断——修订时应注意 V1.1 之后每一版都复制了这个错误</td>
+</tr>
+<tr>
+<td>3</td>
+<td>报告未区分「12.2 统计行写错」与「3.7 三项漏收」是<strong>两个独立缺陷</strong></td>
+<td>由 #2 的追溯可见：明细表在 V1.1 起就是 39 行，而统计行从那时起就写 35 项——说明<strong>统计行不是"表变了没更新"，而是自始就写错</strong>；3.7 三项漏收则是<strong>归类遗漏</strong>（12.2 的 C 组只收录了 3.7 的 8 项，漏了 3 项）</td>
+<td>轻微。但修复方式不同：前者改数字，后者补条目</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="sec-4">四、报告遗漏的一致性缺口（本次核对新发现 7 处）</h2>
+<p>报告发现了 7 处，实际有 14 处。以下 7 处是报告未提及的，<strong>建议与报告 3.6 的 7 处一并修净</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>位置</th>
+<th>问题</th>
+<th>性质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>12.5 节内自相矛盾</strong></td>
+<td>节首（<strong>L1326</strong>）写「<strong>本节结论待拍板</strong>（见 12.3）」，节尾（<strong>L1394</strong>）写「<strong>V1.5 已拍板</strong>」——报告只发现 12.5 与 12.3 之间的口径不一，未发现 12.5 <strong>节内</strong>就自相矛盾</td>
+<td>实质矛盾（与报告 3.6 #1 同类型）</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>5.9 操作系统清单缺 Linux</strong></td>
+<td>L771 只列「Windows、macOS，并适配平板浏览器访问」，但 L1485（12.6 检查清单第 3 条）要求「<strong>Windows / macOS / Linux 三平台都能打出</strong>」；L1256 又强调 microsandbox 支持 Linux。报告只指出了浏览器部分</td>
+<td>定案未传导</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>归档表述过时</strong></td>
+<td>L27 写「历史版本：<strong>V1.0 / V1.1 / V1.2</strong> 均完整保留」；L1027 写「<strong>V1.0、V1.1</strong> 均已归档保留」——而 <code>outputs/archive/</code> 实际含 <strong>V1.0–V1.4 五版</strong>（L10 的表述才是对的）</td>
+<td>数据失真</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>12.4 落地决策表未同步 V1.3 更正</strong></td>
+<td>L1313 第 5 条仍写「风险登记新增两条（<strong>桌面端覆盖不到</strong>、上游仍在 0.x）」，而该风险已在 V1.3 解除（L957 划除、L958 替换）</td>
+<td>决策表过时</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>通用能力清单三处口径不一</strong></td>
+<td>3.1（<strong>L251</strong>）列 7 项、3.7（L589–601）列 11 项、12.2 的 C 组列 8 项。报告发现了"12.2 漏收 3 项"，但未指出 <strong>3.1 漏得更多（漏 4 项）</strong></td>
+<td>数据失真</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>12.3 编号与标题混乱</strong></td>
+<td>「<strong>仍待拍板</strong>」标题下第一节却是「<strong>A 组 · 技术栈｜✅ V1.5 全部关闭</strong>」（L1170–1178）；且「已解决」段（L1167、L1168）与 B 组（L1184–1186）<strong>重复使用编号 3、4</strong></td>
+<td>结构问题</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>修订记录 V1.5 第⑥条与实际不符</strong></td>
+<td>L40 写「12.3 中 A 组第 <strong>2、3</strong> 项关闭」，实际 A 组第 <strong>1、2、3</strong> 项全部关闭（L1176–1178）</td>
+<td>数据失真</td>
+</tr>
+</tbody>
+</table>
+<h3>修复范围建议</h3>
+<blockquote>
+<p><strong>V1.6 应当一次改净 14 处</strong>（报告 3.6 的 7 处 + 本节 7 处），而不是只改报告发现的那 7 处。</p>
+</blockquote>
+<hr />
+<h2 id="sec-5">五、按报告建议核对后的行动建议</h2>
+<p>报告第五章给的修改建议（5.1 前置条件 5 条 / 5.2 开发前 5 条 / 5.3 文档修订 / 5.4 排期三方案），我逐条核对后<strong>全部认同</strong>，只做两点补充：</p>
+<h3>5.1 报告五项评审前置条件（核对结论：均成立，且第 1 项最紧急）</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>事项</th>
+<th>核对意见</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>补「模型供给与成本」章节</td>
+<td><strong>最紧急。</strong> 核对确认全文确无模型供给方案，5.3 成本控制与 C-5 资源消耗透明均悬空</td>
+</tr>
+<tr>
+<td>2</td>
+<td>把团队人力写进 PRD</td>
+<td><strong>第二紧急。</strong> 确认全文无人力数字，12.5 的建议方案处于"不知道自己有几人"的状态</td>
+</tr>
+<tr>
+<td>3</td>
+<td>统一本机执行层排期口径</td>
+<td><strong>实为 4 处</strong>（3.3 / 12.2 C-4 / 12.3 B#5 / 12.5 #4），报告说 4 处，核对发现 12.5 节内还有 1 处（见第四节 #1）</td>
+</tr>
+<tr>
+<td>4</td>
+<td>给「打包可行性验证」定负责人与截止日</td>
+<td>成立，且应<strong>同时纳入里程碑表</strong>（当前 L917–925 确无此项）</td>
+</tr>
+<tr>
+<td>5</td>
+<td>撤稿数据源落地核查</td>
+<td>成立，确认无任何数据源被点名</td>
+</tr>
+</tbody>
+</table>
+<h3>5.2 两点补充</h3>
+<ol>
+<li><strong>报告 5.4 的排期三方案中，方案 B（本机优先）与核对结论相互印证</strong>——本机执行层排期本就是全文口径最乱的一处，先做本机层既能省掉服务器与运维两座山，又能一次性消除第 3、4、7 号不一致。<strong>建议优先评估方案 B。</strong></li>
+<li><strong>「数据不出本机」的措辞应先于功能确定</strong>（报告 4-6 提到，我核对后认为优先级应更高）。理由：L738 承诺"数据不离开用户电脑"，而模型调用必然出网——<strong>这条承诺的措辞不改，功能做得再对也会被质疑</strong>。建议在 V1.6 里就把口径改为「文件与数据不出本机，模型调用内容见流向说明」，与数据流向图同时落地。</li>
+</ol>
+<hr />
+<h2 id="sec-6">六、核对声明</h2>
+<ul>
+<li>本核对<strong>只比对文档内部</strong>（PRD V1.5 ↔ 评估报告 V1.0），<strong>未重新核验任何第三方项目数据</strong>（星标、许可证、平台支持）——这部分采信 PRD 与调研报告自述，与评估报告 1.3 节的采信边界一致。</li>
+<li>凡标注行号的结论，均可在 <code>outputs/科研Agent应用-PRD需求文档.md</code> 中直接定位复现。</li>
+<li>凡涉及计数的结论（39 行明细表、22/15/2 优先级分布、25/7/7 实现方式、16 行风险表），均由脚本重算，非人工目测。</li>
+<li><strong>若对本文某条判断有异议，请指出具体行号与事实，我改回来。</strong></li>
+</ul>
+<hr />
+<p><strong>核对结果结束</strong></p>
+<p><em>本文档为核对结果 V1.0，核对基准为 PRD V1.5（2026-09-16）。</em></p>
+<div class="foot">核对方式：逐条回原文定位（附行号）+ 脚本重算计数 + 关键词全量检索 &nbsp;|&nbsp; 配套：《科研Agent应用-PRD需求文档》V1.5</div>
+
+</div>
+</div>
+</body>
+</html>

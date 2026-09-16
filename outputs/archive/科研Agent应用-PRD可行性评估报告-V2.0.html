@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>科研 Agent 应用 · PRD 方案可行性评估报告 V2.0</title>
+<style>
+:root{
+  --ink:#16202e; --ink-2:#3b4859; --muted:#6c7889;
+  --line:#e3e9f1; --line-2:#eef3f9;
+  --bg:#eef2f7; --card:#ffffff;
+  --brand:#1e5fa8; --brand-2:#2f7fd1; --brand-soft:#ebf3fc; --brand-deep:#123f70;
+  --p0:#b3261e; --p0-bg:#fdecea;
+  --p1:#8a5a00; --p1-bg:#fdf5e4;
+  --p2:#2b6b4c; --p2-bg:#e9f6ef;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; padding:38px 18px 72px; background:var(--bg); color:var(--ink);
+  font-family:"Segoe UI","Microsoft YaHei","PingFang SC","Hiragino Sans GB","Source Han Sans SC",sans-serif;
+  font-size:15.5px; line-height:1.85; font-feature-settings:"kern" 1;
+}
+.sheet{
+  max-width:960px; margin:0 auto; background:var(--card);
+  border:1px solid var(--line); border-radius:14px;
+  padding:0 0 56px; box-shadow:0 10px 34px rgba(23,52,86,.09); overflow:hidden;
+}
+.sheet-head{
+  padding:44px 62px 34px; background:linear-gradient(135deg,#123f70 0%,#1e5fa8 55%,#2f7fd1 100%);
+  color:#fff;
+}
+.sheet-head .eyebrow{
+  font-size:11px; letter-spacing:.24em; text-transform:uppercase;
+  color:#bcd8f5; font-weight:600; margin-bottom:14px;
+}
+.sheet-head h1{
+  margin:0 0 12px; font-size:31px; line-height:1.35; font-weight:700;
+  color:#fff; border:0; padding:0; letter-spacing:.01em;
+}
+.sheet-head .sub{margin:0; color:#d6e8fa; font-size:14.5px}
+.inner{padding:8px 62px 0}
+
+h1,h2,h3,h4,h5{line-height:1.45; color:var(--brand-deep); font-weight:700}
+h2{
+  font-size:22px; margin:52px 0 18px; padding:0 0 10px 14px;
+  border-bottom:1px solid var(--line); border-left:5px solid var(--brand-2); border-radius:2px;
+}
+h3{font-size:17.5px; margin:34px 0 10px; color:#1b548f}
+h3::before{content:""; display:inline-block; width:8px; height:8px; margin-right:9px;
+  background:var(--brand-2); border-radius:2px; transform:translateY(-2px)}
+h4{font-size:16px; margin:24px 0 8px; color:#21568c}
+h5{font-size:15px; margin:0 0 6px}
+p{margin:11px 0}
+strong{color:#0d2a4a; font-weight:700}
+a{color:var(--brand); text-decoration:none}
+a:hover{text-decoration:underline; color:var(--brand-2)}
+ul,ol{padding-left:24px; margin:12px 0}
+li{margin:7px 0}
+hr{border:0; border-top:1px dashed #d8e3ef; margin:44px 0}
+
+blockquote{
+  margin:20px 0; padding:16px 22px; background:var(--brand-soft);
+  border-left:4px solid var(--brand-2); border-radius:0 10px 10px 0; color:var(--ink-2);
+}
+blockquote p{margin:8px 0}
+blockquote strong{color:#123f70}
+
+table{
+  width:100%; border-collapse:separate; border-spacing:0; margin:20px 0 26px;
+  font-size:14.3px; border:1px solid var(--line); border-radius:10px; overflow:hidden;
+}
+thead th{
+  background:#e9f1fb; color:#123f70; text-align:left; font-weight:700;
+  padding:11px 13px; border-bottom:1px solid #d5e3f3;
+}
+tbody td{padding:10px 13px; border-bottom:1px solid var(--line-2); vertical-align:top; line-height:1.7}
+tbody tr:nth-child(even) td{background:#fafcfe}
+tbody tr:last-child td{border-bottom:0}
+code{background:#f1f5fa; border:1px solid #e2eaf3; border-radius:5px;
+  padding:1px 6px; font-size:13.4px; color:#1b4d80;
+  font-family:Consolas,"Cascadia Mono",Menlo,monospace}
+
+.toc{
+  background:#fafcfe; border:1px solid var(--line); border-radius:12px;
+  padding:20px 24px 18px; margin:26px 0 10px;
+}
+.toc h4{margin:0 0 12px; font-size:11.5px; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--muted); font-weight:700}
+.toc ol{margin:0; padding-left:20px; columns:2; column-gap:34px}
+.toc li{margin:5px 0; font-size:14.3px; break-inside:avoid}
+.toc a{color:#1b548f}
+
+.chip{display:inline-block; padding:2px 9px; border-radius:999px; font-size:12px;
+  font-weight:700; letter-spacing:.04em}
+.chip-p0{background:var(--p0-bg); color:var(--p0)}
+.chip-p1{background:var(--p1-bg); color:var(--p1)}
+.chip-p2{background:var(--p2-bg); color:var(--p2)}
+
+.modmap{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:22px 0 12px}
+.modcard{border:1px solid var(--line); border-radius:12px; padding:18px 18px 16px;
+  background:linear-gradient(180deg,#fbfdff,#f4f9fe)}
+.modcard .num{display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.1em;
+  color:var(--brand); background:#fff; border:1px solid #cfe2f6;
+  padding:2px 9px; border-radius:999px; margin-bottom:11px}
+.modcard p{margin:0 0 12px; font-size:13.8px; color:var(--ink-2); line-height:1.65}
+.modcard-wide{grid-column:1/-1; background:linear-gradient(180deg,#f8fbfe,#eef5fc)}
+.mapnote{font-size:13.8px; color:var(--muted); margin:0 0 26px;
+  padding-left:14px; border-left:3px solid #dce8f5}
+
+.flow{display:flex; flex-wrap:wrap; align-items:center; gap:7px; margin:20px 0 6px}
+.flow .st{background:#fff; border:1px solid #d3e3f5; border-radius:999px;
+  padding:7px 15px; font-size:13.6px; color:#1b548f; font-weight:600}
+.flow .ar{color:#9ebcdc; font-weight:700}
+
+.tl{position:relative; margin:24px 0 10px; padding-left:30px}
+.tl::before{content:""; position:absolute; left:7px; top:8px; bottom:14px; width:2px;
+  background:linear-gradient(180deg,var(--brand-2),#d7e6f6)}
+.tl-item{position:relative; margin-bottom:22px}
+.tl-item:last-child{margin-bottom:0}
+.tl-item::before{content:""; position:absolute; left:-30px; top:6px; width:12px; height:12px;
+  border-radius:50%; background:#fff; border:3px solid var(--brand-2)}
+.tl-d{font-size:12.5px; color:var(--muted); font-weight:600; letter-spacing:.05em}
+.tl-h{font-size:15.5px; font-weight:700; color:#123f70; margin:2px 0 4px}
+.tl-b{font-size:14.2px; color:var(--ink-2); line-height:1.7}
+
+.foot{margin-top:46px; padding-top:20px; border-top:1px solid var(--line);
+  font-size:13px; color:var(--muted); text-align:center}
+
+@media (max-width:820px){
+  body{padding:14px 8px 44px; font-size:15px}
+  .sheet-head{padding:30px 24px 26px}
+  .sheet-head h1{font-size:24px}
+  .inner{padding:6px 24px 0}
+  .modmap{grid-template-columns:1fr}
+  .toc ol{columns:1}
+  table{font-size:13.4px}
+  thead th,tbody td{padding:8px 9px}
+}
+@media print{
+  body{background:#fff; padding:0; font-size:11.5pt}
+  .sheet{box-shadow:none; border:0; border-radius:0; max-width:none}
+  .sheet-head{background:#123f70 !important; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+  h2,h3,h4{page-break-after:avoid; break-after:avoid}
+  table,.modcard,.tl-item,blockquote{page-break-inside:avoid; break-inside:avoid}
+  .toc{page-break-after:always; break-after:page}
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+<header class="sheet-head">
+  <div class="eyebrow">Feasibility Assessment Report</div>
+  <h1>科研 Agent 应用 · PRD 方案可行性评估报告</h1>
+  <p class="sub">评估对象：PRD V1.8（Windows 优先版）&nbsp;|&nbsp; 总体结论：可行，建议通过评审 &nbsp;|&nbsp; 报告 V2.0 &nbsp;|&nbsp; 2026-09-16</p>
+</header>
+<div class="inner">
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>评估对象</strong></td>
+<td>《科研 Agent 应用 · 产品需求文档（PRD）》<strong>V1.8</strong>（Windows 优先 + 打包验证提前版）</td>
+</tr>
+<tr>
+<td><strong>上一版评估</strong></td>
+<td>《PRD 方案可行性评估报告》V1.0（针对 PRD V1.5，结论「有条件可行」，已归档）</td>
+</tr>
+<tr>
+<td><strong>参考依据</strong></td>
+<td>《逐条核对结果》V1.0（对上轮评估的逐条核验）；PRD V1.5→V1.8 全量 diff；12.2 统计与优先级分布经脚本独立重算</td>
+</tr>
+<tr>
+<td><strong>报告版本</strong></td>
+<td><strong>V2.0</strong></td>
+</tr>
+<tr>
+<td><strong>评估日期</strong></td>
+<td>2026 年 9 月 16 日</td>
+</tr>
+<tr>
+<td><strong>总体结论</strong></td>
+<td><strong>可行，建议通过评审。</strong> 上轮四大「发动机级」依赖全部闭环，五项评审前置条件全部处置，排期第一次与团队产能自洽。剩余问题已从「结构性」降为「执行性」——共 8 条新发现，无一条动摇架构或路线；另有 1 条产品级风险（BYOK 与「零门槛」的张力）需要在阶段零用数据回答</td>
+</tr>
+</tbody>
+</table>
+<p><strong>阅读提示</strong></p>
+<p>这是第二轮评估。上一轮（V1.0，针对 PRD V1.5）的结论是「方案可行、排期不可行、四个前置决策必须先落」。本轮只回答三个问题：<strong>上轮指出的问题解决了没有？V1.6–V1.8 新做的决策靠不靠谱？这一版还剩什么问题？</strong> 每条判断附 PRD 章节或行号，可直接核对。</p>
+<hr />
+<h2>零、三分钟速览</h2>
+<blockquote>
+<p><strong>一句话结论：V1.5 → V1.8 完成了一次「从愿望到计划」的转化。</strong> 上轮评估的全部结构性问题都已处置：模型供给有了专章（5.11 + D2-6）、团队分母写进了排期（1 人 + AI ≈ 1.5 人产能）、阶段一砍到 6 条工作流 / 5 个月、平台收窄到 Windows 且把最大的技术不确定性（打包）提到第 1–2 周验证。<strong>这份 PRD 第一次做到了「范围—产能—风险」三者在文档内自洽。建议通过评审、按阶段零第 1–2 周清单开工。</strong> 剩余 8 条新发现全部是执行级修补，半天文档工作量即可消掉大部分。</p>
+</blockquote>
+<h3>两轮评分对照</h3>
+<table>
+<thead>
+<tr>
+<th>评估维度</th>
+<th>上轮（对 V1.5）</th>
+<th>本轮（对 V1.8）</th>
+<th>变化原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>产品定位与市场策略</td>
+<td>高</td>
+<td><strong>高</strong></td>
+<td>定位未变；BYOK 引入一个新的产品级张力（见发现 1），但不足以降级</td>
+</tr>
+<tr>
+<td>技术架构</td>
+<td>中高（5 个缺口）</td>
+<td><strong>高</strong></td>
+<td>5 个缺口全部「设计化或排期化」：桌面任务生命周期（5.5 + 检查清单 #9）、统一执行接口（D2-2 补充 + 清单 #8）均已补设计；分发从零覆盖到有预算框架</td>
+</tr>
+<tr>
+<td>阶段划分与排期</td>
+<td><strong>中低</strong>（最大风险）</td>
+<td><strong>中高</strong></td>
+<td>阶段一 6 条工作流 / 5 个月，第一次落在 1 人产能区间；阶段二仍偏满（见发现 8）</td>
+</tr>
+<tr>
+<td>资源与外部依赖</td>
+<td>不明朗（四项未拍板）</td>
+<td><strong>高</strong></td>
+<td>12.3 A 组全部闭环（团队 1 人、无服务器、本机层阶段二、打包第 1–2 周）；B 组已排期</td>
+</tr>
+<tr>
+<td>合规、安全与分发</td>
+<td>中</td>
+<td><strong>中高</strong></td>
+<td>数据流向边界表、生成式 AI 合规立场（不向公众提供服务）、签名预算框架均已写入；证书采购路径与更新通道仍未落实</td>
+</tr>
+<tr>
+<td>文档内部一致性</td>
+<td>中（14 处问题）</td>
+<td><strong>中高</strong></td>
+<td>14 处修净 13 处；新引入 2 处小问题 + 1 处范围收缩残留（见发现 2/3/4）</td>
+</tr>
+<tr>
+<td>验证与度量设计</td>
+<td>中高</td>
+<td><strong>高</strong></td>
+<td>双口径拆分、waitlist 转化率、招募方案全部落地</td>
+</tr>
+</tbody>
+</table>
+<h3>上轮五项评审前置条件的落实情况（5/5）</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>上轮要求</th>
+<th>V1.8 状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>补「模型供给与成本」章节</td>
+<td>✅ 新增 5.11 + 功能项 D2-6（P0、阶段一）：BYOK 优先、首期不做代理、密钥本地加密、计量口径四项</td>
+</tr>
+<tr>
+<td>2</td>
+<td>把团队人力写进 PRD</td>
+<td>✅ 第七章「排期成立的前提」：1 人 + AI 辅助，产能按 ≈1.5 人估算，并说明了 AI 帮不上忙的三件事（跨平台打包、集成排错、真实用户反馈）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>统一本机执行层排期口径</td>
+<td>✅ V1.7 定案「阶段二，与模块一同期」，3.3 / 12.2 / 12.3 / 12.4 / 12.5 五处口径已一致</td>
+</tr>
+<tr>
+<td>4</td>
+<td>给打包验证定负责人与截止日</td>
+<td>✅ 超出要求：提到第 1 个月第 1–2 周、只出 Windows 包、写成「阶段一开工前提」并进里程碑表（12.3 A3 关闭）</td>
+</tr>
+<tr>
+<td>5</td>
+<td>撤稿数据源落地核查</td>
+<td>✅ M2-7 补齐方案（OpenAlex 主路 + Crossref 辅路 + 本地缓存兜底），核查排进第 1 周里程碑；并更正了一条过时说法（见第二节）</td>
+</tr>
+</tbody>
+</table>
+<h3>本轮三个最关键的发现</h3>
+<ol>
+<li><strong>BYOK 与「零门槛」存在正面张力，是当前最大的产品级风险。</strong> 目标用户「绝大多数不写代码」，而 BYOK 要求他们注册供应商、实名、充值、拿到 API Key、填进设置——这是目标人群从未有过的操作。5.1 的「5 分钟不看说明书完成一次任务」、5.2 的「1.5 秒出第一个字」，全部以「已经配好 Key」为前提。<strong>建议给阶段零加一个度量：waitlist 用户在 7 天内成功配好至少一个 Key 的比例</strong>——这个数字低于预期，整个产品假设都要重估。</li>
+<li><strong>V1.7 的范围收缩又留下三处「未传导」</strong>（与 V1.6 修掉的问题同类）：P0 图例仍写「第一版就要有」而多个 P0 已排到阶段二/三（L293）；12.1 归档表述再次过时（L1321 写「V1.0 至 V1.5」，实际归档已是 V1.0–V1.7——<strong>这正是 V1.6 自己写进教训的那类错误</strong>）；5.1 的易用性验收例子仍是「上传数据 → 得到图表」（L758）——数据模块已推迟到阶段二，这个例子在阶段一无法执行。</li>
+<li><strong>排期自洽了，但「容量账」没有算明。</strong> 文档自己估算 1 人 + AI 在 4–5 个月容量为「4–5 条工作流」（L1029），随后选定 6 条（L1043）——中间的差额实际是由 V1.8 砍掉两个平台的打包补回来的，但文档没有把这笔记上。建议把 6 条工作流逐条编号列出，让这笔账可核对。</li>
+</ol>
+<hr />
+<h2>一、上轮问题的闭环核对</h2>
+<h3>1.1 四大「发动机级」依赖 —— 全部闭环</h3>
+<table>
+<thead>
+<tr>
+<th>依赖</th>
+<th>上轮状态</th>
+<th>V1.8 状态</th>
+<th>核对结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>大模型供给</strong></td>
+<td>全文未提及</td>
+<td>5.11 专章 + D2-6 功能项：<strong>BYOK 优先、首期不做代理</strong>；密钥走系统凭据管理器、加密落盘、不进沙箱；计量口径四项（单次/按课题/月度提醒/展示位置）；本地模型定位为「零出网的唯一路径」</td>
+<td>✅ 闭环。方案选择正确：桌面 + BYOK 使产品不成为「向公众提供生成式 AI 服务」的一方，合规负担最低；剩余开放项（B1 供应商清单、B2 是否首期支持本地模型）已列入 12.3 B 组并排期</td>
+</tr>
+<tr>
+<td><strong>云服务器资源</strong></td>
+<td>B 组未拍板</td>
+<td>已明确「暂无 Linux 服务器、无运维承担人」→ <strong>云端沙箱层后置到阶段三</strong>（等服务器资源与付费用户）</td>
+<td>✅ 闭环。把「没有」写成前提而不是假设，这是对的</td>
+</tr>
+<tr>
+<td><strong>撤稿数据源</strong></td>
+<td>旗舰功能无数据源</td>
+<td>M2-7 补齐：<strong>OpenAlex 主路</strong>（<code>is_retracted</code> 字段，免费、礼貌池约 10 请求/秒）+ <strong>Crossref 辅路</strong>（含撤稿元数据与可镜像的完整数据集）+ 本地缓存兜底；核查排进第 1 周里程碑</td>
+<td>✅ 闭环。且<strong>更正了本评估 V1.0 的一条过时建议</strong>——见 1.4</td>
+</tr>
+<tr>
+<td><strong>团队人力</strong></td>
+<td>排期分母缺失</td>
+<td>第七章前提表：<strong>1 人 + AI 辅助，产能按 ≈1.5 人估算</strong>，并诚实列出 AI 帮不上忙的三件事</td>
+<td>✅ 闭环。「≈1.5 人」的折算是全文质量最高的一处自我评估</td>
+</tr>
+</tbody>
+</table>
+<h3>1.2 五个架构缺口 —— 四个半闭环</h3>
+<table>
+<thead>
+<tr>
+<th>缺口</th>
+<th>V1.8 处置</th>
+<th>核对结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 桌面端「关窗即杀内核」</td>
+<td>5.5 新增「桌面形态下的任务生命周期」：托盘常驻后台续跑 / 完全退出前自动打检查点 / 启动时「继续上次任务」入口（不静默续跑）；检查清单新增 #9；风险表新增「桌面端进程生命周期失控」含三条实现级应对</td>
+<td>✅ 闭环，设计完整</td>
+</tr>
+<tr>
+<td>2 本机/云端无统一执行接口</td>
+<td>D2-2 V1.6 补充：定义统一执行接口（起沙箱/执行/取结果/打快照/网络策略），编排层只认接口；检查清单 #8 要求同一套用例跑双后端</td>
+<td>✅ 闭环（阶段二检查项，合理）</td>
+</tr>
+<tr>
+<td>3 本机沙箱覆盖率</td>
+<td>阶段一 Windows-only 改变了问题结构（macOS 用户整体后置而非降级）；硬件摸底排到阶段二启动前；V1.8 新发现 Windows 是唯一没有中间降级档的平台（<code>sandbox-runtime</code> 不支持 Windows），已入风险表并设计应对（引导开 WHP / 摸底 WHP 开启率）</td>
+<td>✅ 闭环。「Windows 无中间档」这条自我发现质量很高——它意味着降级链在主力平台上只有两档</td>
+</tr>
+<tr>
+<td>4 分发工程</td>
+<td>风险表「分发层拦截」三条应对：Windows 代码签名证书列入预算与排期（V1.8 后是唯一必须的签名成本）；干净机器安装测试；更新通道方案待定（C5）</td>
+<td>⚠️ <strong>半闭环</strong>。有框架、无数字：证书预算金额、个人开发者采购路径（多数 CA 面向组织销售，个人购买渠道有限且价格不菲）、更新通道选型都还没有答案。建议阶段零顺手验证「个人能否买到可用的签名证书」，这和撤稿数据源核查同级别重要——<strong>装不上比分功能少致命</strong></td>
+</tr>
+<tr>
+<td>5 沙箱镜像分发体验</td>
+<td>风险表四条应对（精简分层/可选预下载/进度透明/常用镜像预置），标注阶段二涉及</td>
+<td>✅ 闭环（排期合理）</td>
+</tr>
+</tbody>
+</table>
+<h3>1.3 排期与度量建议的采纳情况</h3>
+<ul>
+<li><strong>排期</strong>：上轮给出 A（延长）/ B（本机优先）/ C（垂直聚焦）三方案。V1.7 实际选择 <strong>「C + B 的组合」且比两者都更彻底</strong>——不仅砍掉模块一聚焦文献+写作，还把两层沙箱分别后置到阶段二/三，工期从 3 个月改为 5 个月，整条时间线从 12 个月拉到 18 个月。这是三个方案中最保守的一个，对 1 人团队是正确的选择。</li>
+<li><strong>机构版里程碑</strong>：「落地」已改为「首批合作意向 / POC」并注明高校采购周期以半年计 ✅。</li>
+<li><strong>度量</strong>：引用核验通过率拆成双口径并说明防稀释理由 ✅；waitlist 转化率入阶段零成功标准 ✅；试用招募方案（来源三渠道 + 筛选三维度）✅——但筛选维度缺了一项，见发现 7。</li>
+</ul>
+<h3>1.4 一处对本评估的更正（核实后采纳）</h3>
+<p>V1.6 在 M2-7 中更正了本评估 V1.0 的一条建议：「准备 Crossref 撤稿元数据与 Retraction Watch 双路」——<strong>这个更正是对的</strong>。Crossref 已于 2023 年 9 月收购 Retraction Watch 数据库并将其作为公开资源运营，两者如今是同一条数据链路，「双路并用」的说法已过时。正确设计是 OpenAlex（逐条实时）+ Crossref（权威对账与本地镜像）。本报告采纳该更正，并把它记为「评估者也会引用过时事实」的一例——上轮报告 1.3 节的采信边界声明同样适用于评估者自己。</p>
+<hr />
+<h2>二、V1.6–V1.8 三个关键决策的评估</h2>
+<h3>2.1 V1.7「按分母砍范围」—— 正确且必要</h3>
+<p>阶段一从「三模块 + 两层沙箱、11 条工作流、3 个月」收缩为「文献 + 写作 + 引用核验、6 条工作流、5 个月」。三条支撑理由经核对全部成立：</p>
+<ol>
+<li><strong>容量换算诚实</strong>：11 条对 ≈1.5 人产能是必败，这不是延期问题而是烂尾问题——判断正确。</li>
+<li><strong>「数据模块与沙箱绑定」的推理严密</strong>：需要跑脚本的场景主要就是数据处理与绘图，砍掉数据模块后沙箱在阶段一几乎没有使用者，两者一起后置不是拼凑而是因果。阶段二「两者必须同期」的说明同样成立（没有脚本执行，数据模块就是空壳）。</li>
+<li><strong>「数据不出本机」与「本机跑脚本」的拆解是全文最漂亮的一处概念澄清</strong>：文件不上传不需要沙箱，承诺在阶段一依然成立（配合可选本地模型可全链路零出网）；随沙箱后置的只是「本机执行脚本」。这把上轮评估指出的「承诺真伪」问题从根上解决了。</li>
+</ol>
+<p><strong>代价已主动声明</strong>（获客最强的「数据→图」推迟、对外口径改为「文献与研究写作助手」）并入了风险表。「承认自己做不完」作为版本主题，决策质量高。</p>
+<h3>2.2 V1.8「Windows 优先」—— 理由成立，代价已识别</h3>
+<p>决策链条完整：本机开发（Windows）→ 无多平台构建机与 CI → macOS/Linux 打包在阶段一无法本地验证 → 与其承诺两个交付不了的平台，不如做一个做扎实的。配套动作齐全：5.9 重写、WebView2 依赖说明（干净系统可能缺失、需引导安装、并入打包验证）、风险表新增「仅支持 Windows 的用户覆盖风险」、waitlist 收集平台分布、macOS 排阶段二最前。</p>
+<p>两点补充评价：</p>
+<ul>
+<li><strong>阶段零技能是纯文本、跨平台可用</strong>——这是「技能先行」策略的一个此前未被言明的额外价值（Windows 之外的用户也能先用上），V1.8 把它点明了。好。</li>
+<li><strong>范围收缩把「降级问题」变成了「覆盖问题」</strong>：上轮担心的是「Windows 用户拿到降级体验」，阶段一变成了「macOS 用户根本没有」。文档选择了诚实告知而不是含糊，方向对；但要注意<strong>对外口径的一致性</strong>——产品页、README、技能说明三处都要写「当前仅支持 Windows」，漏一处就是发现 2 那类「未传导」问题的对外版本。</li>
+</ul>
+<h3>2.3 「打包验证提到第 1–2 周」—— 完全正确，但验收范围还没定义</h3>
+<p>「先验最不确定的那件事」是对的，写成「阶段一开工前提、验不过重谈桌面方案」也对。但有一个执行级空洞：<strong>第 1–2 周的这次验证到底验什么，没有清单</strong>。V1.5 时代它的定义是「内核 + 含科学计算库的沙箱跑通」，而阶段一已无沙箱、内核保持轻量——「含 C 扩展依赖的打包稳定性」这句话在阶段一的语境里失去了对象（C 扩展风险随沙箱镜像后移到了阶段二）。建议明确 spike 清单（见第四节开工清单第 1 条），否则第 1–2 周做完，仍回答不了「桌面方案要不要重谈」。</p>
+<hr />
+<h2>三、本轮新发现（8 条，无结构性问题）</h2>
+<p>按重要程度排序。前 4 条建议在开工前处理，后 4 条可随版本消化。</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>级别</th>
+<th>发现</th>
+<th>出处与说明</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>🔴 产品级</td>
+<td><strong>BYOK 与「零门槛」的正面张力</strong></td>
+<td>目标用户「绝大多数不写代码」（2.1），BYOK 要求注册供应商、实名、充值、取 Key、填入设置——这是该人群的新门槛。5.1 的「5 分钟不看说明书完成任务」、5.2 全部性能指标、阶段一成功标准（60% 用户完成完整任务）都以配好 Key 为前提；5.11 只写了「模型质量与网络条件由用户承担」，没有正视<strong>获取 Key 本身</strong>的摩擦</td>
+<td>① 阶段零增加度量：<strong>waitlist 用户 7 天内成功配好至少一个 Key 的比例</strong>；② 设计引导（图文教程、供应商优选、一键测试连通性 D2-6 已有）；③ 若比例过低，需提前评估兜底方案（如限时体验额度——注意这会触碰 5.11「不做代理」的合规立场，需一并想清楚）</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>⚠️ 一致性</td>
+<td><strong>P0 图例语义失真</strong></td>
+<td>L293 图例仍写「P0 = 没有它产品不能上线（<strong>第一版就要有</strong>）」，而 V1.7 后多个 P0 项排在阶段二/三（D2-2 代码沙箱、M1-1/M1-2/M1-4、D2-4 等）。优先级与计划阶段已脱钩，图例没跟着改——V1.7 重排引入的新不一致</td>
+<td>图例改为「P0 = 成品必须具备的核心能力；上线阶段以『计划阶段』列为准」，一句话修掉</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>⚠️ 一致性</td>
+<td><strong>12.1 归档表述再次过时</strong></td>
+<td>L1321 写「V1.0 至 V1.5 均已归档保留」，实际 archive/ 已含 V1.0–V1.7。<strong>这正是 V1.6 写进教训的那类错误</strong>（「定案要传导」）——归档新版本时忘了改引用它的地方，教训写下的当天就又犯了一次</td>
+<td>改为不依赖具体版本号的写法（「除当前版外的全部历史版本均已归档」），一劳永逸</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>⚠️ 一致性</td>
+<td><strong>5.1 验收例子仍用阶段二能力</strong></td>
+<td>L758 易用性验收例子是「上传一份数据 → 得到一张图表」——数据模块已推迟到阶段二，该例子在阶段一无法执行；阶段一成功标准已改为「上传稿件 → 引用核验 → 修改 → 导出」，此处未同步。这是 V1.7 范围收缩的第二处「未传导」（第一处已被 V1.7 自己标注：场景 A）</td>
+<td>例子改为「上传一份稿件 → 得到一份引用核验报告」</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>⚠️ 排期</td>
+<td><strong>容量账没有算明</strong></td>
+<td>L1029 自估容量「4–5 条」，L1043 选定「6 条」，差额实际由 V1.8 砍掉两平台打包补回，但文档没有写这笔记，且「6 条工作流」全文没有逐条编号列出（只散见在范围表的 5 个类别里）</td>
+<td>在阶段一开头把 6 条工作流编号列清（①平台底座 ②课题空间 ③技能加载 ④简化编排+任务恢复 ⑤执行环境（文件/网络/模型接入）⑥文献与写作功能层），并补一句「V1.8 平台收窄抵消了超出容量估算的部分」</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>⚠️ 执行</td>
+<td><strong>打包验证（第 1–2 周）的验收清单未定义</strong></td>
+<td>里程碑只写了「体积、冷启动、含 C 扩展依赖的稳定性」三个词；阶段一无沙箱、内核轻量，「C 扩展」在阶段一语境缺对象（见 2.3）。另外 M3-5 决定用内核内置 pandoc 排版——pandoc 是静态编译的大二进制，<strong>与「内核保持轻量」和「打包体积验收指标」直接相关</strong>，必须在这次验证里量出基线</td>
+<td>明确 spike 清单：Tauri 骨架 + sidecar 双向通信 + WebView2 引导安装 + 轻内核（含 pandoc）的体积与冷启动实测；输出「Windows 安装包体积基线」数字</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td>⚠️ 执行</td>
+<td><strong>试用招募筛选维度缺「操作系统」</strong></td>
+<td>L1137 筛选维度只有学科分布、是否写过论文、常用工具——阶段一只出 Windows 包，30–50 名试用用户必须筛 Windows 10+ 用户，否则一部分名额浪费在装不上的人身上</td>
+<td>筛选维度加一条「使用 Windows 10 及以上」（数据来源：waitlist 收集的平台分布正好复用）</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td>⚠️ 排期</td>
+<td><strong>阶段二的容量假设未写明</strong></td>
+<td>阶段二（第 7–12 个月）载入 18 个功能项，含模块一全部 6 项 + 本机沙箱接入 + 降级链 + 10 项补齐——对 1 人团队是比阶段一更重的负荷，但文档没有写阶段二是否仍按 1 人排（阶段一的前提表只覆盖了阶段一）。bus factor 风险提了「可交接」，没提「产能是否增长」</td>
+<td>阶段二补一句产能假设：默认仍为 1 人；若阶段一出现收入/协作者，届时重排。以及一个触发条件（如「阶段二启动前按阶段一实际速率复盘一次」）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>三条小瑕疵</strong>（顺手修，不占编号）：</p>
+<ol>
+<li>L1252 标题「V1.7 新增的 2 条风险」，表内实列 3 行（第 3 行是 V1.8 新增的「仅支持 Windows」风险，塞进了 V1.7 的表）——标题改为「V1.7–V1.8 新增」或拆表。</li>
+<li>M2-5「引用与参考文献格式」在阶段一标为「借用技能」，但国标排版类技能普遍依赖脚本（python-docx 等），在无沙箱的阶段一会落入「纯文本模式」降级。M3-5 已给出了正确解法（内核内置可信工具 pandoc），M2-5 建议同样处理——引用格式引擎用内核内置的 CSL / citeproc（调研报告第五章早已建议「不要自研格式引擎」），比借用脚本型技能更稳。</li>
+<li>C-4「敏感数据本机处理」已提前到阶段一，但其「全链路零出网」的成色完全取决于 B2（是否首期支持本地模型，仍待拍板）。建议在 12.2 的 C-4 行或 5.6 表加一句依赖标注，避免试用期间宣传口径超出实际能力。</li>
+</ol>
+<hr />
+<h2>四、评审建议</h2>
+<h3>4.1 结论</h3>
+<blockquote>
+<p><strong>通过评审。</strong> V1.8 是这个项目第一版「范围—产能—风险」在文档内自洽的 PRD：该砍的砍了（模块一、两层沙箱、两个平台），该提前的提前了（打包验证），该补的地基补上了（模型供给、数据流向、团队分母、桌面任务生命周期）。上轮评估的全部结构性问题已闭环。剩余 8 条新发现无一动摇架构与路线，其中 4 条是一致性/表述类，半天文档工作量可清完。</p>
+</blockquote>
+<h3>4.2 开工清单（第 1 个月第 1–2 周，与 PRD 里程碑对齐）</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>动作</th>
+<th>完成标准</th>
+<th>PRD 对应</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>打包验证 spike（Windows）</strong></td>
+<td>产出四个数字：安装包体积（内核含 pandoc）、冷启动到界面可用、冷启动到内核就绪、WebView2 缺失机器上的引导安装成功率。<strong>任一项不可接受 → 按约定重谈桌面方案</strong></td>
+<td>12.3 A3、12.6 检查清单 #3/#4</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>撤稿数据源核查</strong></td>
+<td>OpenAlex <code>is_retracted</code> 与 Crossref 撤稿元数据各跑通一次真实核验；礼貌池频控实测；结论写回 M2-7</td>
+<td>里程碑第 1 周、B3</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>文档小修（半天）</strong></td>
+<td>修掉发现 2/3/4 + 三条小瑕疵（P0 图例、归档表述、5.1 例子、V1.7 风险表标题、M2-5 实现方式、C-4 依赖标注）；把 6 条工作流编号列出</td>
+<td>本报告第三节</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>阶段零度量补一项</strong></td>
+<td>waitlist 增加「7 天内配 Key 成功率」与「平台分布」两个字段——前者回答发现 1，后者支撑发现 7 的筛选</td>
+<td>阶段零成功标准</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>签名证书采购预研</strong></td>
+<td>确认个人开发者可购买的产品与价格（这是「装不上比功能少更致命」那条风险的解除条件）；更新通道方案初选</td>
+<td>C5、风险表「分发层拦截」</td>
+</tr>
+</tbody>
+</table>
+<h3>4.3 两个复查节点（建议写入里程碑）</h3>
+<ul>
+<li><strong>第 6 个月（阶段一上线）</strong>：用实际开发速率复盘「≈1.5 人产能」的估算偏差，作为阶段二重排的输入（对应发现 8）。</li>
+<li><strong>第 7 个月（阶段二启动）</strong>：硬件覆盖率摸底（PRD 已列）+ 按当时上游状态复核 microsandbox beta 与 Tauri 版本（上轮报告的「结论半衰期」提醒仍然有效）。</li>
+</ul>
+<hr />
+<h2>五、最终结论</h2>
+<blockquote>
+<p><strong>从「有条件可行」升级为「可行，建议通过评审」。</strong></p>
+</blockquote>
+<p>三点收尾：</p>
+<ol>
+<li><strong>上轮的四个发动机级依赖全部闭环，且处置质量高于「补一节文档」的水平</strong>——BYOK 的合规立场、≈1.5 人的产能折算、「数据不出本机」的概念拆解、Windows-only 的决策链条，都是能直接指导开发的决策，不是敷衍的补丁。</li>
+<li><strong>本轮 8 条新发现全部是执行级</strong>：4 条一致性/表述、2 条排期补注、2 条执行清单化。没有任何一条要求改变架构、技术选型或范围切分。这与上轮「排期虚、依赖悬空」的结构性问题不在一个量级——<strong>问题重心的迁移本身就是这三次修订有效性的证明</strong>。</li>
+<li><strong>这套「外审 → 逐条核对 → 修订 → 留痕」的机制已经形成闭环</strong>，V1.6 甚至更正了评估报告自身的一条过时事实（经核实属实，已采纳）。12.1 里那句「自己写的文档，自己看不出问题」值得保留为项目的长期纪律——本报告同样欢迎被逐条核对：若对某条判断有异议，请指出具体行号与事实，下一版改回来。</li>
+</ol>
+<hr />
+<p><strong>报告结束</strong></p>
+<p><em>本报告为 V2.0（针对 PRD V1.8）。上一版评估（V1.0，针对 V1.5）已归档至 <code>outputs/archive/</code>。12.2 统计、优先级分布、风险表行数均经脚本独立重算复核。</em></p>
+<div class="foot">科研 Agent 应用（SciMate）· PRD 可行性评估报告 V2.0 &nbsp;|&nbsp; 2026-09-16 &nbsp;|&nbsp; 依据：PRD V1.8 全量 diff + 逐条核对结果 V1.0 + 脚本重算</div>
+</div>
+</div>
+</body>
+</html>

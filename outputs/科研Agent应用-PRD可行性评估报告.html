@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>科研 Agent 应用 · PRD 方案可行性评估报告 V3.0</title>
+<style>
+:root{
+  --ink:#16202e; --ink-2:#3b4859; --muted:#6c7889;
+  --line:#e3e9f1; --line-2:#eef3f9;
+  --bg:#eef2f7; --card:#ffffff;
+  --brand:#1e5fa8; --brand-2:#2f7fd1; --brand-soft:#ebf3fc; --brand-deep:#123f70;
+  --p0:#b3261e; --p0-bg:#fdecea;
+  --p1:#8a5a00; --p1-bg:#fdf5e4;
+  --p2:#2b6b4c; --p2-bg:#e9f6ef;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; padding:38px 18px 72px; background:var(--bg); color:var(--ink);
+  font-family:"Segoe UI","Microsoft YaHei","PingFang SC","Hiragino Sans GB","Source Han Sans SC",sans-serif;
+  font-size:15.5px; line-height:1.85; font-feature-settings:"kern" 1;
+}
+.sheet{
+  max-width:960px; margin:0 auto; background:var(--card);
+  border:1px solid var(--line); border-radius:14px;
+  padding:0 0 56px; box-shadow:0 10px 34px rgba(23,52,86,.09); overflow:hidden;
+}
+.sheet-head{
+  padding:44px 62px 34px; background:linear-gradient(135deg,#123f70 0%,#1e5fa8 55%,#2f7fd1 100%);
+  color:#fff;
+}
+.sheet-head .eyebrow{
+  font-size:11px; letter-spacing:.24em; text-transform:uppercase;
+  color:#bcd8f5; font-weight:600; margin-bottom:14px;
+}
+.sheet-head h1{
+  margin:0 0 12px; font-size:31px; line-height:1.35; font-weight:700;
+  color:#fff; border:0; padding:0; letter-spacing:.01em;
+}
+.sheet-head .sub{margin:0; color:#d6e8fa; font-size:14.5px}
+.inner{padding:8px 62px 0}
+
+h1,h2,h3,h4,h5{line-height:1.45; color:var(--brand-deep); font-weight:700}
+h2{
+  font-size:22px; margin:52px 0 18px; padding:0 0 10px 14px;
+  border-bottom:1px solid var(--line); border-left:5px solid var(--brand-2); border-radius:2px;
+}
+h3{font-size:17.5px; margin:34px 0 10px; color:#1b548f}
+h3::before{content:""; display:inline-block; width:8px; height:8px; margin-right:9px;
+  background:var(--brand-2); border-radius:2px; transform:translateY(-2px)}
+h4{font-size:16px; margin:24px 0 8px; color:#21568c}
+h5{font-size:15px; margin:0 0 6px}
+p{margin:11px 0}
+strong{color:#0d2a4a; font-weight:700}
+a{color:var(--brand); text-decoration:none}
+a:hover{text-decoration:underline; color:var(--brand-2)}
+ul,ol{padding-left:24px; margin:12px 0}
+li{margin:7px 0}
+hr{border:0; border-top:1px dashed #d8e3ef; margin:44px 0}
+
+blockquote{
+  margin:20px 0; padding:16px 22px; background:var(--brand-soft);
+  border-left:4px solid var(--brand-2); border-radius:0 10px 10px 0; color:var(--ink-2);
+}
+blockquote p{margin:8px 0}
+blockquote strong{color:#123f70}
+
+table{
+  width:100%; border-collapse:separate; border-spacing:0; margin:20px 0 26px;
+  font-size:14.3px; border:1px solid var(--line); border-radius:10px; overflow:hidden;
+}
+thead th{
+  background:#e9f1fb; color:#123f70; text-align:left; font-weight:700;
+  padding:11px 13px; border-bottom:1px solid #d5e3f3;
+}
+tbody td{padding:10px 13px; border-bottom:1px solid var(--line-2); vertical-align:top; line-height:1.7}
+tbody tr:nth-child(even) td{background:#fafcfe}
+tbody tr:last-child td{border-bottom:0}
+code{background:#f1f5fa; border:1px solid #e2eaf3; border-radius:5px;
+  padding:1px 6px; font-size:13.4px; color:#1b4d80;
+  font-family:Consolas,"Cascadia Mono",Menlo,monospace}
+
+.toc{
+  background:#fafcfe; border:1px solid var(--line); border-radius:12px;
+  padding:20px 24px 18px; margin:26px 0 10px;
+}
+.toc h4{margin:0 0 12px; font-size:11.5px; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--muted); font-weight:700}
+.toc ol{margin:0; padding-left:20px; columns:2; column-gap:34px}
+.toc li{margin:5px 0; font-size:14.3px; break-inside:avoid}
+.toc a{color:#1b548f}
+
+.chip{display:inline-block; padding:2px 9px; border-radius:999px; font-size:12px;
+  font-weight:700; letter-spacing:.04em}
+.chip-p0{background:var(--p0-bg); color:var(--p0)}
+.chip-p1{background:var(--p1-bg); color:var(--p1)}
+.chip-p2{background:var(--p2-bg); color:var(--p2)}
+
+.modmap{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:22px 0 12px}
+.modcard{border:1px solid var(--line); border-radius:12px; padding:18px 18px 16px;
+  background:linear-gradient(180deg,#fbfdff,#f4f9fe)}
+.modcard .num{display:inline-block; font-size:11.5px; font-weight:700; letter-spacing:.1em;
+  color:var(--brand); background:#fff; border:1px solid #cfe2f6;
+  padding:2px 9px; border-radius:999px; margin-bottom:11px}
+.modcard p{margin:0 0 12px; font-size:13.8px; color:var(--ink-2); line-height:1.65}
+.modcard-wide{grid-column:1/-1; background:linear-gradient(180deg,#f8fbfe,#eef5fc)}
+.mapnote{font-size:13.8px; color:var(--muted); margin:0 0 26px;
+  padding-left:14px; border-left:3px solid #dce8f5}
+
+.flow{display:flex; flex-wrap:wrap; align-items:center; gap:7px; margin:20px 0 6px}
+.flow .st{background:#fff; border:1px solid #d3e3f5; border-radius:999px;
+  padding:7px 15px; font-size:13.6px; color:#1b548f; font-weight:600}
+.flow .ar{color:#9ebcdc; font-weight:700}
+
+.tl{position:relative; margin:24px 0 10px; padding-left:30px}
+.tl::before{content:""; position:absolute; left:7px; top:8px; bottom:14px; width:2px;
+  background:linear-gradient(180deg,var(--brand-2),#d7e6f6)}
+.tl-item{position:relative; margin-bottom:22px}
+.tl-item:last-child{margin-bottom:0}
+.tl-item::before{content:""; position:absolute; left:-30px; top:6px; width:12px; height:12px;
+  border-radius:50%; background:#fff; border:3px solid var(--brand-2)}
+.tl-d{font-size:12.5px; color:var(--muted); font-weight:600; letter-spacing:.05em}
+.tl-h{font-size:15.5px; font-weight:700; color:#123f70; margin:2px 0 4px}
+.tl-b{font-size:14.2px; color:var(--ink-2); line-height:1.7}
+
+.foot{margin-top:46px; padding-top:20px; border-top:1px solid var(--line);
+  font-size:13px; color:var(--muted); text-align:center}
+
+@media (max-width:820px){
+  body{padding:14px 8px 44px; font-size:15px}
+  .sheet-head{padding:30px 24px 26px}
+  .sheet-head h1{font-size:24px}
+  .inner{padding:6px 24px 0}
+  .modmap{grid-template-columns:1fr}
+  .toc ol{columns:1}
+  table{font-size:13.4px}
+  thead th,tbody td{padding:8px 9px}
+}
+@media print{
+  body{background:#fff; padding:0; font-size:11.5pt}
+  .sheet{box-shadow:none; border:0; border-radius:0; max-width:none}
+  .sheet-head{background:#123f70 !important; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+  h2,h3,h4{page-break-after:avoid; break-after:avoid}
+  table,.modcard,.tl-item,blockquote{page-break-inside:avoid; break-inside:avoid}
+  .toc{page-break-after:always; break-after:page}
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+<header class="sheet-head">
+  <div class="eyebrow">Feasibility Assessment Report</div>
+  <h1>科研 Agent 应用 · PRD 方案可行性评估报告</h1>
+  <p class="sub">评估对象：PRD V1.9（文档小修版）&nbsp;|&nbsp; 总体结论：通过评审，建议评审收口、转入执行 &nbsp;|&nbsp; 报告 V3.0（第三轮·收尾轮） &nbsp;|&nbsp; 2026-09-16</p>
+</header>
+<div class="inner">
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>评估对象</strong></td>
+<td>《科研 Agent 应用 · 产品需求文档（PRD）》<strong>V1.9</strong>（按第二轮外审做文档小修 + 补合规缺口版）</td>
+</tr>
+<tr>
+<td><strong>评估轮次</strong></td>
+<td>第三轮。第一轮（报告 V1.0，对 PRD V1.5，结论「有条件可行」）、第二轮（报告 V2.0，对 PRD V1.8，结论「可行，建议通过评审」）均已归档</td>
+</tr>
+<tr>
+<td><strong>参考依据</strong></td>
+<td>PRD V1.8→V1.9 全量 diff；《逐条核对结果》V2.0（对上轮报告的核验，抓出本报告 2 处错误）；12.2 统计、12.3 结构、归档计数均经脚本独立复核</td>
+</tr>
+<tr>
+<td><strong>报告版本</strong></td>
+<td><strong>V3.0</strong></td>
+</tr>
+<tr>
+<td><strong>评估日期</strong></td>
+<td>2026 年 9 月 16 日</td>
+</tr>
+<tr>
+<td><strong>总体结论</strong></td>
+<td><strong>通过评审，且建议评审就此收口、转入执行。</strong> V1.9 把第二轮外审的 16 处发现全部落地，合规地基从一句悬空主张补成有出处的一节；12.2 的 43 项功能一字未动（脚本复核一致）。本轮全文档扫描仅剩 <strong>2 处表述级问题 + 2 条建议</strong>——三轮评审的问题轨迹已走完「结构性 → 执行性 → 表述级」的收敛，<strong>继续打磨文档的边际收益接近零，下一轮有效反馈只能来自阶段零的真实数据</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>阅读提示</strong></p>
+<p>这是第三轮、也可能是收尾轮。本轮回答四个问题：<strong>16 处修复落地了没有？V1.9 新补的内容（10.4 合规立场、spike 清单、两项度量）质量如何？上轮评估报告自己的 2 处错误怎么认？还剩什么？</strong> 逐条附行号。</p>
+<hr />
+<h2>零、三分钟速览</h2>
+<blockquote>
+<p><strong>一句话结论：V1.9 之后再修文档就是在打磨镜面了。</strong> 该落的全部落地、该补的补成真的、该度量的有了收数方案；剩余 2 处表述级瑕疵十分钟可修。<strong>建议：通过评审 → 修掉 2 处 → 直接开阶段零。</strong> 下一次「外审」不应该再看文档，而应该看数据——第 1 个月末阶段零三线线的结论，与第 6 个月的产能复盘。</p>
+</blockquote>
+<h3>三轮轨迹（问题重心的迁移本身就是收敛的证据）</h3>
+<table>
+<thead>
+<tr>
+<th>评估维度</th>
+<th>V1.5（第一轮）</th>
+<th>V1.8（第二轮）</th>
+<th>V1.9（本轮）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>产品定位与市场</td>
+<td>高</td>
+<td>高</td>
+<td>高（配 Key 风险已有度量方案）</td>
+</tr>
+<tr>
+<td>技术架构</td>
+<td>中高（5 缺口）</td>
+<td>高</td>
+<td>高（spike 清单补上最后的模糊点）</td>
+</tr>
+<tr>
+<td>阶段划分与排期</td>
+<td><strong>中低</strong>（排期虚）</td>
+<td>中高（范围=产能）</td>
+<td>中高（V1.9 未动、也无需动）</td>
+</tr>
+<tr>
+<td>资源与外部依赖</td>
+<td><strong>不明朗</strong>（4 项悬空）</td>
+<td>高（A 组闭环）</td>
+<td>高（B4/B5/C6 补入，开放项全部显式化）</td>
+</tr>
+<tr>
+<td>合规、安全与分发</td>
+<td>中</td>
+<td>中高（<strong>评分含一处误记</strong>）</td>
+<td><strong>高</strong>（10.4 落地；签名待 B4 验证）</td>
+</tr>
+<tr>
+<td>文档内部一致性</td>
+<td>中（14 处问题）</td>
+<td>中高（残留 + 新引入）</td>
+<td><strong>高</strong>（本轮仅剩 1 处表述过时 + 1 处计数口径）</td>
+</tr>
+<tr>
+<td>验证与度量设计</td>
+<td>中高</td>
+<td>高</td>
+<td>高（度量有了落地动作与兜底预案）</td>
+</tr>
+</tbody>
+</table>
+<h3>本轮三个要点</h3>
+<ol>
+<li><strong>16 处修复全部落地，质量高于「照单全收」</strong>——其中 spike 清单（四个数字 + 两项结论）和「配 Key 成功率」的兜底冲突预案，做得比评审要求的更彻底（见第一节）。</li>
+<li><strong>上轮评估报告自身有 2 处错误，被《核对结果》V2.0 抓出，核实属实，本轮认账</strong>（见第二节）——其中一处是把「有一句主张」当成了「合规立场已写入」。这条误记若无人指出，悬空的合规地基会被永远标记为「已闭环」。</li>
+<li><strong>剩余问题 2 处，全是表述级</strong>：文档结尾的版本引用第三次过时（L2073）；「16 处 vs 11 处」两套计数口径对不上（L21 vs L90）。十分钟修完（见第三节）。</li>
+</ol>
+<hr />
+<h2>一、V1.9 修复质量核验</h2>
+<h3>1.1 第二轮 16 处发现的落地情况 —— 16/16</h3>
+<table>
+<thead>
+<tr>
+<th>来源</th>
+<th>发现</th>
+<th>落地位置与方式</th>
+<th>核验</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>报告 #1</td>
+<td>BYOK 与零门槛的张力</td>
+<td>阶段零新增两项度量（L1113–1119）：「7 天内配 Key 成功率」写明它是「5.1 的 5 分钟、5.2 全部性能指标、阶段一 60% 完成率」的共同前提；<strong>并预先写死兜底方案的合规冲突</strong>（「限时体验额度」与 5.11 立场冲突，必须在阶段零一并定，不能等数据出来再补）</td>
+<td>✅ 且超出要求</td>
+</tr>
+<tr>
+<td>报告 #2</td>
+<td>P0 图例语义失真</td>
+<td>L306 图例改为「P0 ≠ 第一版就要有；上线阶段以 12.2 计划阶段列为准」，并举了 D2-2 / M1-1/M1-2/M1-4 的实例</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>报告 #3</td>
+<td>12.1 归档表述再次过时</td>
+<td>L58 / L1433 改为<strong>不依赖版本号</strong>的写法（「除当前版外的全部历史版本均已归档」），并注明改写理由；「共 22 个文件」经 <code>ls</code> 核实 = 22</td>
+<td>✅ 机制化修法</td>
+</tr>
+<tr>
+<td>报告 #4</td>
+<td>5.1 验收例子用阶段二能力</td>
+<td>L775 改为「上传一份稿件 → 得到一份引用核验报告」，<strong>并主动标注了隐藏前提</strong>（验收成立的前提是已配好 Key——与配 Key 度量互相引用）</td>
+<td>✅ 且超出要求</td>
+</tr>
+<tr>
+<td>报告 #5</td>
+<td>容量账没算明</td>
+<td>新增 6 条工作流编号清单（L1065–1078，① 平台底座…⑥ 功能层，逐条对应 12.2 条目）；<strong>补记了那笔账</strong>：6 条 = 4–5 条产能 + V1.8 砍两个平台换来的 1 条余量，且余量已声明为缓冲</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>报告 #6</td>
+<td>打包验证无验收清单</td>
+<td>新增 spike 清单（L1257–1276）：<strong>四个数字</strong>（含 pandoc 的体积基线 / 冷启动到界面 / 冷启动到内核就绪 / WebView2 引导成功率）+ <strong>两项结论</strong>（pandoc 能否打包运行 / 桌面方案是否继续），每项带「不可接受时」的处置——并自我修正了「C 扩展在阶段一无对象」的错位</td>
+<td>✅ 优于评审要求</td>
+</tr>
+<tr>
+<td>报告 #7</td>
+<td>招募筛选缺操作系统</td>
+<td>L1185 加入「操作系统须为 Windows 10 及以上」，数据复用 waitlist 平台分布</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>报告 #8</td>
+<td>阶段二产能假设缺失</td>
+<td>新增产能假设表（L1211–1223）：默认仍 1 人不假设增长；收入/协作者出现时重排范围而非压缩时间；<strong>第 6 个月用实际速率复盘「≈1.5 人」写成触发条件</strong></td>
+<td>✅</td>
+</tr>
+<tr>
+<td>小瑕疵 1</td>
+<td>V1.7 风险表标题「2 条」实 3 行</td>
+<td>L1335 改为「V1.7–V1.8 新增的 3 条」+ 修正注</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>小瑕疵 2</td>
+<td>M2-5 借用脚本型技能会降级</td>
+<td>L576 补落地方式：格式引擎用内核内置 CSL / citeproc，不进沙箱，与 M3-5 口径一致</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>小瑕疵 3</td>
+<td>C-4 缺 B2 依赖标注</td>
+<td>12.2 C-4 行加「⚠️ 依赖 B2」；B2 行同步标注「是 C-4 的前置依赖」</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>核对 #1/#2</td>
+<td>12.3 A 组错位 + A3 被空行拆表</td>
+<td>A 组归位到「一、已关闭」（L1702），A3 并回主表——脚本验证：A 组表 5 行连续无断裂</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>核对 #3</td>
+<td>声明「三段式」实为两节</td>
+<td>L1744 真正分出「三、可并行推进」，结构与声明一致</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>核对 #4</td>
+<td>5.11 引用悬空</td>
+<td>新增 <strong>10.4「生成式 AI 合规立场」</strong>（L1370–1401），引用指准；现存 3 处「见第十章的合规说明」字样均为修正说明中的引文，非悬空</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>核对 #5</td>
+<td>5.2 指标未标注阶段</td>
+<td>L786 加「⚠️ 自阶段二起生效，阶段一不列为验收项」</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>（V1.9 自查）</td>
+<td>并行线口径、C-2 排期表述</td>
+<td>「三条工作线 = 1 主线 + 2 并行线」两处统一（L1093–1095）</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<h3>1.2 新增内容的质量评价</h3>
+<p><strong>10.4「生成式 AI 合规立场」——本轮最有价值的新增。</strong> 三段结构（为什么选 BYOK / 五条自我约束 / 必须承认的边界）里，第三段「不要对外说过头」（「这不是法律意见」「需专业人士确认」「按季度复核」）最难写也最可贵——多数产品文档只写立场不写边界。它把 5.11 那句孤零零的主张变成了有论证、有出处、有自限的一节，BYOK 策略的合规地基从「声称」变成了「成立」。</p>
+<p><strong>spike 清单——把「开工前提」从口号变成了可勾选的验收。</strong> 尤其两处自我修正：① 指出「含 C 扩展依赖」在阶段一无对象（内核轻量、无沙箱），真正要量的是 pandoc 与 Python 运行时；② 给「不可接受时」各配了处置动作。第 1–2 周做完这件事，「桌面方案要不要重谈」就有了明确答案。</p>
+<p><strong>阶段零两项度量——产品级风险从「识别」走到「可测」。</strong> 且「兜底方案与 5.11 立场冲突、必须阶段零一并定」这句话，把最容易被拖延的决策提前钉死了。这是整个 V1.9 里对项目存活率贡献最大的一处。</p>
+<p><strong>12.3 的 B4 / B5 / C6</strong> 把剩余开放项（签名证书个人采购、度量落地、macOS 时点）全部显式化——至此<strong>文档里不再有「隐含的未决事项」</strong>，所有开放问题都在 12.3 里有一行。</p>
+<h3>1.3 「12.2 一字未动」的复核</h3>
+<p>脚本重算：43 项，P0 26 / P1 15 / P2 2，计划阶段 23 / 18 / 2，实现方式 28 / 7 / 8——与 V1.8 完全一致（仅 C-4 行加依赖标注）。<strong>「不改功能范围」的声明属实。</strong> 这很重要：一次纯文档修订没有夹带范围变更，说明修订纪律在起作用。</p>
+<hr />
+<h2>二、对上轮评估报告的自纠（2 处，认账）</h2>
+<p>《核对结果》V2.0 抓出上轮报告 2 处错误，我逐条复核后<strong>全部属实</strong>，在此更正：</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>上轮报告的错</th>
+<th>错在哪</th>
+<th>更正</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>评分表与 1.1 节把「生成式 AI 合规立场（不向公众提供服务）」记为<strong>已写入/已闭环</strong></td>
+<td>当时全文「生成式」仅出现 1 次（5.11 表格一句主张），且指向<strong>并不存在的</strong>第十章章节——主张有、论证无、引用悬空。<strong>评估错在把「有一句主张」当成了「已落地」。</strong></td>
+<td>V1.8 时该项状态应为「有立场、无论证、引用悬空」；V1.9 的 10.4 才把它补成真的，本轮已核验通过。<strong>方法教训：核对「已写入」类判断时，必须检索到实际章节，而不是检索到那句话</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>「14 处修净 13 处」，并把未修净的一项归因为「归档表述再次过时」</td>
+<td>数字恰好对，归因错了：上一轮 14 处实际 <strong>13 处完全改净 + 1 处（12.3 结构）部分改净</strong>——那处正是 V1.6 亲口诊断过却没修的 A 组错位，评估没有发现它；「归档表述过时」则是同一类错误的<strong>新发实例</strong>，不是旧问题的残留</td>
+<td>更正为「13 处改净 + 1 处部分改净；另有 3 处为 V1.7/V1.8 新引入」。该处结构问题已由 V1.9 修复（见 1.1）</td>
+</tr>
+</tbody>
+</table>
+<p>这两处不影响上轮「通过评审」的结论，但影响「下一轮该查什么」——若无核对机制，悬空的合规地基会被永久标记为已闭环。<strong>这正是双向核对存在的意义：评估者也需要被核对。</strong></p>
+<hr />
+<h2>三、本轮新发现（2 处表述级 + 2 条建议）</h2>
+<p>V1.9 全文档扫描（含内部引用、计数、格式）的结果：<strong>无结构性、无执行级问题，仅剩以下 4 条。</strong></p>
+<h3>发现 1 ⚠️ 文档结尾的版本引用，当天第三次过时（L2073）</h3>
+<p>结尾写「本版依据两份外部文档修订：《…可行性评估报告》<strong>V1.0</strong> 与《…逐条核对结果》<strong>V1.0</strong>」——而 V1.9 实际依据的是两者的 <strong>V2.0</strong>；配套文档行（L11）也只列了《核对结果》V2.0、未列《评估报告》。</p>
+<p>这是「<strong>版本号写死 → 过时</strong>」模式当天第三次出现：V1.6/V1.7/V1.8 归档表述连错两版 → V1.9 刚用「去版本号」的写法修掉它，并在教训里写下「让结构兜住，不靠记忆」→ <strong>同一版里，结尾引用又犯了一次</strong>。修法同款：改为「依据两份外部评估/核对文档的最新版（见 outputs/）」，或在配套文档行补齐《评估报告》并随版同步。十分钟。</p>
+<h3>发现 2 ⚠️ 「16 处 vs 11 处」两套计数口径对不上（L21 vs L90）</h3>
+<p>文档头（L21）：「共 <strong>16 处</strong>（报告 8 条 + 小瑕疵 3 条 + 核对补充 5 处）」；修订记录（L90）：「① 修净 <strong>11 处</strong> 文档缺陷：4 + 3 + 4」。两套数字各自成理，但对不上账：① 的 11 项<strong>漏列了 5 处实际修复</strong>（spike 清单、阶段二产能、招募筛选、并行线口径、C-2 表述——部分散在 ②③ 里但没入账），且「8+3+5=16」的等式<strong>数值上成立、组成上不真</strong>（实际构成是：报告 7 条〔BYOK 单列为度量〕+ 小瑕疵 3 + 核对 4〔A3 并入 A 组〕+ V1.9 自查 2〔并行线、C-2〕）。</p>
+<p><strong>不改变任何实质，但这是「统计要重算，不要手写」这条教训在自家修订记录上的复现</strong>——正是 V1.6 用 12.2 的四版错数换来的那条。建议修订记录直接复用文档头的四类分账，一处维护。</p>
+<h3>建议 1（度量）给「配 Key 成功率」补两个定义</h3>
+<p>阶段零表单（L1117）问「你在这 7 天内成功配置了至少一个模型密钥吗」——<strong>7 天从何时起算</strong>（建议：安装技能当日）没有锚点；<strong>「明显低于预期」的预期值</strong>也没有定义（建议给一条触发线，例如 &lt; 40% 即启动兜底评估、并同步决策 5.11 立场）。另外这是自报式数据，收数时顺带记录「未回复」占比，避免把沉默当成功。</p>
+<h3>建议 2（合规）10.4 的季度复核清单点名一项新规</h3>
+<p>《人工智能生成合成内容标识办法》（2025 年 9 月起施行）对「生成内容标识」的义务边界仍在演化，建议在 10.4 的「按季度复核」里留个名字。好消息是方向已经对齐：M3-7 / 5.8 早已承诺「AI 生成内容带明确标识」——产品行为与监管方向一致，缺的只是把这件事记入复核清单。</p>
+<hr />
+<h2>四、评审结论</h2>
+<h3>4.1 结论：通过评审，并建议评审就此收口</h3>
+<p>三轮评审的问题轨迹：</p>
+<table>
+<thead>
+<tr>
+<th>轮次</th>
+<th>对象</th>
+<th>问题量级</th>
+<th>问题性质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一轮</td>
+<td>V1.5</td>
+<td>4 项结构性依赖悬空 + 14 处不一致</td>
+<td><strong>结构性</strong>（排期虚、发动机缺失）</td>
+</tr>
+<tr>
+<td>第二轮</td>
+<td>V1.8</td>
+<td>8 条新发现 + 3 小瑕疵</td>
+<td><strong>执行性</strong>（清单未定义、账没算明）</td>
+</tr>
+<tr>
+<td>第三轮</td>
+<td>V1.9</td>
+<td>2 处表述 + 2 条建议</td>
+<td><strong>表述级</strong>（引用过时、计数口径）</td>
+</tr>
+</tbody>
+</table>
+<p>严重度单调递减且已收敛到「十分钟文档工作量」。<strong>文档已到达边际收益递减点——再改一轮也只会找出标点级别的问题，而阶段零每周都在产生新的、真实的、文档里预测不了的信息。</strong> 建议把「外审 → 核对 → 修订」的机制保留给代码与数据，文档评审到此为止。</p>
+<h3>4.2 开工清单（第 1–2 周，与 12.3 B 组及里程碑表一致）</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>动作</th>
+<th>完成标准</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>打包验证 spike</td>
+<td>按 L1257 清单拿到<strong>四个数字 + 两项结论</strong>；任一项不可接受 → 按约定重谈桌面方案</td>
+</tr>
+<tr>
+<td>2</td>
+<td>撤稿数据源核查（第 1 周）</td>
+<td>OpenAlex 与 Crossref 各跑通一次真实核验，频控实测，结论写回 M2-7</td>
+</tr>
+<tr>
+<td>3</td>
+<td>waitlist 加两字段（B5）</td>
+<td>「配 Key 成功率」（含起算锚点与触发线，见建议 1）+「平台分布」</td>
+</tr>
+<tr>
+<td>4</td>
+<td>B1 供应商清单初版 + B4 签名证书预研</td>
+<td>国产模型至少 2 家验证连通；确认个人可购买的签名证书产品与价格</td>
+</tr>
+<tr>
+<td>5</td>
+<td>顺手修掉本轮 2 处表述（发现 1 / 发现 2）</td>
+<td>十分钟，不必为此升版</td>
+</tr>
+</tbody>
+</table>
+<h3>4.3 下一次外部复核的时点（不在文档层）</h3>
+<ul>
+<li><strong>第 1 个月末</strong>：阶段零三线结论 + 配 Key 成功率首批数据——后者若低于触发线，5.11 的 BYOK 立场与兜底方案需要一次正式决策；</li>
+<li><strong>第 6 个月</strong>：按 L1221 的触发条件，用实际开发速率复盘「≈1.5 人」估算，作为阶段二重排输入。</li>
+</ul>
+<hr />
+<h2>五、最终结论</h2>
+<blockquote>
+<p><strong>V1.9 通过评审。文档阶段结束，执行阶段开始。</strong></p>
+</blockquote>
+<p>最后说一点超出单份 PRD 的话。这三轮形成了一个完整的闭环：<strong>外部评估指出问题 → 逐条核对（连评估自己的错误也不放过）→ 修订留痕 → 下一版把「为什么会犯」写成机制</strong>。评估者自己被更正了两次，PRD 也在被更正中从「愿望」变成了「计划」。这份文档最值得带进阶段零的，不是它的任何一条结论，而是它的这条工作方式——<strong>留痕的纠错比正确的结论更值钱，因为结论会过时，机制不会。</strong></p>
+<p>祝开工顺利。第 1 个月末见数据。</p>
+<hr />
+<p><strong>报告结束</strong></p>
+<p><em>本报告为 V3.0（针对 PRD V1.9，收尾轮）。第一、二轮报告（V1.0 / V2.0）已归档至 <code>outputs/archive/</code>。12.2 统计、12.3 结构、A 组表格完整性、归档文件计数（22）均经脚本独立复核。</em></p>
+<div class="foot">科研 Agent 应用（SciMate）· PRD 可行性评估报告 V3.0 &nbsp;|&nbsp; 2026-09-16 &nbsp;|&nbsp; 依据：PRD V1.8→V1.9 全量 diff + 核对结果 V2.0 + 脚本复核</div>
+</div>
+</div>
+</body>
+</html>
