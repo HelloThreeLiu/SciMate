@@ -1,0 +1,6037 @@
+[
+  {
+    "idx": 1,
+    "ref": "[1] Vaswani A, Shazeer N, Parmar N, et al. Attention is all you need[C]//Advances in Neural Information Processing Systems. 2017: 5998-6008. doi:10.5555/3294771.3295384",
+    "status": "doi_unindexed",
+    "source": "Crossref（书目检索）",
+    "matched": {
+      "display_name": "Attention Is All You Need",
+      "publication_year": 2025,
+      "doi": "10.65215/r5bs2d54",
+      "authorships": [
+        {
+          "author": {
+            "display_name": "Vaswani"
+          }
+        },
+        {
+          "author": {
+            "display_name": "Shazeer"
+          }
+        },
+        {
+          "author": {
+            "display_name": "Parmar"
+          }
+        },
+        {
+          "author": {
+            "display_name": "Uszkoreit"
+          }
+        },
+        {
+          "author": {
+            "display_name": "Jones"
+          }
+        },
+        {
+          "author": {
+            "display_name": "N.Gomez"
+          }
+        },
+        {
+          "author": {
+            "display_name": "Kaiser"
+          }
+        },
+        {
+          "author": {
+            "display_name": "Polosukhin"
+          }
+        }
+      ]
+    },
+    "doi": "10.5555/3294771.3295384",
+    "retraction": null,
+    "diffs": [],
+    "score": 0.75,
+    "note": "引用中的 DOI（10.5555/3294771.3295384）未被 OpenAlex/Crossref 收录，但存在同题文献（相似度 1.0）——DOI 可能无效或未注册，请核对 DOI 是否抄写正确"
+  },
+  {
+    "idx": 2,
+    "ref": "[2] Wakefield A J, Murch S H, Anthony A, et al. Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children[J]. The Lancet, 1998, 351(9103): 637-641. doi:10.1016/S0140-6736(97)11096-0",
+    "status": "retracted",
+    "source": "OpenAlex（DOI 直查）",
+    "matched": {
+      "id": "https://openalex.org/W2117847125",
+      "doi": "https://doi.org/10.1016/s0140-6736(97)11096-0",
+      "title": "RETRACTED: Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children",
+      "display_name": "RETRACTED: Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children",
+      "publication_year": 1998,
+      "publication_date": "1998-02-01",
+      "ids": {
+        "openalex": "https://openalex.org/W2117847125",
+        "doi": "https://doi.org/10.1016/s0140-6736(97)11096-0",
+        "mag": "2117847125",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/9500320"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1016/s0140-6736(97)11096-0",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1016/s0140-6736(97)11096-0",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S49861241",
+          "display_name": "The Lancet",
+          "issn_l": "0099-5355",
+          "issn": [
+            "0099-5355",
+            "0140-6736",
+            "1474-547X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310320990",
+          "host_organization_name": "Elsevier BV",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310320990"
+          ],
+          "host_organization_lineage_names": [
+            "Elsevier BV"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "The Lancet",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5110570568",
+            "display_name": "A J Wakefield",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801138448",
+              "display_name": "The Royal Free Hospital",
+              "ror": "https://ror.org/01ge67z96",
+              "country_code": "GB",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I169248724",
+                "https://openalex.org/I2801138448"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I45129253",
+              "display_name": "University College London",
+              "ror": "https://ror.org/02jx3x895",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I124357947",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "AJ Wakefield",
+          "raw_affiliation_strings": [
+            "Inflammatory Bowel Disease Study Group, University Department of Medicine, Royal Free Hospital and School of Medicine, London, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Inflammatory Bowel Disease Study Group, University Department of Medicine, Royal Free Hospital and School of Medicine, London, UK",
+              "institution_ids": [
+                "https://openalex.org/I2801138448",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5111912040",
+            "display_name": "SH Murch",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801138448",
+              "display_name": "The Royal Free Hospital",
+              "ror": "https://ror.org/01ge67z96",
+              "country_code": "GB",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I169248724",
+                "https://openalex.org/I2801138448"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I45129253",
+              "display_name": "University College London",
+              "ror": "https://ror.org/02jx3x895",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I124357947",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "SH Murch",
+          "raw_affiliation_strings": [
+            "University Departments of Paediatric Gastroenterology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University Departments of Paediatric Gastroenterology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK",
+              "institution_ids": [
+                "https://openalex.org/I2801138448",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "A Anthony",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801138448",
+              "display_name": "The Royal Free Hospital",
+              "ror": "https://ror.org/01ge67z96",
+              "country_code": "GB",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I169248724",
+                "https://openalex.org/I2801138448"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I45129253",
+              "display_name": "University College London",
+              "ror": "https://ror.org/02jx3x895",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I124357947",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "A Anthony",
+          "raw_affiliation_strings": [
+            "Inflammatory Bowel Disease Study Group, University Departments of Medicine and Histopathology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Inflammatory Bowel Disease Study Group, University Departments of Medicine and Histopathology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK",
+              "institution_ids": [
+                "https://openalex.org/I2801138448",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5113668959",
+            "display_name": "J. C. Linnell",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801138448",
+              "display_name": "The Royal Free Hospital",
+              "ror": "https://ror.org/01ge67z96",
+              "country_code": "GB",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I169248724",
+                "https://openalex.org/I2801138448"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I45129253",
+              "display_name": "University College London",
+              "ror": "https://ror.org/02jx3x895",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I124357947",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "J Linnell",
+          "raw_affiliation_strings": [
+            "Inflammatory Bowel Disease Study Group, University Departments of Medicine and Histopathology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Inflammatory Bowel Disease Study Group, University Departments of Medicine and Histopathology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK",
+              "institution_ids": [
+                "https://openalex.org/I2801138448",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5111912041",
+            "display_name": "D M Casson",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801138448",
+              "display_name": "The Royal Free Hospital",
+              "ror": "https://ror.org/01ge67z96",
+              "country_code": "GB",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I169248724",
+                "https://openalex.org/I2801138448"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I45129253",
+              "display_name": "University College London",
+              "ror": "https://ror.org/02jx3x895",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I124357947",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "DM Casson",
+          "raw_affiliation_strings": [
+            "University Departments of Paediatric Gastroenterology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University Departments of Paediatric Gastroenterology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK",
+              "institution_ids": [
+                "https://openalex.org/I2801138448",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5113048994",
+            "display_name": "M.M. Malik",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801138448",
+              "display_name": "The Royal Free Hospital",
+              "ror": "https://ror.org/01ge67z96",
+              "country_code": "GB",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I169248724",
+                "https://openalex.org/I2801138448"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I45129253",
+              "display_name": "University College London",
+              "ror": "https://ror.org/02jx3x895",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I124357947",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "M Malik",
+          "raw_affiliation_strings": [
+            "University Departments of Paediatric Gastroenterology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University Departments of Paediatric Gastroenterology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK",
+              "institution_ids": [
+                "https://openalex.org/I2801138448",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5037267967",
+            "display_name": "Mark Berelowitz",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801138448",
+              "display_name": "The Royal Free Hospital",
+              "ror": "https://ror.org/01ge67z96",
+              "country_code": "GB",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I169248724",
+                "https://openalex.org/I2801138448"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I45129253",
+              "display_name": "University College London",
+              "ror": "https://ror.org/02jx3x895",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I124357947",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "M Berelowitz",
+          "raw_affiliation_strings": [
+            "Child and Adolescent Psychiatry, Royal Free Hospital and School of Medicine, London NW3 2QG, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Child and Adolescent Psychiatry, Royal Free Hospital and School of Medicine, London NW3 2QG, UK",
+              "institution_ids": [
+                "https://openalex.org/I2801138448",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5111912042",
+            "display_name": "AP Dhillon",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801138448",
+              "display_name": "The Royal Free Hospital",
+              "ror": "https://ror.org/01ge67z96",
+              "country_code": "GB",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I169248724",
+                "https://openalex.org/I2801138448"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I45129253",
+              "display_name": "University College London",
+              "ror": "https://ror.org/02jx3x895",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I124357947",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "AP Dhillon",
+          "raw_affiliation_strings": [
+            "Inflammatory Bowel Disease Study Group, University Departments of Medicine and Histopathology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Inflammatory Bowel Disease Study Group, University Departments of Medicine and Histopathology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK",
+              "institution_ids": [
+                "https://openalex.org/I2801138448",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5110215081",
+            "display_name": "M.L. Thomson",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801138448",
+              "display_name": "The Royal Free Hospital",
+              "ror": "https://ror.org/01ge67z96",
+              "country_code": "GB",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I169248724",
+                "https://openalex.org/I2801138448"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I45129253",
+              "display_name": "University College London",
+              "ror": "https://ror.org/02jx3x895",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I124357947",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "MA Thomson",
+          "raw_affiliation_strings": [
+            "University Departments of Paediatric Gastroenterology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "University Departments of Paediatric Gastroenterology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK",
+              "institution_ids": [
+                "https://openalex.org/I2801138448",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5000187483",
+            "display_name": "Peter Harvey",
+            "orcid": "https://orcid.org/0000-0003-2983-663X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801138448",
+              "display_name": "The Royal Free Hospital",
+              "ror": "https://ror.org/01ge67z96",
+              "country_code": "GB",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I169248724",
+                "https://openalex.org/I2801138448"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I45129253",
+              "display_name": "University College London",
+              "ror": "https://ror.org/02jx3x895",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I124357947",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "P Harvey",
+          "raw_affiliation_strings": [
+            "Neurology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Neurology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK",
+              "institution_ids": [
+                "https://openalex.org/I2801138448",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5001067656",
+            "display_name": "A. R. Valentine",
+            "orcid": "https://orcid.org/0009-0002-4748-3735"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801138448",
+              "display_name": "The Royal Free Hospital",
+              "ror": "https://ror.org/01ge67z96",
+              "country_code": "GB",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I169248724",
+                "https://openalex.org/I2801138448"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I45129253",
+              "display_name": "University College London",
+              "ror": "https://ror.org/02jx3x895",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I124357947",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "A Valentine",
+          "raw_affiliation_strings": [
+            "Radiology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Radiology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK",
+              "institution_ids": [
+                "https://openalex.org/I2801138448",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5102148556",
+            "display_name": "SE Davies",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801138448",
+              "display_name": "The Royal Free Hospital",
+              "ror": "https://ror.org/01ge67z96",
+              "country_code": "GB",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I169248724",
+                "https://openalex.org/I2801138448"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I45129253",
+              "display_name": "University College London",
+              "ror": "https://ror.org/02jx3x895",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I124357947",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "SE Davies",
+          "raw_affiliation_strings": [
+            "Inflammatory Bowel Disease Study Group, University Departments of Medicine and Histopathology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Inflammatory Bowel Disease Study Group, University Departments of Medicine and Histopathology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK",
+              "institution_ids": [
+                "https://openalex.org/I2801138448",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5111912039",
+            "display_name": "JA Walker-Smith",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801138448",
+              "display_name": "The Royal Free Hospital",
+              "ror": "https://ror.org/01ge67z96",
+              "country_code": "GB",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I169248724",
+                "https://openalex.org/I2801138448"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I45129253",
+              "display_name": "University College London",
+              "ror": "https://ror.org/02jx3x895",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I124357947",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ],
+          "countries": [
+            "GB"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "JA Walker-Smith",
+          "raw_affiliation_strings": [
+            "Inflammatory Bowel Disease Study Group, University Departments of Medicine and Histopathology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Inflammatory Bowel Disease Study Group, University Departments of Medicine and Histopathology, Royal Free Hospital and School of Medicine, London NW3 2QG, UK",
+              "institution_ids": [
+                "https://openalex.org/I2801138448",
+                "https://openalex.org/I45129253"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 1,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": {
+        "value": 7890,
+        "currency": "USD",
+        "value_usd": 7890
+      },
+      "apc_paid": null,
+      "fwci": 64.4248,
+      "has_fulltext": false,
+      "cited_by_count": 2960,
+      "citation_normalized_percentile": {
+        "value": 0.99971593,
+        "is_in_top_1_percent": true,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": {
+        "min": 99,
+        "max": 100
+      },
+      "biblio": {
+        "volume": "351",
+        "issue": "9103",
+        "first_page": "637",
+        "last_page": "641"
+      },
+      "is_retracted": true,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T12237",
+        "display_name": "Congenital gastrointestinal and neural anomalies",
+        "score": 0.24320000410079956,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2746",
+          "display_name": "Surgery"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/27",
+          "display_name": "Medicine"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/4",
+          "display_name": "Health Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T12237",
+          "display_name": "Congenital gastrointestinal and neural anomalies",
+          "score": 0.24320000410079956,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2746",
+            "display_name": "Surgery"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10134",
+          "display_name": "Inflammatory Bowel Disease",
+          "score": 0.2393999993801117,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10365",
+          "display_name": "Gastrointestinal motility and disorders",
+          "score": 0.04650000110268593,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2715",
+            "display_name": "Gastroenterology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/medicine",
+          "display_name": "Medicine",
+          "score": 0.8178350925445557
+        },
+        {
+          "id": "https://openalex.org/keywords/lymphoid-hyperplasia",
+          "display_name": "Lymphoid hyperplasia",
+          "score": 0.5629274845123291
+        },
+        {
+          "id": "https://openalex.org/keywords/pervasive-developmental-disorder",
+          "display_name": "Pervasive developmental disorder",
+          "score": 0.5135436058044434
+        },
+        {
+          "id": "https://openalex.org/keywords/autism",
+          "display_name": "Autism",
+          "score": 0.48727619647979736
+        },
+        {
+          "id": "https://openalex.org/keywords/pathology",
+          "display_name": "Pathology",
+          "score": 0.46715277433395386
+        },
+        {
+          "id": "https://openalex.org/keywords/pediatrics",
+          "display_name": "Pediatrics",
+          "score": 0.4462345242500305
+        },
+        {
+          "id": "https://openalex.org/keywords/gastroenterology",
+          "display_name": "Gastroenterology",
+          "score": 0.4156651496887207
+        },
+        {
+          "id": "https://openalex.org/keywords/developmental-disorder",
+          "display_name": "Developmental disorder",
+          "score": 0.34298619627952576
+        },
+        {
+          "id": "https://openalex.org/keywords/internal-medicine",
+          "display_name": "Internal medicine",
+          "score": 0.33215174078941345
+        },
+        {
+          "id": "https://openalex.org/keywords/lymphoma",
+          "display_name": "Lymphoma",
+          "score": 0.16836991906166077
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C71924100",
+          "wikidata": "https://www.wikidata.org/wiki/Q11190",
+          "display_name": "Medicine",
+          "level": 0,
+          "score": 0.8178350925445557
+        },
+        {
+          "id": "https://openalex.org/C2780117679",
+          "wikidata": "https://www.wikidata.org/wiki/Q17131724",
+          "display_name": "Lymphoid hyperplasia",
+          "level": 3,
+          "score": 0.5629274845123291
+        },
+        {
+          "id": "https://openalex.org/C2776831707",
+          "wikidata": "https://www.wikidata.org/wiki/Q6691991",
+          "display_name": "Pervasive developmental disorder",
+          "level": 4,
+          "score": 0.5135436058044434
+        },
+        {
+          "id": "https://openalex.org/C205778803",
+          "wikidata": "https://www.wikidata.org/wiki/Q38404",
+          "display_name": "Autism",
+          "level": 2,
+          "score": 0.48727619647979736
+        },
+        {
+          "id": "https://openalex.org/C142724271",
+          "wikidata": "https://www.wikidata.org/wiki/Q7208",
+          "display_name": "Pathology",
+          "level": 1,
+          "score": 0.46715277433395386
+        },
+        {
+          "id": "https://openalex.org/C187212893",
+          "wikidata": "https://www.wikidata.org/wiki/Q123028",
+          "display_name": "Pediatrics",
+          "level": 1,
+          "score": 0.4462345242500305
+        },
+        {
+          "id": "https://openalex.org/C90924648",
+          "wikidata": "https://www.wikidata.org/wiki/Q120569",
+          "display_name": "Gastroenterology",
+          "level": 1,
+          "score": 0.4156651496887207
+        },
+        {
+          "id": "https://openalex.org/C2778594975",
+          "wikidata": "https://www.wikidata.org/wiki/Q3087172",
+          "display_name": "Developmental disorder",
+          "level": 3,
+          "score": 0.34298619627952576
+        },
+        {
+          "id": "https://openalex.org/C126322002",
+          "wikidata": "https://www.wikidata.org/wiki/Q11180",
+          "display_name": "Internal medicine",
+          "level": 1,
+          "score": 0.33215174078941345
+        },
+        {
+          "id": "https://openalex.org/C2779338263",
+          "wikidata": "https://www.wikidata.org/wiki/Q208414",
+          "display_name": "Lymphoma",
+          "level": 2,
+          "score": 0.16836991906166077
+        },
+        {
+          "id": "https://openalex.org/C118552586",
+          "wikidata": "https://www.wikidata.org/wiki/Q7867",
+          "display_name": "Psychiatry",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D002648",
+          "descriptor_name": "Child",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002648",
+          "descriptor_name": "Child",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002648",
+          "descriptor_name": "Child",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002648",
+          "descriptor_name": "Child",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002658",
+          "descriptor_name": "Developmental Disabilities",
+          "qualifier_ui": "Q000209",
+          "qualifier_name": "etiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002658",
+          "descriptor_name": "Developmental Disabilities",
+          "qualifier_ui": "Q000209",
+          "qualifier_name": "etiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002658",
+          "descriptor_name": "Developmental Disabilities",
+          "qualifier_ui": "Q000209",
+          "qualifier_name": "etiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002658",
+          "descriptor_name": "Developmental Disabilities",
+          "qualifier_ui": "Q000209",
+          "qualifier_name": "etiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002675",
+          "descriptor_name": "Child, Preschool",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002675",
+          "descriptor_name": "Child, Preschool",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002675",
+          "descriptor_name": "Child, Preschool",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002675",
+          "descriptor_name": "Child, Preschool",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004760",
+          "descriptor_name": "Enterocolitis",
+          "qualifier_ui": "Q000209",
+          "qualifier_name": "etiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004760",
+          "descriptor_name": "Enterocolitis",
+          "qualifier_ui": "Q000209",
+          "qualifier_name": "etiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004760",
+          "descriptor_name": "Enterocolitis",
+          "qualifier_ui": "Q000209",
+          "qualifier_name": "etiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D004760",
+          "descriptor_name": "Enterocolitis",
+          "qualifier_ui": "Q000209",
+          "qualifier_name": "etiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D005260",
+          "descriptor_name": "Female",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D005260",
+          "descriptor_name": "Female",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D005260",
+          "descriptor_name": "Female",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D005260",
+          "descriptor_name": "Female",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006965",
+          "descriptor_name": "Hyperplasia",
+          "qualifier_ui": "Q000473",
+          "qualifier_name": "pathology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006965",
+          "descriptor_name": "Hyperplasia",
+          "qualifier_ui": "Q000473",
+          "qualifier_name": "pathology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006965",
+          "descriptor_name": "Hyperplasia",
+          "qualifier_ui": "Q000473",
+          "qualifier_name": "pathology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006965",
+          "descriptor_name": "Hyperplasia",
+          "qualifier_ui": "Q000473",
+          "qualifier_name": "pathology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D007082",
+          "descriptor_name": "Ileum",
+          "qualifier_ui": "Q000473",
+          "qualifier_name": "pathology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D007082",
+          "descriptor_name": "Ileum",
+          "qualifier_ui": "Q000473",
+          "qualifier_name": "pathology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D007082",
+          "descriptor_name": "Ileum",
+          "qualifier_ui": "Q000473",
+          "qualifier_name": "pathology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D007082",
+          "descriptor_name": "Ileum",
+          "qualifier_ui": "Q000473",
+          "qualifier_name": "pathology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008221",
+          "descriptor_name": "Lymphoid Tissue",
+          "qualifier_ui": "Q000473",
+          "qualifier_name": "pathology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008221",
+          "descriptor_name": "Lymphoid Tissue",
+          "qualifier_ui": "Q000473",
+          "qualifier_name": "pathology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008221",
+          "descriptor_name": "Lymphoid Tissue",
+          "qualifier_ui": "Q000473",
+          "qualifier_name": "pathology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008221",
+          "descriptor_name": "Lymphoid Tissue",
+          "qualifier_ui": "Q000473",
+          "qualifier_name": "pathology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008297",
+          "descriptor_name": "Male",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008297",
+          "descriptor_name": "Male",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008297",
+          "descriptor_name": "Male",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008297",
+          "descriptor_name": "Male",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008457",
+          "descriptor_name": "Measles",
+          "qualifier_ui": "Q000150",
+          "qualifier_name": "complications",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008457",
+          "descriptor_name": "Measles",
+          "qualifier_ui": "Q000150",
+          "qualifier_name": "complications",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008457",
+          "descriptor_name": "Measles",
+          "qualifier_ui": "Q000150",
+          "qualifier_name": "complications",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008457",
+          "descriptor_name": "Measles",
+          "qualifier_ui": "Q000150",
+          "qualifier_name": "complications",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008458",
+          "descriptor_name": "Measles Vaccine",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008458",
+          "descriptor_name": "Measles Vaccine",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008458",
+          "descriptor_name": "Measles Vaccine",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008458",
+          "descriptor_name": "Measles Vaccine",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009108",
+          "descriptor_name": "Mumps Vaccine",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009108",
+          "descriptor_name": "Mumps Vaccine",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009108",
+          "descriptor_name": "Mumps Vaccine",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009108",
+          "descriptor_name": "Mumps Vaccine",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D010033",
+          "descriptor_name": "Otitis Media",
+          "qualifier_ui": "Q000150",
+          "qualifier_name": "complications",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D010033",
+          "descriptor_name": "Otitis Media",
+          "qualifier_ui": "Q000150",
+          "qualifier_name": "complications",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D010033",
+          "descriptor_name": "Otitis Media",
+          "qualifier_ui": "Q000150",
+          "qualifier_name": "complications",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D010033",
+          "descriptor_name": "Otitis Media",
+          "qualifier_ui": "Q000150",
+          "qualifier_name": "complications",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012411",
+          "descriptor_name": "Rubella Vaccine",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012411",
+          "descriptor_name": "Rubella Vaccine",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012411",
+          "descriptor_name": "Rubella Vaccine",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D012411",
+          "descriptor_name": "Rubella Vaccine",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D017778",
+          "descriptor_name": "Vaccines, Combined",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D017778",
+          "descriptor_name": "Vaccines, Combined",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D017778",
+          "descriptor_name": "Vaccines, Combined",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D017778",
+          "descriptor_name": "Vaccines, Combined",
+          "qualifier_ui": "Q000009",
+          "qualifier_name": "adverse effects",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D022542",
+          "descriptor_name": "Measles-Mumps-Rubella Vaccine",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D022542",
+          "descriptor_name": "Measles-Mumps-Rubella Vaccine",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D022542",
+          "descriptor_name": "Measles-Mumps-Rubella Vaccine",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D022542",
+          "descriptor_name": "Measles-Mumps-Rubella Vaccine",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        }
+      ],
+      "locations_count": 2,
+      "locations": [
+        {
+          "id": "doi:10.1016/s0140-6736(97)11096-0",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1016/s0140-6736(97)11096-0",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S49861241",
+            "display_name": "The Lancet",
+            "issn_l": "0099-5355",
+            "issn": [
+              "0099-5355",
+              "0140-6736",
+              "1474-547X"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310320990",
+            "host_organization_name": "Elsevier BV",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310320990"
+            ],
+            "host_organization_lineage_names": [
+              "Elsevier BV"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "The Lancet",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:9500320",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/9500320",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Lancet (London, England)",
+          "raw_type": "Journal Article"
+        }
+      ],
+      "best_oa_location": null,
+      "sustainable_development_goals": [
+        {
+          "score": 0.4399999976158142,
+          "id": "https://metadata.un.org/sdg/3",
+          "display_name": "Good health and well-being"
+        }
+      ],
+      "awards": [],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320315702",
+          "display_name": "Royal Free London NHS Foundation Trust",
+          "ror": "https://ror.org/04rtdp853"
+        }
+      ],
+      "has_content": {
+        "pdf": false,
+        "grobid_xml": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 27,
+      "referenced_works": [
+        "https://openalex.org/W19804704",
+        "https://openalex.org/W40430408",
+        "https://openalex.org/W141317774",
+        "https://openalex.org/W1966535127",
+        "https://openalex.org/W1967035877",
+        "https://openalex.org/W1978222253",
+        "https://openalex.org/W1979047426",
+        "https://openalex.org/W1992308980",
+        "https://openalex.org/W1998420106",
+        "https://openalex.org/W1999722248",
+        "https://openalex.org/W2005383370",
+        "https://openalex.org/W2015151182",
+        "https://openalex.org/W2024571744",
+        "https://openalex.org/W2047024130",
+        "https://openalex.org/W2052072164",
+        "https://openalex.org/W2060419140",
+        "https://openalex.org/W2077238261",
+        "https://openalex.org/W2106182761",
+        "https://openalex.org/W2136857670",
+        "https://openalex.org/W2151181921",
+        "https://openalex.org/W2159011576",
+        "https://openalex.org/W2276306589",
+        "https://openalex.org/W3033949515",
+        "https://openalex.org/W4205253110",
+        "https://openalex.org/W6600804475",
+        "https://openalex.org/W6601647549",
+        "https://openalex.org/W6605749883"
+      ],
+      "related_works": [
+        "https://openalex.org/W4242086627",
+        "https://openalex.org/W4280602684",
+        "https://openalex.org/W2037790826",
+        "https://openalex.org/W2078273246",
+        "https://openalex.org/W2017221278",
+        "https://openalex.org/W2069605278",
+        "https://openalex.org/W1997714374",
+        "https://openalex.org/W2068892162",
+        "https://openalex.org/W2071639186",
+        "https://openalex.org/W2144446993"
+      ],
+      "abstract_inverted_index": null,
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 38
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 77
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 92
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 107
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 120
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 172
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 131
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 141
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 154
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 109
+        },
+        {
+          "year": 2016,
+          "cited_by_count": 102
+        },
+        {
+          "year": 2015,
+          "cited_by_count": 134
+        },
+        {
+          "year": 2014,
+          "cited_by_count": 149
+        },
+        {
+          "year": 2013,
+          "cited_by_count": 128
+        },
+        {
+          "year": 2012,
+          "cited_by_count": 147
+        }
+      ],
+      "updated_date": "2026-09-12T09:15:50.089291",
+      "created_date": "2016-06-24T00:00:00"
+    },
+    "doi": "10.1016/S0140-6736(97)11096-0",
+    "retraction": "OpenAlex 标记该文献已被撤稿；Crossref 撤稿记录：撤稿通知 DOI 10.1016/s0140-6736(10)60175-4（Retraction，来源 retraction-watch，2010-2-6）",
+    "diffs": [],
+    "score": 1.0,
+    "note": ""
+  },
+  {
+    "idx": 3,
+    "ref": "[3] Zhang Y, Li X, Wang H. A novel deep learning framework for protein folding prediction with ultra-high accuracy[J]. Nature Biotechnology, 2025, 43(3): 456-470. doi:10.1038/s41587-025-99999-x",
+    "status": "not_found_doi",
+    "source": "",
+    "matched": null,
+    "doi": "10.1038/s41587-025-99999-x",
+    "retraction": null,
+    "diffs": [],
+    "score": 0.0,
+    "note": "DOI 10.1038/s41587-025-99999-x 在 OpenAlex 与 Crossref 均查无此文，且未找到同题文献——疑似编造的引用，请务必人工确认"
+  },
+  {
+    "idx": 4,
+    "ref": "[4] Kucsko G, Maurer P C, Yao N Y, et al. Nanometre-scale thermometry in a living cell[J]. Nature, 2013, 500(7460): 54-58. doi:10.1038/nature12373",
+    "status": "ok_doi",
+    "source": "OpenAlex（DOI 直查）",
+    "matched": {
+      "id": "https://openalex.org/W2159974629",
+      "doi": "https://doi.org/10.1038/nature12373",
+      "title": "Nanometre-scale thermometry in a living cell",
+      "display_name": "Nanometre-scale thermometry in a living cell",
+      "publication_year": 2013,
+      "publication_date": "2013-07-30",
+      "ids": {
+        "openalex": "https://openalex.org/W2159974629",
+        "doi": "https://doi.org/10.1038/nature12373",
+        "mag": "2159974629",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/23903748"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1038/nature12373",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/nature12373",
+        "pdf_url": "https://www.nature.com/articles/nature12373.pdf",
+        "source": {
+          "id": "https://openalex.org/S137773608",
+          "display_name": "Nature",
+          "issn_l": "0028-0836",
+          "issn": [
+            "0028-0836",
+            "1476-4687"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Nature",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "arxiv",
+        "crossref",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://www.nature.com/articles/nature12373.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5033043101",
+            "display_name": "Georg Kucsko",
+            "orcid": "https://orcid.org/0000-0002-4189-3154"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "G. Kucsko",
+          "raw_affiliation_strings": [
+            "Department of Physics, Harvard University, Cambridge, Massachusetts 02138, USA",
+            "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physics, Harvard University, Cambridge, Massachusetts 02138, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5102792711",
+            "display_name": "Peter C. Maurer",
+            "orcid": "https://orcid.org/0000-0001-9033-5135"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "P. C. Maurer",
+          "raw_affiliation_strings": [
+            "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5012033205",
+            "display_name": "Norman Y. Yao",
+            "orcid": "https://orcid.org/0000-0003-0194-7266"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "N. Y. Yao",
+          "raw_affiliation_strings": [
+            "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5108525526",
+            "display_name": "M. K. Kubo",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "M. Kubo",
+          "raw_affiliation_strings": [
+            "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, 02138, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, 02138, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5101737952",
+            "display_name": "H.‐J. Noh",
+            "orcid": "https://orcid.org/0000-0001-8892-538X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I107606265",
+              "display_name": "Broad Institute",
+              "ror": "https://ror.org/05a0ya142",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I107606265"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "H. J. Noh",
+          "raw_affiliation_strings": [
+            "Broad Institute of MIT and Harvard University, 7 Cambridge Center, Cambridge, 02142, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Broad Institute of MIT and Harvard University, 7 Cambridge Center, Cambridge, 02142, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I107606265",
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5009465540",
+            "display_name": "Pik Kwan Lo",
+            "orcid": "https://orcid.org/0000-0001-5255-1718"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I168719708",
+              "display_name": "City University of Hong Kong",
+              "ror": "https://ror.org/03q8dnn23",
+              "country_code": "HK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I168719708"
+              ]
+            }
+          ],
+          "countries": [
+            "HK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "P. K. Lo",
+          "raw_affiliation_strings": [
+            "Department of Biology and Chemistry, City University of Hong Kong, Tat Chee Avenue, Kowloon, Hong Kong SAR, China,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Biology and Chemistry, City University of Hong Kong, Tat Chee Avenue, Kowloon, Hong Kong SAR, China,",
+              "institution_ids": [
+                "https://openalex.org/I168719708"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5086778667",
+            "display_name": "Hongkun Park",
+            "orcid": "https://orcid.org/0000-0001-9576-8829"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I107606265",
+              "display_name": "Broad Institute",
+              "ror": "https://ror.org/05a0ya142",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I107606265"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "H. Park",
+          "raw_affiliation_strings": [
+            "Broad Institute of MIT and Harvard University, 7 Cambridge Center, Cambridge, 02142, Massachusetts, USA",
+            "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, 02138, Massachusetts, USA",
+            "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Broad Institute of MIT and Harvard University, 7 Cambridge Center, Cambridge, 02142, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I107606265",
+                "https://openalex.org/I136199984"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, 02138, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5066245772",
+            "display_name": "Mikhail D. Lukin",
+            "orcid": "https://orcid.org/0000-0002-8658-1007"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "M. D. Lukin",
+          "raw_affiliation_strings": [
+            "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 2,
+      "institutions_distinct_count": 3,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5066245772",
+        "https://openalex.org/A5086778667"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I107606265",
+        "https://openalex.org/I136199984"
+      ],
+      "apc_list": {
+        "value": 12690,
+        "currency": "USD",
+        "value_usd": 12690
+      },
+      "apc_paid": null,
+      "fwci": 49.661,
+      "has_fulltext": true,
+      "cited_by_count": 1987,
+      "citation_normalized_percentile": {
+        "value": 0.99967461,
+        "is_in_top_1_percent": true,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": {
+        "min": 99,
+        "max": 100
+      },
+      "biblio": {
+        "volume": "500",
+        "issue": "7460",
+        "first_page": "54",
+        "last_page": "58"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10478",
+        "display_name": "Diamond and Carbon-based Materials Research",
+        "score": 1.0,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2505",
+          "display_name": "Materials Chemistry"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/25",
+          "display_name": "Materials Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10478",
+          "display_name": "Diamond and Carbon-based Materials Research",
+          "score": 1.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2505",
+            "display_name": "Materials Chemistry"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/25",
+            "display_name": "Materials Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10988",
+          "display_name": "Advanced Fiber Laser Technologies",
+          "score": 0.9980000257492065,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3107",
+            "display_name": "Atomic and Molecular Physics, and Optics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/31",
+            "display_name": "Physics and Astronomy"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11788",
+          "display_name": "Nonlinear Optical Materials Studies",
+          "score": 0.9947999715805054,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2204",
+            "display_name": "Biomedical Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/diamond",
+          "display_name": "Diamond",
+          "score": 0.7732237577438354
+        },
+        {
+          "id": "https://openalex.org/keywords/thermometer",
+          "display_name": "Thermometer",
+          "score": 0.7116981148719788
+        },
+        {
+          "id": "https://openalex.org/keywords/nanotechnology",
+          "display_name": "Nanotechnology",
+          "score": 0.5847357511520386
+        },
+        {
+          "id": "https://openalex.org/keywords/nanoscopic-scale",
+          "display_name": "Nanoscopic scale",
+          "score": 0.5646806359291077
+        },
+        {
+          "id": "https://openalex.org/keywords/nanometre",
+          "display_name": "Nanometre",
+          "score": 0.45778951048851013
+        },
+        {
+          "id": "https://openalex.org/keywords/materials-science",
+          "display_name": "Materials science",
+          "score": 0.4053666591644287
+        },
+        {
+          "id": "https://openalex.org/keywords/physics",
+          "display_name": "Physics",
+          "score": 0.30008697509765625
+        },
+        {
+          "id": "https://openalex.org/keywords/optics",
+          "display_name": "Optics",
+          "score": 0.17517632246017456
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776921476",
+          "wikidata": "https://www.wikidata.org/wiki/Q5283",
+          "display_name": "Diamond",
+          "level": 2,
+          "score": 0.7732237577438354
+        },
+        {
+          "id": "https://openalex.org/C2777155165",
+          "wikidata": "https://www.wikidata.org/wiki/Q646",
+          "display_name": "Thermometer",
+          "level": 2,
+          "score": 0.7116981148719788
+        },
+        {
+          "id": "https://openalex.org/C171250308",
+          "wikidata": "https://www.wikidata.org/wiki/Q11468",
+          "display_name": "Nanotechnology",
+          "level": 1,
+          "score": 0.5847357511520386
+        },
+        {
+          "id": "https://openalex.org/C45206210",
+          "wikidata": "https://www.wikidata.org/wiki/Q2415817",
+          "display_name": "Nanoscopic scale",
+          "level": 2,
+          "score": 0.5646806359291077
+        },
+        {
+          "id": "https://openalex.org/C77066764",
+          "wikidata": "https://www.wikidata.org/wiki/Q178674",
+          "display_name": "Nanometre",
+          "level": 2,
+          "score": 0.45778951048851013
+        },
+        {
+          "id": "https://openalex.org/C192562407",
+          "wikidata": "https://www.wikidata.org/wiki/Q228736",
+          "display_name": "Materials science",
+          "level": 0,
+          "score": 0.4053666591644287
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.30008697509765625
+        },
+        {
+          "id": "https://openalex.org/C120665830",
+          "wikidata": "https://www.wikidata.org/wiki/Q14620",
+          "display_name": "Optics",
+          "level": 1,
+          "score": 0.17517632246017456
+        },
+        {
+          "id": "https://openalex.org/C159985019",
+          "wikidata": "https://www.wikidata.org/wiki/Q181790",
+          "display_name": "Composite material",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D002470",
+          "descriptor_name": "Cell Survival",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002470",
+          "descriptor_name": "Cell Survival",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002470",
+          "descriptor_name": "Cell Survival",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D003116",
+          "descriptor_name": "Color",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D003116",
+          "descriptor_name": "Color",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D003116",
+          "descriptor_name": "Color",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D005347",
+          "descriptor_name": "Fibroblasts",
+          "qualifier_ui": "Q000166",
+          "qualifier_name": "cytology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D005347",
+          "descriptor_name": "Fibroblasts",
+          "qualifier_ui": "Q000166",
+          "qualifier_name": "cytology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D005347",
+          "descriptor_name": "Fibroblasts",
+          "qualifier_ui": "Q000166",
+          "qualifier_name": "cytology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006046",
+          "descriptor_name": "Gold",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006046",
+          "descriptor_name": "Gold",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006046",
+          "descriptor_name": "Gold",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009584",
+          "descriptor_name": "Nitrogen",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009584",
+          "descriptor_name": "Nitrogen",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009584",
+          "descriptor_name": "Nitrogen",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013696",
+          "descriptor_name": "Temperature",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013696",
+          "descriptor_name": "Temperature",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013696",
+          "descriptor_name": "Temperature",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013821",
+          "descriptor_name": "Thermometers",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D013821",
+          "descriptor_name": "Thermometers",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D013821",
+          "descriptor_name": "Thermometers",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D036103",
+          "descriptor_name": "Nanotechnology",
+          "qualifier_ui": "Q000295",
+          "qualifier_name": "instrumentation",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D036103",
+          "descriptor_name": "Nanotechnology",
+          "qualifier_ui": "Q000295",
+          "qualifier_name": "instrumentation",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D036103",
+          "descriptor_name": "Nanotechnology",
+          "qualifier_ui": "Q000295",
+          "qualifier_name": "instrumentation",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D053768",
+          "descriptor_name": "Metal Nanoparticles",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D053768",
+          "descriptor_name": "Metal Nanoparticles",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D053768",
+          "descriptor_name": "Metal Nanoparticles",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D058612",
+          "descriptor_name": "Nanodiamonds",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D058612",
+          "descriptor_name": "Nanodiamonds",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D058612",
+          "descriptor_name": "Nanodiamonds",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D059010",
+          "descriptor_name": "Single-Cell Analysis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D059010",
+          "descriptor_name": "Single-Cell Analysis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D059010",
+          "descriptor_name": "Single-Cell Analysis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D062125",
+          "descriptor_name": "Thermometry",
+          "qualifier_ui": "Q000295",
+          "qualifier_name": "instrumentation",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D062125",
+          "descriptor_name": "Thermometry",
+          "qualifier_ui": "Q000295",
+          "qualifier_name": "instrumentation",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D062125",
+          "descriptor_name": "Thermometry",
+          "qualifier_ui": "Q000295",
+          "qualifier_name": "instrumentation",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D062125",
+          "descriptor_name": "Thermometry",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D062125",
+          "descriptor_name": "Thermometry",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D062125",
+          "descriptor_name": "Thermometry",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        }
+      ],
+      "locations_count": 6,
+      "locations": [
+        {
+          "id": "doi:10.1038/nature12373",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1038/nature12373",
+          "pdf_url": "https://www.nature.com/articles/nature12373.pdf",
+          "source": {
+            "id": "https://openalex.org/S137773608",
+            "display_name": "Nature",
+            "issn_l": "0028-0836",
+            "issn": [
+              "0028-0836",
+              "1476-4687"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_name": "Nature Portfolio",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Nature",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:23903748",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/23903748",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Nature",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:arXiv.org:1304.1068",
+          "is_oa": true,
+          "landing_page_url": "http://arxiv.org/abs/1304.1068",
+          "pdf_url": "https://arxiv.org/pdf/1304.1068",
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": "2331-8422",
+            "issn": [
+              "2331-8422"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "text"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:4221854",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4221854",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Nature",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:dash.harvard.edu:1/12285462",
+          "is_oa": true,
+          "landing_page_url": "http://nrs.harvard.edu/urn-3:HUL.InstRepos:12285462",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401540",
+            "display_name": "Digital Access to Scholarship at Harvard (DASH) (Harvard University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I136199984",
+            "host_organization_name": "Harvard University",
+            "host_organization_lineage": [
+              "https://openalex.org/I136199984"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:escholarship.org:ark:/13030/qt5035z3pq",
+          "is_oa": false,
+          "landing_page_url": "https://escholarship.org/uc/item/5035z3pq",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400115",
+            "display_name": "eScholarship (California Digital Library)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2801248553",
+            "host_organization_name": "California Digital Library",
+            "host_organization_lineage": [
+              "https://openalex.org/I2801248553"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Nature, vol 500, iss 7460",
+          "raw_type": "article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1038/nature12373",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/nature12373",
+        "pdf_url": "https://www.nature.com/articles/nature12373.pdf",
+        "source": {
+          "id": "https://openalex.org/S137773608",
+          "display_name": "Nature",
+          "issn_l": "0028-0836",
+          "issn": [
+            "0028-0836",
+            "1476-4687"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Nature",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "score": 0.5699999928474426,
+          "id": "https://metadata.un.org/sdg/12",
+          "display_name": "Responsible consumption and production"
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G1319685744",
+          "display_name": "Center for Cell Circuits",
+          "funder_award_id": "1p50hg006193-01",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G1730927352",
+          "display_name": null,
+          "funder_award_id": "1P50HG006193",
+          "funder_id": "https://openalex.org/F4320337348",
+          "funder_display_name": "National Human Genome Research Institute"
+        },
+        {
+          "id": "https://openalex.org/G1734833136",
+          "display_name": "Center for Cell Circuits",
+          "funder_award_id": "5rm1hg006193-10",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G2467894467",
+          "display_name": null,
+          "funder_award_id": "1P50HG006193-01",
+          "funder_id": "https://openalex.org/F4320337348",
+          "funder_display_name": "National Human Genome Research Institute"
+        },
+        {
+          "id": "https://openalex.org/G2822612741",
+          "display_name": "Nano- and Microelectronic Tools for Interrogating Neuronal Circuits and Networks",
+          "funder_award_id": "1dp1od003893-01",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G6973254948",
+          "display_name": "Quantum manipulations of nitrogen-vacancy centers for applications in bioimaging and quantum information",
+          "funder_award_id": "143918",
+          "funder_id": "https://openalex.org/F4320320924",
+          "funder_display_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung"
+        },
+        {
+          "id": "https://openalex.org/G7579847751",
+          "display_name": null,
+          "funder_award_id": "DP1 DA035083",
+          "funder_id": "https://openalex.org/F4320337347",
+          "funder_display_name": "National Institute on Drug Abuse"
+        },
+        {
+          "id": "https://openalex.org/G8563761879",
+          "display_name": "Nano- and Microelectronic Tools for Interrogating Neuronal Circuits and Networks",
+          "funder_award_id": "5dp1od003893-03",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G959100688",
+          "display_name": null,
+          "funder_award_id": "P50HG006193",
+          "funder_id": "https://openalex.org/F4320337348",
+          "funder_display_name": "National Human Genome Research Institute"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320306076",
+          "display_name": "National Science Foundation",
+          "ror": "https://ror.org/021nxhr62"
+        },
+        {
+          "id": "https://openalex.org/F4320320924",
+          "display_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung",
+          "ror": "https://ror.org/00yjd3n13"
+        },
+        {
+          "id": "https://openalex.org/F4320332161",
+          "display_name": "National Institutes of Health",
+          "ror": "https://ror.org/01cwqze88"
+        },
+        {
+          "id": "https://openalex.org/F4320332815",
+          "display_name": "Advanced Research Projects Agency",
+          "ror": "https://ror.org/02caytj08"
+        },
+        {
+          "id": "https://openalex.org/F4320333591",
+          "display_name": "Multidisciplinary University Research Initiative",
+          "ror": null
+        },
+        {
+          "id": "https://openalex.org/F4320334437",
+          "display_name": "Center for Ultracold Atoms, Massachusetts Institute of Technology",
+          "ror": "https://ror.org/053tmcn30"
+        },
+        {
+          "id": "https://openalex.org/F4320337347",
+          "display_name": "National Institute on Drug Abuse",
+          "ror": "https://ror.org/00fq5cm18"
+        },
+        {
+          "id": "https://openalex.org/F4320337348",
+          "display_name": "National Human Genome Research Institute",
+          "ror": "https://ror.org/00baak391"
+        },
+        {
+          "id": "https://openalex.org/F4320338281",
+          "display_name": "Army Research Office",
+          "ror": "https://ror.org/05epdh915"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": true,
+        "pdf": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W2159974629.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W2159974629.grobid-xml"
+      },
+      "referenced_works_count": 36,
+      "referenced_works": [
+        "https://openalex.org/W1557405337",
+        "https://openalex.org/W1963514592",
+        "https://openalex.org/W1980583020",
+        "https://openalex.org/W1990629543",
+        "https://openalex.org/W1994266871",
+        "https://openalex.org/W1995664068",
+        "https://openalex.org/W2002181702",
+        "https://openalex.org/W2029232010",
+        "https://openalex.org/W2030395871",
+        "https://openalex.org/W2031754995",
+        "https://openalex.org/W2035176058",
+        "https://openalex.org/W2036328014",
+        "https://openalex.org/W2036547226",
+        "https://openalex.org/W2043069843",
+        "https://openalex.org/W2060274041",
+        "https://openalex.org/W2061464027",
+        "https://openalex.org/W2076028647",
+        "https://openalex.org/W2077210071",
+        "https://openalex.org/W2088536552",
+        "https://openalex.org/W2093130510",
+        "https://openalex.org/W2100332558",
+        "https://openalex.org/W2100898236",
+        "https://openalex.org/W2107519814",
+        "https://openalex.org/W2119089023",
+        "https://openalex.org/W2123637643",
+        "https://openalex.org/W2123838498",
+        "https://openalex.org/W2131245179",
+        "https://openalex.org/W2140094129",
+        "https://openalex.org/W2147607085",
+        "https://openalex.org/W2152105724",
+        "https://openalex.org/W2152169077",
+        "https://openalex.org/W2316334919",
+        "https://openalex.org/W2326403914",
+        "https://openalex.org/W2790762140",
+        "https://openalex.org/W2963941855",
+        "https://openalex.org/W3101024234"
+      ],
+      "related_works": [
+        "https://openalex.org/W2368732888",
+        "https://openalex.org/W2364813980",
+        "https://openalex.org/W284937103",
+        "https://openalex.org/W2006086525",
+        "https://openalex.org/W3148451994",
+        "https://openalex.org/W2073804415",
+        "https://openalex.org/W1565798380",
+        "https://openalex.org/W3134046893",
+        "https://openalex.org/W2051890993",
+        "https://openalex.org/W2335545365"
+      ],
+      "abstract_inverted_index": null,
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 94
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 195
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 144
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 187
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 180
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 200
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 183
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 161
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 160
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 134
+        },
+        {
+          "year": 2016,
+          "cited_by_count": 116
+        },
+        {
+          "year": 2015,
+          "cited_by_count": 105
+        },
+        {
+          "year": 2014,
+          "cited_by_count": 110
+        },
+        {
+          "year": 2013,
+          "cited_by_count": 18
+        }
+      ],
+      "updated_date": "2026-09-12T09:15:50.089291",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    "doi": "10.1038/nature12373",
+    "retraction": null,
+    "diffs": [],
+    "score": 1.0,
+    "note": ""
+  },
+  {
+    "idx": 5,
+    "ref": "[5] Devlin J, Chang M W, Lee K, Toutanova K. BERT: pre-training of deep bidirectional transformers for language understanding[C]//Proceedings of NAACL-HLT. 2019: 4171-4186.",
+    "status": "ok_match",
+    "source": "OpenAlex（标题检索）",
+    "matched": {
+      "id": "https://openalex.org/W2963341956",
+      "doi": "https://doi.org/10.18653/v1/n19-1423",
+      "display_name": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "publication_year": 2019,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5057457287",
+            "display_name": "Jacob Devlin",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Jacob Devlin",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5076904467",
+            "display_name": "Ming‐Wei Chang",
+            "orcid": "https://orcid.org/0000-0002-0137-8895"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Ming-Wei Chang",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5081862885",
+            "display_name": "Kenton Lee",
+            "orcid": "https://orcid.org/0000-0002-9534-5970"
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Kenton Lee",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5053947885",
+            "display_name": "Kristina Toutanova",
+            "orcid": null
+          },
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "raw_author_name": "Kristina Toutanova",
+          "raw_affiliation_strings": [],
+          "raw_orcid": null,
+          "affiliations": []
+        }
+      ],
+      "is_retracted": false,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": "4171",
+        "last_page": "4186"
+      }
+    },
+    "doi": null,
+    "retraction": null,
+    "diffs": [],
+    "score": 1.0,
+    "note": "标题匹配相似度 1.0（无 DOI，属间接核实，请以原文为准）"
+  },
+  {
+    "idx": 6,
+    "ref": "[6] 周志华. 机器学习[M]. 北京: 清华大学出版社, 2016.",
+    "status": "unverifiable",
+    "source": "",
+    "matched": null,
+    "doi": null,
+    "retraction": null,
+    "diffs": [],
+    "score": 0.0,
+    "note": "未能核实——两库均无足够置信的匹配（图书/中文教材常不在收录范围），请人工确认"
+  },
+  {
+    "idx": 7,
+    "ref": "[7] Hochreiter S, Schmidhuber J. Long short-term memory[J]. Neural Computation, 1995, 9(8): 1735-1780. doi:10.1162/neco.1997.9.8.1735",
+    "status": "ok_doi",
+    "source": "OpenAlex（DOI 直查）",
+    "matched": {
+      "id": "https://openalex.org/W2064675550",
+      "doi": "https://doi.org/10.1162/neco.1997.9.8.1735",
+      "title": "Long Short-Term Memory",
+      "display_name": "Long Short-Term Memory",
+      "publication_year": 1997,
+      "publication_date": "1997-11-01",
+      "ids": {
+        "openalex": "https://openalex.org/W2064675550",
+        "doi": "https://doi.org/10.1162/neco.1997.9.8.1735",
+        "mag": "2064675550",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/9377276"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1162/neco.1997.9.8.1735",
+        "is_oa": false,
+        "landing_page_url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S207023548",
+          "display_name": "Neural Computation",
+          "issn_l": "0899-7667",
+          "issn": [
+            "0899-7667",
+            "1530-888X"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310315718",
+          "host_organization_name": "The MIT Press",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310315718",
+            "https://openalex.org/P4310316440"
+          ],
+          "host_organization_lineage_names": [
+            "The MIT Press",
+            "Massachusetts Institute of Technology"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Neural Computation",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "crossref",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "any_repository_has_fulltext": false
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5053148274",
+            "display_name": "Sepp Hochreiter",
+            "orcid": "https://orcid.org/0000-0001-7449-2528"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I62916508",
+              "display_name": "Technical University of Munich",
+              "ror": "https://ror.org/02kkvpp62",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I62916508"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Sepp Hochreiter",
+          "raw_affiliation_strings": [
+            "Fakultät für Informatik, Technische Universität München, 80290 München, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fakultät für Informatik, Technische Universität München, 80290 München, Germany",
+              "institution_ids": [
+                "https://openalex.org/I62916508"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5071172037",
+            "display_name": "Jürgen Schmidhuber",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2614128279",
+              "display_name": "Dalle Molle Institute for Artificial Intelligence Research",
+              "ror": "https://ror.org/013355g38",
+              "country_code": "CH",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I15196421",
+                "https://openalex.org/I2614128279",
+                "https://openalex.org/I57201433"
+              ]
+            }
+          ],
+          "countries": [
+            "CH"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Jürgen Schmidhuber",
+          "raw_affiliation_strings": [
+            "IDSIA, Corso Elvezia 36, 6900 Lugano, Switzerland",
+            "IDSIA Corso Elvezia 36 6900 Lugano, Switzerland#TAB#"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "IDSIA, Corso Elvezia 36, 6900 Lugano, Switzerland",
+              "institution_ids": [
+                "https://openalex.org/I2614128279"
+              ]
+            },
+            {
+              "raw_affiliation_string": "IDSIA Corso Elvezia 36 6900 Lugano, Switzerland#TAB#",
+              "institution_ids": [
+                "https://openalex.org/I2614128279"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 2,
+      "institutions_distinct_count": 2,
+      "corresponding_author_ids": [],
+      "corresponding_institution_ids": [],
+      "apc_list": null,
+      "apc_paid": null,
+      "fwci": 24.1798,
+      "has_fulltext": false,
+      "cited_by_count": 101761,
+      "citation_normalized_percentile": {
+        "value": 0.99510231,
+        "is_in_top_1_percent": true,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": {
+        "min": 99,
+        "max": 100
+      },
+      "biblio": {
+        "volume": "9",
+        "issue": "8",
+        "first_page": "1735",
+        "last_page": "1780"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10320",
+        "display_name": "Neural Networks and Applications",
+        "score": 0.9715999960899353,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10320",
+          "display_name": "Neural Networks and Applications",
+          "score": 0.9715999960899353,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11307",
+          "display_name": "Domain Adaptation and Few-Shot Learning",
+          "score": 0.9226999878883362,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/term",
+          "display_name": "Term (time)",
+          "score": 0.6298137307167053
+        },
+        {
+          "id": "https://openalex.org/keywords/short-term-memory",
+          "display_name": "Short-term memory",
+          "score": 0.4886475205421448
+        },
+        {
+          "id": "https://openalex.org/keywords/computer-science",
+          "display_name": "Computer science",
+          "score": 0.41314831376075745
+        },
+        {
+          "id": "https://openalex.org/keywords/mathematics",
+          "display_name": "Mathematics",
+          "score": 0.3207841217517853
+        },
+        {
+          "id": "https://openalex.org/keywords/psychology",
+          "display_name": "Psychology",
+          "score": 0.3027428686618805
+        },
+        {
+          "id": "https://openalex.org/keywords/neuroscience",
+          "display_name": "Neuroscience",
+          "score": 0.2080390453338623
+        },
+        {
+          "id": "https://openalex.org/keywords/cognition",
+          "display_name": "Cognition",
+          "score": 0.18833708763122559
+        },
+        {
+          "id": "https://openalex.org/keywords/working-memory",
+          "display_name": "Working memory",
+          "score": 0.18085071444511414
+        },
+        {
+          "id": "https://openalex.org/keywords/physics",
+          "display_name": "Physics",
+          "score": 0.14113420248031616
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C61797465",
+          "wikidata": "https://www.wikidata.org/wiki/Q1188986",
+          "display_name": "Term (time)",
+          "level": 2,
+          "score": 0.6298137307167053
+        },
+        {
+          "id": "https://openalex.org/C179226034",
+          "wikidata": "https://www.wikidata.org/wiki/Q18599",
+          "display_name": "Short-term memory",
+          "level": 4,
+          "score": 0.4886475205421448
+        },
+        {
+          "id": "https://openalex.org/C41008148",
+          "wikidata": "https://www.wikidata.org/wiki/Q21198",
+          "display_name": "Computer science",
+          "level": 0,
+          "score": 0.41314831376075745
+        },
+        {
+          "id": "https://openalex.org/C33923547",
+          "wikidata": "https://www.wikidata.org/wiki/Q395",
+          "display_name": "Mathematics",
+          "level": 0,
+          "score": 0.3207841217517853
+        },
+        {
+          "id": "https://openalex.org/C15744967",
+          "wikidata": "https://www.wikidata.org/wiki/Q9418",
+          "display_name": "Psychology",
+          "level": 0,
+          "score": 0.3027428686618805
+        },
+        {
+          "id": "https://openalex.org/C169760540",
+          "wikidata": "https://www.wikidata.org/wiki/Q207011",
+          "display_name": "Neuroscience",
+          "level": 1,
+          "score": 0.2080390453338623
+        },
+        {
+          "id": "https://openalex.org/C169900460",
+          "wikidata": "https://www.wikidata.org/wiki/Q2200417",
+          "display_name": "Cognition",
+          "level": 2,
+          "score": 0.18833708763122559
+        },
+        {
+          "id": "https://openalex.org/C21963081",
+          "wikidata": "https://www.wikidata.org/wiki/Q11337567",
+          "display_name": "Working memory",
+          "level": 3,
+          "score": 0.18085071444511414
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.14113420248031616
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D000465",
+          "descriptor_name": "Algorithms",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D000465",
+          "descriptor_name": "Algorithms",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D000465",
+          "descriptor_name": "Algorithms",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D000465",
+          "descriptor_name": "Algorithms",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D007858",
+          "descriptor_name": "Learning",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D007858",
+          "descriptor_name": "Learning",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D007858",
+          "descriptor_name": "Learning",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D007858",
+          "descriptor_name": "Learning",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008568",
+          "descriptor_name": "Memory",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008568",
+          "descriptor_name": "Memory",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008570",
+          "descriptor_name": "Memory, Short-Term",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008570",
+          "descriptor_name": "Memory, Short-Term",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008959",
+          "descriptor_name": "Models, Neurological",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008959",
+          "descriptor_name": "Models, Neurological",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008959",
+          "descriptor_name": "Models, Neurological",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008959",
+          "descriptor_name": "Models, Neurological",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D008960",
+          "descriptor_name": "Models, Psychological",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008960",
+          "descriptor_name": "Models, Psychological",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008960",
+          "descriptor_name": "Models, Psychological",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D008960",
+          "descriptor_name": "Models, Psychological",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009415",
+          "descriptor_name": "Nerve Net",
+          "qualifier_ui": "Q000502",
+          "qualifier_name": "physiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009415",
+          "descriptor_name": "Nerve Net",
+          "qualifier_ui": "Q000502",
+          "qualifier_name": "physiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009415",
+          "descriptor_name": "Nerve Net",
+          "qualifier_ui": "Q000502",
+          "qualifier_name": "physiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009415",
+          "descriptor_name": "Nerve Net",
+          "qualifier_ui": "Q000502",
+          "qualifier_name": "physiology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013997",
+          "descriptor_name": "Time Factors",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013997",
+          "descriptor_name": "Time Factors",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013997",
+          "descriptor_name": "Time Factors",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013997",
+          "descriptor_name": "Time Factors",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D016571",
+          "descriptor_name": "Neural Networks, Computer",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D016571",
+          "descriptor_name": "Neural Networks, Computer",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D016571",
+          "descriptor_name": "Neural Networks, Computer",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D016571",
+          "descriptor_name": "Neural Networks, Computer",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        }
+      ],
+      "locations_count": 7,
+      "locations": [
+        {
+          "id": "doi:10.1162/neco.1997.9.8.1735",
+          "is_oa": false,
+          "landing_page_url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S207023548",
+            "display_name": "Neural Computation",
+            "issn_l": "0899-7667",
+            "issn": [
+              "0899-7667",
+              "1530-888X"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310315718",
+            "host_organization_name": "The MIT Press",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310315718",
+              "https://openalex.org/P4310316440"
+            ],
+            "host_organization_lineage_names": [
+              "The MIT Press",
+              "Massachusetts Institute of Technology"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Neural Computation",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:9377276",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/9377276",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Neural computation",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:CiteSeerX.psu:10.1.1.13.634",
+          "is_oa": false,
+          "landing_page_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.13.634",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "http://wwwbrauer.in.tum.de/fki-berichte/postscript/fki-207-95r.ps.gz",
+          "raw_type": "text"
+        },
+        {
+          "id": "pmh:oai:CiteSeerX.psu:10.1.1.13.7178",
+          "is_oa": false,
+          "landing_page_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.13.7178",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "http://wwwbrauer.in.tum.de/fki-berichte/postscript/fki-207-95rev.ps.gz",
+          "raw_type": "text"
+        },
+        {
+          "id": "pmh:oai:CiteSeerX.psu:10.1.1.45.3765",
+          "is_oa": false,
+          "landing_page_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.45.3765",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "ftp://ftp.idsia.ch/pub/juergen/fki-207-95.ps.gz",
+          "raw_type": "text"
+        },
+        {
+          "id": "pmh:oai:CiteSeerX.psu:10.1.1.51.3117",
+          "is_oa": false,
+          "landing_page_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.51.3117",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "http://wwwbrauer.informatik.tu-muenchen.de/fki-berichte/postscript/fki-207-95.ps.gz",
+          "raw_type": "text"
+        },
+        {
+          "id": "pmh:oai:CiteSeerX.psu:10.1.1.56.7752",
+          "is_oa": false,
+          "landing_page_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.56.7752",
+          "pdf_url": null,
+          "source": null,
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "ftp://ftp.idsia.ch/pub/juergen/lstm.ps.gz",
+          "raw_type": "text"
+        }
+      ],
+      "best_oa_location": null,
+      "sustainable_development_goals": [],
+      "awards": [],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320320879",
+          "display_name": "Deutsche Forschungsgemeinschaft",
+          "ror": "https://ror.org/018mejw64"
+        }
+      ],
+      "has_content": {
+        "grobid_xml": false,
+        "pdf": false
+      },
+      "content_urls": null,
+      "referenced_works_count": 34,
+      "referenced_works": [
+        "https://openalex.org/W202296964",
+        "https://openalex.org/W1674799117",
+        "https://openalex.org/W1881179843",
+        "https://openalex.org/W1963605035",
+        "https://openalex.org/W1971129545",
+        "https://openalex.org/W1971209221",
+        "https://openalex.org/W1982291194",
+        "https://openalex.org/W1984375561",
+        "https://openalex.org/W2007431958",
+        "https://openalex.org/W2036317923",
+        "https://openalex.org/W2048060899",
+        "https://openalex.org/W2057653135",
+        "https://openalex.org/W2086756055",
+        "https://openalex.org/W2103452139",
+        "https://openalex.org/W2107878631",
+        "https://openalex.org/W2111871983",
+        "https://openalex.org/W2114471683",
+        "https://openalex.org/W2118127772",
+        "https://openalex.org/W2119216348",
+        "https://openalex.org/W2121553911",
+        "https://openalex.org/W2123716044",
+        "https://openalex.org/W2128499899",
+        "https://openalex.org/W2129831132",
+        "https://openalex.org/W2131387845",
+        "https://openalex.org/W2136939460",
+        "https://openalex.org/W2143503258",
+        "https://openalex.org/W2144001972",
+        "https://openalex.org/W2146367896",
+        "https://openalex.org/W2154890045",
+        "https://openalex.org/W2156960699",
+        "https://openalex.org/W2162704388",
+        "https://openalex.org/W2165432985",
+        "https://openalex.org/W2168934702",
+        "https://openalex.org/W4285719527"
+      ],
+      "related_works": [
+        "https://openalex.org/W2899084033",
+        "https://openalex.org/W2748952813",
+        "https://openalex.org/W4391375266",
+        "https://openalex.org/W1979597421",
+        "https://openalex.org/W2007980826",
+        "https://openalex.org/W2061531152",
+        "https://openalex.org/W3002753104",
+        "https://openalex.org/W2077600819",
+        "https://openalex.org/W2142036596",
+        "https://openalex.org/W4225519494"
+      ],
+      "abstract_inverted_index": {
+        "Learning": [
+          0
+        ],
+        "to": [
+          1,
+          59,
+          86,
+          91,
+          147
+        ],
+        "store": [
+          2
+        ],
+        "information": [
+          3
+        ],
+        "over": [
+          4
+        ],
+        "extended": [
+          5
+        ],
+        "time": [
+          6,
+          62,
+          107
+        ],
+        "intervals": [
+          7
+        ],
+        "by": [
+          8,
+          35,
+          70,
+          168
+        ],
+        "recurrent": [
+          9,
+          130,
+          136,
+          170
+        ],
+        "backpropagation": [
+          10
+        ],
+        "takes": [
+          11
+        ],
+        "a": [
+          12,
+          37
+        ],
+        "very": [
+          13
+        ],
+        "long": [
+          14,
+          43
+        ],
+        "time,": [
+          15,
+          135
+        ],
+        "mostly": [
+          16
+        ],
+        "because": [
+          17
+        ],
+        "of": [
+          18,
+          29,
+          66
+        ],
+        "insufficient,": [
+          19
+        ],
+        "decaying": [
+          20
+        ],
+        "error": [
+          21,
+          73,
+          77,
+          94
+        ],
+        "backflow.": [
+          22
+        ],
+        "We": [
+          23
+        ],
+        "briefly": [
+          24
+        ],
+        "review": [
+          25
+        ],
+        "Hochreiter's": [
+          26
+        ],
+        "(1991)": [
+          27
+        ],
+        "analysis": [
+          28
+        ],
+        "this": [
+          30,
+          51
+        ],
+        "problem,": [
+          31
+        ],
+        "then": [
+          32
+        ],
+        "address": [
+          33
+        ],
+        "it": [
+          34
+        ],
+        "introducing": [
+          36
+        ],
+        "novel,": [
+          38
+        ],
+        "efficient,": [
+          39
+        ],
+        "gradient-based": [
+          40
+        ],
+        "method": [
+          41
+        ],
+        "called": [
+          42
+        ],
+        "short-term": [
+          44
+        ],
+        "memory": [
+          45
+        ],
+        "(LSTM).": [
+          46
+        ],
+        "Truncating": [
+          47
+        ],
+        "the": [
+          48,
+          92
+        ],
+        "gradient": [
+          49
+        ],
+        "where": [
+          50
+        ],
+        "does": [
+          52
+        ],
+        "not": [
+          53
+        ],
+        "do": [
+          54
+        ],
+        "harm,": [
+          55
+        ],
+        "LSTM": [
+          56,
+          96,
+          145,
+          156
+        ],
+        "can": [
+          57
+        ],
+        "learn": [
+          58,
+          85
+        ],
+        "bridge": [
+          60
+        ],
+        "minimal": [
+          61
+        ],
+        "lags": [
+          63
+        ],
+        "in": [
+          64,
+          99
+        ],
+        "excess": [
+          65
+        ],
+        "1000": [
+          67
+        ],
+        "discrete-time": [
+          68
+        ],
+        "steps": [
+          69
+        ],
+        "enforcing": [
+          71
+        ],
+        "constant": [
+          72,
+          76,
+          93
+        ],
+        "flow": [
+          74
+        ],
+        "through": [
+          75,
+          134
+        ],
+        "carousels": [
+          78
+        ],
+        "within": [
+          79
+        ],
+        "special": [
+          80
+        ],
+        "units.": [
+          81
+        ],
+        "Multiplicative": [
+          82
+        ],
+        "gate": [
+          83
+        ],
+        "units": [
+          84
+        ],
+        "open": [
+          87
+        ],
+        "and": [
+          88,
+          101,
+          109,
+          122,
+          141,
+          152
+        ],
+        "close": [
+          89
+        ],
+        "access": [
+          90
+        ],
+        "flow.": [
+          95
+        ],
+        "is": [
+          97,
+          111
+        ],
+        "local": [
+          98
+        ],
+        "space": [
+          100
+        ],
+        "time;": [
+          102
+        ],
+        "its": [
+          103
+        ],
+        "computational": [
+          104
+        ],
+        "complexity": [
+          105
+        ],
+        "per": [
+          106
+        ],
+        "step": [
+          108
+        ],
+        "weight": [
+          110
+        ],
+        "O(1).": [
+          112
+        ],
+        "Our": [
+          113
+        ],
+        "experiments": [
+          114
+        ],
+        "with": [
+          115,
+          128
+        ],
+        "artificial": [
+          116,
+          160
+        ],
+        "data": [
+          117
+        ],
+        "involve": [
+          118
+        ],
+        "local,": [
+          119
+        ],
+        "distributed,": [
+          120
+        ],
+        "real-valued,": [
+          121
+        ],
+        "noisy": [
+          123
+        ],
+        "pattern": [
+          124
+        ],
+        "representations.": [
+          125
+        ],
+        "In": [
+          126
+        ],
+        "comparisons": [
+          127
+        ],
+        "real-time": [
+          129
+        ],
+        "learning,": [
+          131
+        ],
+        "back": [
+          132
+        ],
+        "propagation": [
+          133
+        ],
+        "cascade": [
+          137
+        ],
+        "correlation,": [
+          138
+        ],
+        "Elman": [
+          139
+        ],
+        "nets,": [
+          140
+        ],
+        "neural": [
+          142
+        ],
+        "sequence": [
+          143
+        ],
+        "chunking,": [
+          144
+        ],
+        "leads": [
+          146
+        ],
+        "many": [
+          148
+        ],
+        "more": [
+          149
+        ],
+        "successful": [
+          150
+        ],
+        "runs,": [
+          151
+        ],
+        "learns": [
+          153
+        ],
+        "much": [
+          154
+        ],
+        "faster.": [
+          155
+        ],
+        "also": [
+          157
+        ],
+        "solves": [
+          158
+        ],
+        "complex,": [
+          159
+        ],
+        "long-time-lag": [
+          161
+        ],
+        "tasks": [
+          162
+        ],
+        "that": [
+          163
+        ],
+        "have": [
+          164
+        ],
+        "never": [
+          165
+        ],
+        "been": [
+          166
+        ],
+        "solved": [
+          167
+        ],
+        "previous": [
+          169
+        ],
+        "network": [
+          171
+        ],
+        "algorithms.": [
+          172
+        ]
+      },
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 8719
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 13098
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 11922
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 11887
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 11198
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 12843
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 10918
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 9064
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 6022
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 3231
+        },
+        {
+          "year": 2016,
+          "cited_by_count": 1580
+        },
+        {
+          "year": 2015,
+          "cited_by_count": 544
+        },
+        {
+          "year": 2014,
+          "cited_by_count": 140
+        },
+        {
+          "year": 2013,
+          "cited_by_count": 79
+        },
+        {
+          "year": 2012,
+          "cited_by_count": 79
+        }
+      ],
+      "updated_date": "2026-09-15T07:32:03.291174",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    "doi": "10.1162/neco.1997.9.8.1735",
+    "retraction": null,
+    "diffs": [
+      "年份不符：引用写 1995，数据库为 1997"
+    ],
+    "score": 0.75,
+    "note": ""
+  },
+  {
+    "idx": 8,
+    "ref": "[8] Goodfellow I, Bengio Y, Courville A. Deep learning[M]. Cambridge: MIT Press, 2016.",
+    "status": "ok_match",
+    "source": "OpenAlex（标题检索）",
+    "matched": {
+      "id": "https://openalex.org/W2557283755",
+      "doi": null,
+      "display_name": "Deep Learning",
+      "publication_year": 2016,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5004271128",
+            "display_name": "Ian Goodfellow",
+            "orcid": "https://orcid.org/0000-0003-3937-2322"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1291425158",
+              "display_name": "Google (United States)",
+              "ror": "https://ror.org/00njsd438",
+              "country_code": "US",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I1291425158",
+                "https://openalex.org/I4210128969"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Ian Goodfellow",
+          "raw_affiliation_strings": [
+            "Google,,,,,"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-3937-2322",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Google,,,,,",
+              "institution_ids": [
+                "https://openalex.org/I1291425158"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5086198262",
+            "display_name": "Yoshua Bengio",
+            "orcid": "https://orcid.org/0000-0002-9322-3515"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I70931966",
+              "display_name": "Université de Montréal",
+              "ror": "https://ror.org/0161xgx34",
+              "country_code": "CA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I70931966"
+              ]
+            }
+          ],
+          "countries": [
+            "CA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Yoshua Bengio",
+          "raw_affiliation_strings": [
+            "Universitè de Montreal"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-9322-3515",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Universitè de Montreal",
+              "institution_ids": [
+                "https://openalex.org/I70931966"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5112608251",
+            "display_name": "Aaron Courville",
+            "orcid": "https://orcid.org/0000-0001-6223-0301"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I70931966",
+              "display_name": "Université de Montréal",
+              "ror": "https://ror.org/0161xgx34",
+              "country_code": "CA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I70931966"
+              ]
+            }
+          ],
+          "countries": [
+            "CA"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "Aaron Courville",
+          "raw_affiliation_strings": [
+            "Universitè de Montreal"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-6223-0301",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Universitè de Montreal",
+              "institution_ids": [
+                "https://openalex.org/I70931966"
+              ]
+            }
+          ]
+        }
+      ],
+      "is_retracted": false,
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      }
+    },
+    "doi": null,
+    "retraction": null,
+    "diffs": [],
+    "score": 1.0,
+    "note": "标题匹配相似度 1.0（无 DOI，属间接核实，请以原文为准）"
+  },
+  {
+    "idx": 9,
+    "ref": "[9] Kucsko G, Maurer P C, Yao N Y, et al. Nanometre-scale thermometry in a living cell[J]. Nature, 2015, 500(7460): 54-58. doi:10.1038/nature12373",
+    "status": "ok_doi",
+    "source": "OpenAlex（DOI 直查）",
+    "matched": {
+      "id": "https://openalex.org/W2159974629",
+      "doi": "https://doi.org/10.1038/nature12373",
+      "title": "Nanometre-scale thermometry in a living cell",
+      "display_name": "Nanometre-scale thermometry in a living cell",
+      "publication_year": 2013,
+      "publication_date": "2013-07-30",
+      "ids": {
+        "openalex": "https://openalex.org/W2159974629",
+        "doi": "https://doi.org/10.1038/nature12373",
+        "mag": "2159974629",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/23903748"
+      },
+      "language": "en",
+      "primary_location": {
+        "id": "doi:10.1038/nature12373",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/nature12373",
+        "pdf_url": "https://www.nature.com/articles/nature12373.pdf",
+        "source": {
+          "id": "https://openalex.org/S137773608",
+          "display_name": "Nature",
+          "issn_l": "0028-0836",
+          "issn": [
+            "0028-0836",
+            "1476-4687"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Nature",
+        "raw_type": "journal-article"
+      },
+      "type": "article",
+      "indexed_in": [
+        "arxiv",
+        "crossref",
+        "pubmed"
+      ],
+      "open_access": {
+        "is_oa": true,
+        "oa_status": "bronze",
+        "oa_url": "https://www.nature.com/articles/nature12373.pdf",
+        "any_repository_has_fulltext": true
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5033043101",
+            "display_name": "Georg Kucsko",
+            "orcid": "https://orcid.org/0000-0002-4189-3154"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "G. Kucsko",
+          "raw_affiliation_strings": [
+            "Department of Physics, Harvard University, Cambridge, Massachusetts 02138, USA",
+            "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physics, Harvard University, Cambridge, Massachusetts 02138, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5102792711",
+            "display_name": "Peter C. Maurer",
+            "orcid": "https://orcid.org/0000-0001-9033-5135"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "P. C. Maurer",
+          "raw_affiliation_strings": [
+            "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5012033205",
+            "display_name": "Norman Y. Yao",
+            "orcid": "https://orcid.org/0000-0003-0194-7266"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "N. Y. Yao",
+          "raw_affiliation_strings": [
+            "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5108525526",
+            "display_name": "M. K. Kubo",
+            "orcid": null
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "M. Kubo",
+          "raw_affiliation_strings": [
+            "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, 02138, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, 02138, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5101737952",
+            "display_name": "H.‐J. Noh",
+            "orcid": "https://orcid.org/0000-0001-8892-538X"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I107606265",
+              "display_name": "Broad Institute",
+              "ror": "https://ror.org/05a0ya142",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I107606265"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "H. J. Noh",
+          "raw_affiliation_strings": [
+            "Broad Institute of MIT and Harvard University, 7 Cambridge Center, Cambridge, 02142, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Broad Institute of MIT and Harvard University, 7 Cambridge Center, Cambridge, 02142, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I107606265",
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5009465540",
+            "display_name": "Pik Kwan Lo",
+            "orcid": "https://orcid.org/0000-0001-5255-1718"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I168719708",
+              "display_name": "City University of Hong Kong",
+              "ror": "https://ror.org/03q8dnn23",
+              "country_code": "HK",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I168719708"
+              ]
+            }
+          ],
+          "countries": [
+            "HK"
+          ],
+          "is_corresponding": false,
+          "raw_author_name": "P. K. Lo",
+          "raw_affiliation_strings": [
+            "Department of Biology and Chemistry, City University of Hong Kong, Tat Chee Avenue, Kowloon, Hong Kong SAR, China,"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Biology and Chemistry, City University of Hong Kong, Tat Chee Avenue, Kowloon, Hong Kong SAR, China,",
+              "institution_ids": [
+                "https://openalex.org/I168719708"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5086778667",
+            "display_name": "Hongkun Park",
+            "orcid": "https://orcid.org/0000-0001-9576-8829"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I107606265",
+              "display_name": "Broad Institute",
+              "ror": "https://ror.org/05a0ya142",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I107606265"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "H. Park",
+          "raw_affiliation_strings": [
+            "Broad Institute of MIT and Harvard University, 7 Cambridge Center, Cambridge, 02142, Massachusetts, USA",
+            "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, 02138, Massachusetts, USA",
+            "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Broad Institute of MIT and Harvard University, 7 Cambridge Center, Cambridge, 02142, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I107606265",
+                "https://openalex.org/I136199984"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Chemistry and Chemical Biology, Harvard University, Cambridge, 02138, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5066245772",
+            "display_name": "Mikhail D. Lukin",
+            "orcid": "https://orcid.org/0000-0002-8658-1007"
+          },
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "raw_author_name": "M. D. Lukin",
+          "raw_affiliation_strings": [
+            "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physics, Harvard University, Cambridge, 02138, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        }
+      ],
+      "institutions": [],
+      "countries_distinct_count": 2,
+      "institutions_distinct_count": 3,
+      "corresponding_author_ids": [
+        "https://openalex.org/A5066245772",
+        "https://openalex.org/A5086778667"
+      ],
+      "corresponding_institution_ids": [
+        "https://openalex.org/I107606265",
+        "https://openalex.org/I136199984"
+      ],
+      "apc_list": {
+        "value": 12690,
+        "currency": "USD",
+        "value_usd": 12690
+      },
+      "apc_paid": null,
+      "fwci": 49.661,
+      "has_fulltext": true,
+      "cited_by_count": 1987,
+      "citation_normalized_percentile": {
+        "value": 0.99967461,
+        "is_in_top_1_percent": true,
+        "is_in_top_10_percent": true
+      },
+      "cited_by_percentile_year": {
+        "min": 99,
+        "max": 100
+      },
+      "biblio": {
+        "volume": "500",
+        "issue": "7460",
+        "first_page": "54",
+        "last_page": "58"
+      },
+      "is_retracted": false,
+      "is_paratext": false,
+      "is_xpac": false,
+      "primary_topic": {
+        "id": "https://openalex.org/T10478",
+        "display_name": "Diamond and Carbon-based Materials Research",
+        "score": 1.0,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2505",
+          "display_name": "Materials Chemistry"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/25",
+          "display_name": "Materials Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      "topics": [
+        {
+          "id": "https://openalex.org/T10478",
+          "display_name": "Diamond and Carbon-based Materials Research",
+          "score": 1.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2505",
+            "display_name": "Materials Chemistry"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/25",
+            "display_name": "Materials Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10988",
+          "display_name": "Advanced Fiber Laser Technologies",
+          "score": 0.9980000257492065,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3107",
+            "display_name": "Atomic and Molecular Physics, and Optics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/31",
+            "display_name": "Physics and Astronomy"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11788",
+          "display_name": "Nonlinear Optical Materials Studies",
+          "score": 0.9947999715805054,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2204",
+            "display_name": "Biomedical Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "https://openalex.org/keywords/diamond",
+          "display_name": "Diamond",
+          "score": 0.7732237577438354
+        },
+        {
+          "id": "https://openalex.org/keywords/thermometer",
+          "display_name": "Thermometer",
+          "score": 0.7116981148719788
+        },
+        {
+          "id": "https://openalex.org/keywords/nanotechnology",
+          "display_name": "Nanotechnology",
+          "score": 0.5847357511520386
+        },
+        {
+          "id": "https://openalex.org/keywords/nanoscopic-scale",
+          "display_name": "Nanoscopic scale",
+          "score": 0.5646806359291077
+        },
+        {
+          "id": "https://openalex.org/keywords/nanometre",
+          "display_name": "Nanometre",
+          "score": 0.45778951048851013
+        },
+        {
+          "id": "https://openalex.org/keywords/materials-science",
+          "display_name": "Materials science",
+          "score": 0.4053666591644287
+        },
+        {
+          "id": "https://openalex.org/keywords/physics",
+          "display_name": "Physics",
+          "score": 0.30008697509765625
+        },
+        {
+          "id": "https://openalex.org/keywords/optics",
+          "display_name": "Optics",
+          "score": 0.17517632246017456
+        }
+      ],
+      "concepts": [
+        {
+          "id": "https://openalex.org/C2776921476",
+          "wikidata": "https://www.wikidata.org/wiki/Q5283",
+          "display_name": "Diamond",
+          "level": 2,
+          "score": 0.7732237577438354
+        },
+        {
+          "id": "https://openalex.org/C2777155165",
+          "wikidata": "https://www.wikidata.org/wiki/Q646",
+          "display_name": "Thermometer",
+          "level": 2,
+          "score": 0.7116981148719788
+        },
+        {
+          "id": "https://openalex.org/C171250308",
+          "wikidata": "https://www.wikidata.org/wiki/Q11468",
+          "display_name": "Nanotechnology",
+          "level": 1,
+          "score": 0.5847357511520386
+        },
+        {
+          "id": "https://openalex.org/C45206210",
+          "wikidata": "https://www.wikidata.org/wiki/Q2415817",
+          "display_name": "Nanoscopic scale",
+          "level": 2,
+          "score": 0.5646806359291077
+        },
+        {
+          "id": "https://openalex.org/C77066764",
+          "wikidata": "https://www.wikidata.org/wiki/Q178674",
+          "display_name": "Nanometre",
+          "level": 2,
+          "score": 0.45778951048851013
+        },
+        {
+          "id": "https://openalex.org/C192562407",
+          "wikidata": "https://www.wikidata.org/wiki/Q228736",
+          "display_name": "Materials science",
+          "level": 0,
+          "score": 0.4053666591644287
+        },
+        {
+          "id": "https://openalex.org/C121332964",
+          "wikidata": "https://www.wikidata.org/wiki/Q413",
+          "display_name": "Physics",
+          "level": 0,
+          "score": 0.30008697509765625
+        },
+        {
+          "id": "https://openalex.org/C120665830",
+          "wikidata": "https://www.wikidata.org/wiki/Q14620",
+          "display_name": "Optics",
+          "level": 1,
+          "score": 0.17517632246017456
+        },
+        {
+          "id": "https://openalex.org/C159985019",
+          "wikidata": "https://www.wikidata.org/wiki/Q181790",
+          "display_name": "Composite material",
+          "level": 1,
+          "score": 0.0
+        },
+        {
+          "id": "https://openalex.org/C62520636",
+          "wikidata": "https://www.wikidata.org/wiki/Q944",
+          "display_name": "Quantum mechanics",
+          "level": 1,
+          "score": 0.0
+        }
+      ],
+      "mesh": [
+        {
+          "descriptor_ui": "D002470",
+          "descriptor_name": "Cell Survival",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002470",
+          "descriptor_name": "Cell Survival",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D002470",
+          "descriptor_name": "Cell Survival",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D003116",
+          "descriptor_name": "Color",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D003116",
+          "descriptor_name": "Color",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D003116",
+          "descriptor_name": "Color",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D005347",
+          "descriptor_name": "Fibroblasts",
+          "qualifier_ui": "Q000166",
+          "qualifier_name": "cytology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D005347",
+          "descriptor_name": "Fibroblasts",
+          "qualifier_ui": "Q000166",
+          "qualifier_name": "cytology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D005347",
+          "descriptor_name": "Fibroblasts",
+          "qualifier_ui": "Q000166",
+          "qualifier_name": "cytology",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006046",
+          "descriptor_name": "Gold",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006046",
+          "descriptor_name": "Gold",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006046",
+          "descriptor_name": "Gold",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D006801",
+          "descriptor_name": "Humans",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009584",
+          "descriptor_name": "Nitrogen",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009584",
+          "descriptor_name": "Nitrogen",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D009584",
+          "descriptor_name": "Nitrogen",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013696",
+          "descriptor_name": "Temperature",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013696",
+          "descriptor_name": "Temperature",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013696",
+          "descriptor_name": "Temperature",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D013821",
+          "descriptor_name": "Thermometers",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D013821",
+          "descriptor_name": "Thermometers",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D013821",
+          "descriptor_name": "Thermometers",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": true
+        },
+        {
+          "descriptor_ui": "D036103",
+          "descriptor_name": "Nanotechnology",
+          "qualifier_ui": "Q000295",
+          "qualifier_name": "instrumentation",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D036103",
+          "descriptor_name": "Nanotechnology",
+          "qualifier_ui": "Q000295",
+          "qualifier_name": "instrumentation",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D036103",
+          "descriptor_name": "Nanotechnology",
+          "qualifier_ui": "Q000295",
+          "qualifier_name": "instrumentation",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D053768",
+          "descriptor_name": "Metal Nanoparticles",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D053768",
+          "descriptor_name": "Metal Nanoparticles",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D053768",
+          "descriptor_name": "Metal Nanoparticles",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D058612",
+          "descriptor_name": "Nanodiamonds",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D058612",
+          "descriptor_name": "Nanodiamonds",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D058612",
+          "descriptor_name": "Nanodiamonds",
+          "qualifier_ui": "Q000737",
+          "qualifier_name": "chemistry",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D059010",
+          "descriptor_name": "Single-Cell Analysis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D059010",
+          "descriptor_name": "Single-Cell Analysis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D059010",
+          "descriptor_name": "Single-Cell Analysis",
+          "qualifier_ui": null,
+          "qualifier_name": null,
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D062125",
+          "descriptor_name": "Thermometry",
+          "qualifier_ui": "Q000295",
+          "qualifier_name": "instrumentation",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D062125",
+          "descriptor_name": "Thermometry",
+          "qualifier_ui": "Q000295",
+          "qualifier_name": "instrumentation",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D062125",
+          "descriptor_name": "Thermometry",
+          "qualifier_ui": "Q000295",
+          "qualifier_name": "instrumentation",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D062125",
+          "descriptor_name": "Thermometry",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D062125",
+          "descriptor_name": "Thermometry",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        },
+        {
+          "descriptor_ui": "D062125",
+          "descriptor_name": "Thermometry",
+          "qualifier_ui": "Q000379",
+          "qualifier_name": "methods",
+          "is_major_topic": false
+        }
+      ],
+      "locations_count": 6,
+      "locations": [
+        {
+          "id": "doi:10.1038/nature12373",
+          "is_oa": true,
+          "landing_page_url": "https://doi.org/10.1038/nature12373",
+          "pdf_url": "https://www.nature.com/articles/nature12373.pdf",
+          "source": {
+            "id": "https://openalex.org/S137773608",
+            "display_name": "Nature",
+            "issn_l": "0028-0836",
+            "issn": [
+              "0028-0836",
+              "1476-4687"
+            ],
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": true,
+            "host_organization": "https://openalex.org/P4310319908",
+            "host_organization_name": "Nature Portfolio",
+            "host_organization_lineage": [
+              "https://openalex.org/P4310319908",
+              "https://openalex.org/P4310319965"
+            ],
+            "host_organization_lineage_names": [
+              "Nature Portfolio",
+              "Springer Nature"
+            ],
+            "type": "journal"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Nature",
+          "raw_type": "journal-article"
+        },
+        {
+          "id": "pmid:23903748",
+          "is_oa": false,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/23903748",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306525036",
+            "display_name": "PubMed",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "publishedVersion",
+          "is_accepted": true,
+          "is_published": true,
+          "raw_source_name": "Nature",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:arXiv.org:1304.1068",
+          "is_oa": true,
+          "landing_page_url": "http://arxiv.org/abs/1304.1068",
+          "pdf_url": "https://arxiv.org/pdf/1304.1068",
+          "source": {
+            "id": "https://openalex.org/S4306400194",
+            "display_name": "arXiv (Cornell University)",
+            "issn_l": "2331-8422",
+            "issn": [
+              "2331-8422"
+            ],
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I205783295",
+            "host_organization_name": "Cornell University",
+            "host_organization_lineage": [
+              "https://openalex.org/I205783295"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": null,
+          "raw_type": "text"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:4221854",
+          "is_oa": true,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4221854",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S2764455111",
+            "display_name": "PubMed Central",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": true,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I1299303238",
+            "host_organization_name": "National Institutes of Health",
+            "host_organization_lineage": [
+              "https://openalex.org/I1299303238"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Nature",
+          "raw_type": "Text"
+        },
+        {
+          "id": "pmh:oai:dash.harvard.edu:1/12285462",
+          "is_oa": true,
+          "landing_page_url": "http://nrs.harvard.edu/urn-3:HUL.InstRepos:12285462",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306401540",
+            "display_name": "Digital Access to Scholarship at Harvard (DASH) (Harvard University)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I136199984",
+            "host_organization_name": "Harvard University",
+            "host_organization_lineage": [
+              "https://openalex.org/I136199984"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": "cc-by",
+          "license_id": "https://openalex.org/licenses/cc-by",
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "",
+          "raw_type": "Journal Article"
+        },
+        {
+          "id": "pmh:oai:escholarship.org:ark:/13030/qt5035z3pq",
+          "is_oa": false,
+          "landing_page_url": "https://escholarship.org/uc/item/5035z3pq",
+          "pdf_url": null,
+          "source": {
+            "id": "https://openalex.org/S4306400115",
+            "display_name": "eScholarship (California Digital Library)",
+            "issn_l": null,
+            "issn": null,
+            "is_oa": false,
+            "is_in_doaj": false,
+            "is_core": false,
+            "host_organization": "https://openalex.org/I2801248553",
+            "host_organization_name": "California Digital Library",
+            "host_organization_lineage": [
+              "https://openalex.org/I2801248553"
+            ],
+            "host_organization_lineage_names": [],
+            "type": "repository"
+          },
+          "license": null,
+          "license_id": null,
+          "version": "submittedVersion",
+          "is_accepted": false,
+          "is_published": false,
+          "raw_source_name": "Nature, vol 500, iss 7460",
+          "raw_type": "article"
+        }
+      ],
+      "best_oa_location": {
+        "id": "doi:10.1038/nature12373",
+        "is_oa": true,
+        "landing_page_url": "https://doi.org/10.1038/nature12373",
+        "pdf_url": "https://www.nature.com/articles/nature12373.pdf",
+        "source": {
+          "id": "https://openalex.org/S137773608",
+          "display_name": "Nature",
+          "issn_l": "0028-0836",
+          "issn": [
+            "0028-0836",
+            "1476-4687"
+          ],
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": true,
+          "host_organization": "https://openalex.org/P4310319908",
+          "host_organization_name": "Nature Portfolio",
+          "host_organization_lineage": [
+            "https://openalex.org/P4310319908",
+            "https://openalex.org/P4310319965"
+          ],
+          "host_organization_lineage_names": [
+            "Nature Portfolio",
+            "Springer Nature"
+          ],
+          "type": "journal"
+        },
+        "license": null,
+        "license_id": null,
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true,
+        "raw_source_name": "Nature",
+        "raw_type": "journal-article"
+      },
+      "sustainable_development_goals": [
+        {
+          "score": 0.5699999928474426,
+          "display_name": "Responsible consumption and production",
+          "id": "https://metadata.un.org/sdg/12"
+        }
+      ],
+      "awards": [
+        {
+          "id": "https://openalex.org/G1319685744",
+          "display_name": "Center for Cell Circuits",
+          "funder_award_id": "1p50hg006193-01",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G1730927352",
+          "display_name": null,
+          "funder_award_id": "1P50HG006193",
+          "funder_id": "https://openalex.org/F4320337348",
+          "funder_display_name": "National Human Genome Research Institute"
+        },
+        {
+          "id": "https://openalex.org/G1734833136",
+          "display_name": "Center for Cell Circuits",
+          "funder_award_id": "5rm1hg006193-10",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G2467894467",
+          "display_name": null,
+          "funder_award_id": "1P50HG006193-01",
+          "funder_id": "https://openalex.org/F4320337348",
+          "funder_display_name": "National Human Genome Research Institute"
+        },
+        {
+          "id": "https://openalex.org/G2822612741",
+          "display_name": "Nano- and Microelectronic Tools for Interrogating Neuronal Circuits and Networks",
+          "funder_award_id": "1dp1od003893-01",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G6973254948",
+          "display_name": "Quantum manipulations of nitrogen-vacancy centers for applications in bioimaging and quantum information",
+          "funder_award_id": "143918",
+          "funder_id": "https://openalex.org/F4320320924",
+          "funder_display_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung"
+        },
+        {
+          "id": "https://openalex.org/G7579847751",
+          "display_name": null,
+          "funder_award_id": "DP1 DA035083",
+          "funder_id": "https://openalex.org/F4320337347",
+          "funder_display_name": "National Institute on Drug Abuse"
+        },
+        {
+          "id": "https://openalex.org/G8563761879",
+          "display_name": "Nano- and Microelectronic Tools for Interrogating Neuronal Circuits and Networks",
+          "funder_award_id": "5dp1od003893-03",
+          "funder_id": "https://openalex.org/F4320332161",
+          "funder_display_name": "National Institutes of Health"
+        },
+        {
+          "id": "https://openalex.org/G959100688",
+          "display_name": null,
+          "funder_award_id": "P50HG006193",
+          "funder_id": "https://openalex.org/F4320337348",
+          "funder_display_name": "National Human Genome Research Institute"
+        }
+      ],
+      "funders": [
+        {
+          "id": "https://openalex.org/F4320306076",
+          "display_name": "National Science Foundation",
+          "ror": "https://ror.org/021nxhr62"
+        },
+        {
+          "id": "https://openalex.org/F4320320924",
+          "display_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung",
+          "ror": "https://ror.org/00yjd3n13"
+        },
+        {
+          "id": "https://openalex.org/F4320332161",
+          "display_name": "National Institutes of Health",
+          "ror": "https://ror.org/01cwqze88"
+        },
+        {
+          "id": "https://openalex.org/F4320332815",
+          "display_name": "Advanced Research Projects Agency",
+          "ror": "https://ror.org/02caytj08"
+        },
+        {
+          "id": "https://openalex.org/F4320333591",
+          "display_name": "Multidisciplinary University Research Initiative",
+          "ror": null
+        },
+        {
+          "id": "https://openalex.org/F4320334437",
+          "display_name": "Center for Ultracold Atoms, Massachusetts Institute of Technology",
+          "ror": "https://ror.org/053tmcn30"
+        },
+        {
+          "id": "https://openalex.org/F4320337347",
+          "display_name": "National Institute on Drug Abuse",
+          "ror": "https://ror.org/00fq5cm18"
+        },
+        {
+          "id": "https://openalex.org/F4320337348",
+          "display_name": "National Human Genome Research Institute",
+          "ror": "https://ror.org/00baak391"
+        },
+        {
+          "id": "https://openalex.org/F4320338281",
+          "display_name": "Army Research Office",
+          "ror": "https://ror.org/05epdh915"
+        }
+      ],
+      "has_content": {
+        "pdf": true,
+        "grobid_xml": true
+      },
+      "content_urls": {
+        "pdf": "https://content.openalex.org/works/W2159974629.pdf",
+        "grobid_xml": "https://content.openalex.org/works/W2159974629.grobid-xml"
+      },
+      "referenced_works_count": 36,
+      "referenced_works": [
+        "https://openalex.org/W1557405337",
+        "https://openalex.org/W1963514592",
+        "https://openalex.org/W1980583020",
+        "https://openalex.org/W1990629543",
+        "https://openalex.org/W1994266871",
+        "https://openalex.org/W1995664068",
+        "https://openalex.org/W2002181702",
+        "https://openalex.org/W2029232010",
+        "https://openalex.org/W2030395871",
+        "https://openalex.org/W2031754995",
+        "https://openalex.org/W2035176058",
+        "https://openalex.org/W2036328014",
+        "https://openalex.org/W2036547226",
+        "https://openalex.org/W2043069843",
+        "https://openalex.org/W2060274041",
+        "https://openalex.org/W2061464027",
+        "https://openalex.org/W2076028647",
+        "https://openalex.org/W2077210071",
+        "https://openalex.org/W2088536552",
+        "https://openalex.org/W2093130510",
+        "https://openalex.org/W2100332558",
+        "https://openalex.org/W2100898236",
+        "https://openalex.org/W2107519814",
+        "https://openalex.org/W2119089023",
+        "https://openalex.org/W2123637643",
+        "https://openalex.org/W2123838498",
+        "https://openalex.org/W2131245179",
+        "https://openalex.org/W2140094129",
+        "https://openalex.org/W2147607085",
+        "https://openalex.org/W2152105724",
+        "https://openalex.org/W2152169077",
+        "https://openalex.org/W2316334919",
+        "https://openalex.org/W2326403914",
+        "https://openalex.org/W2790762140",
+        "https://openalex.org/W2963941855",
+        "https://openalex.org/W3101024234"
+      ],
+      "related_works": [
+        "https://openalex.org/W2368732888",
+        "https://openalex.org/W2364813980",
+        "https://openalex.org/W284937103",
+        "https://openalex.org/W2006086525",
+        "https://openalex.org/W3148451994",
+        "https://openalex.org/W2073804415",
+        "https://openalex.org/W1565798380",
+        "https://openalex.org/W3134046893",
+        "https://openalex.org/W2051890993",
+        "https://openalex.org/W2335545365"
+      ],
+      "abstract_inverted_index": null,
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 94
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 195
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 144
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 187
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 180
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 200
+        },
+        {
+          "year": 2020,
+          "cited_by_count": 183
+        },
+        {
+          "year": 2019,
+          "cited_by_count": 161
+        },
+        {
+          "year": 2018,
+          "cited_by_count": 160
+        },
+        {
+          "year": 2017,
+          "cited_by_count": 134
+        },
+        {
+          "year": 2016,
+          "cited_by_count": 116
+        },
+        {
+          "year": 2015,
+          "cited_by_count": 105
+        },
+        {
+          "year": 2014,
+          "cited_by_count": 110
+        },
+        {
+          "year": 2013,
+          "cited_by_count": 18
+        }
+      ],
+      "updated_date": "2026-09-12T09:15:50.089291",
+      "created_date": "2025-10-10T00:00:00"
+    },
+    "doi": "10.1038/nature12373",
+    "retraction": null,
+    "diffs": [
+      "年份不符：引用写 2015，数据库为 2013"
+    ],
+    "score": 0.75,
+    "note": ""
+  },
+  {
+    "idx": 10,
+    "ref": "[10] Liu W, Wang X. Some preliminary studies on artificial intelligence[J]. Journal of Generic Studies, 2020, 15(2): 1-12.",
+    "status": "unverifiable",
+    "source": "",
+    "matched": null,
+    "doi": null,
+    "retraction": null,
+    "diffs": [],
+    "score": 0.0,
+    "note": "未能核实——两库均无足够置信的匹配（图书/中文教材常不在收录范围），请人工确认"
+  }
+]
