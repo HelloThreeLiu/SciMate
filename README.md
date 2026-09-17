@@ -12,13 +12,24 @@
 | [`phase0/`](phase0/) | **阶段零 · 技能先行**（第 1 个月）工作区：引用核验技能、打包可行性验证 spike、撤稿数据源核查报告 |
 | [`scripts/`](scripts/) | 文档工具链（Markdown → 排版 HTML） |
 
-## 当前状态（阶段零）
+## 当前进度（更新于 2026-09-17）
 
-三条工作线（1 主线 + 2 并行线）的工程侧已完成：
+**所处阶段：阶段零 · 技能先行（第 1 个月）**——三条工作线的工程侧已全部完成（2026-09-16）：
 
-- **主线 · [引用真实性核验技能](phase0/skill-citation-verify/)**——逐条核验参考文献是否真实存在、元数据是否相符、**是否已被撤稿**（OpenAlex + Crossref），零依赖脚本，可直接在你的 AI 客户端使用；
-- **并行线 · [打包可行性验证](phase0/spike-packaging/REPORT.md)**——Tauri 外壳 + Python sidecar 内核出 Windows 安装包：**33.8 MB、冷启动 0.28s 到界面 / 0.33s 到内核就绪、pandoc 打包后正常**，桌面方案继续；
-- **并行线 · [撤稿数据源核查](phase0/reports/撤稿数据源核查报告.md)**——OpenAlex / Crossref 双路可得、免 Key，方案成立。
+| 工作线 | 状态 | 关键结果 |
+|---|---|---|
+| **主线** · [引用真实性核验技能](phase0/skill-citation-verify/) | ✅ 开发完成 | 零依赖脚本 + 10 条构造样本端到端测试**分类 10/10 正确**（撤稿识别 / 编造 DOI / 无 DOI 匹配 / 元数据差异 / 泛化假引用不误判） |
+| **并行线** · [打包可行性验证](phase0/spike-packaging/REPORT.md) | ✅ 四项指标全部通过 | Windows 安装包 **33.8 MB**（含 pandoc）、冷启动→界面 **0.28s**、→内核就绪 **0.33s**、pandoc 打包后正常运行——**桌面方案继续，阶段一开工前提已满足** |
+| **并行线** · [撤稿数据源核查](phase0/reports/撤稿数据源核查报告.md) | ✅ 双路可得 | OpenAlex / Crossref 免 Key 可用，`is_retracted` 与 retraction-watch 数据均实证 |
+
+**接下来（阶段零收尾 → 阶段一启动）**：
+
+- [ ] 技能对外发布（独立公开仓库分发）与 waitlist 渠道（含「配 Key 成功率」「平台分布」两项度量）
+- [ ] WebView2 引导安装在干净虚拟机上实测（spike 唯一未闭环项）
+- [ ] Windows 代码签名证书调研（个人开发者可购性与价格，PRD 12.3 B4）
+- [ ] 阶段一「精简工作台」开工：课题空间 + 技能加载与简化编排 + 执行环境（文件/网络/模型接入）+ 文献与写作功能层（第 2–6 月，仅 Windows）
+
+> 阶段划分与全部决策依据见 [PRD](outputs/科研Agent应用-PRD需求文档.md)（V1.9，含 9 版演进留痕）。
 
 ## 路线图（摘自 PRD 第七章）
 
@@ -31,4 +42,4 @@
 
 ## 许可证
 
-整仓许可证尚在选定中（PRD 建议 Apache-2.0 或 MIT）；阶段零技能已按 Apache-2.0 发布（见 [phase0/skill-citation-verify/LICENSE](phase0/skill-citation-verify/LICENSE)）。
+本仓库（含阶段零技能）采用 **Apache-2.0** 许可证，见 [LICENSE](LICENSE)。
