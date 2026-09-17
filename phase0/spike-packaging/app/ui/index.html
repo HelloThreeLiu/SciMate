@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>SciMate 打包验证 Spike</title>
+  <style>
+    :root { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; }
+    body { margin: 0; padding: 28px 32px; background: #f7f8fa; color: #1c1e21; }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    .sub { color: #666; font-size: 13px; margin-bottom: 24px; }
+    .card { background: #fff; border: 1px solid #e3e5e8; border-radius: 10px;
+            padding: 18px 20px; margin-bottom: 16px; }
+    .card h2 { font-size: 15px; margin: 0 0 12px; }
+    .row { display: flex; gap: 32px; flex-wrap: wrap; }
+    .metric { min-width: 180px; }
+    .metric .label { font-size: 12px; color: #777; }
+    .metric .value { font-size: 30px; font-weight: 600; margin-top: 2px; }
+    .metric .value.ok { color: #0a7d32; }
+    .metric .value.warn { color: #b8860b; }
+    .metric .value.bad { color: #c0392b; }
+    button { padding: 8px 18px; border: 1px solid #c9ccd1; border-radius: 6px;
+             background: #fff; cursor: pointer; font-size: 13px; }
+    button:hover { background: #f0f2f4; }
+    #pandoc-out { margin-top: 12px; padding: 12px; background: #f4f6f8;
+                  border-radius: 6px; font-size: 13px; min-height: 20px; }
+    code { background: #eef1f4; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+    .legend { font-size: 12px; color: #888; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>SciMate · 打包可行性验证 Spike</h1>
+  <div class="sub">Tauri 外壳 + Python 内核（sidecar）· 本页即冷启动计时界面</div>
+
+  <div class="card">
+    <h2>冷启动计时（PRD 验收项 2 / 3）</h2>
+    <div class="row">
+      <div class="metric">
+        <div class="label">冷启动 → 界面可用（目标 ≤ 2.0s）</div>
+        <div class="value" id="m-ui">…</div>
+      </div>
+      <div class="metric">
+        <div class="label">冷启动 → 内核就绪（Python 可接受指令）</div>
+        <div class="value" id="m-kernel">…</div>
+      </div>
+      <div class="metric">
+        <div class="label">内核信息</div>
+        <div class="value" style="font-size:15px" id="m-info">—</div>
+      </div>
+    </div>
+    <div class="legend">计时基准 = Rust 侧记录的外壳进程启动时刻；数据同时上报内核落盘
+      （%TEMP%\scimate-spike-metrics.log）。</div>
+  </div>
+
+  <div class="card">
+    <h2>pandoc 验证（PRD 结论一：大二进制组件打包后能否正常运行）</h2>
+    <button id="btn-pandoc">运行 Markdown → HTML 转换</button>
+    <div id="pandoc-out">点击按钮，内核将调用随包分发的 pandoc.exe 转换一段 Markdown。</div>
+  </div>
+
+  <script>
+    const KERNEL = "http://127.0.0.1:17890";
+    const t_dom_ready = Date.now();
+
+    function setMetric(id, seconds, target) {
+      const el = document.getElementById(id);
+      el.textContent = seconds == null ? "…" : seconds.toFixed(2) + " s";
+      if (seconds != null && target != null) {
+        el.className = "value " + (seconds <= target ? "ok" : (seconds <= target * 2 ? "warn" : "bad"));
+      }
+    }
+
+    async function report(metric, value) {
+      try {
+        await fetch(KERNEL + "/metrics", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ metric, value, t: Date.now() })
+        });
+      } catch (e) { /* 内核未起时忽略 */ }
+    }
+
+    async function waitForKernel(processStartMs) {
+      const deadline = Date.now() + 120000;
+      while (Date.now() < deadline) {
+        try {
+          const r = await fetch(KERNEL + "/status");
+          if (r.ok) {
+            const s = await r.json();
+            const coldKernel = (Date.now() - processStartMs) / 1000;
+            setMetric("m-kernel", coldKernel, null);
+            await report("cold_start_to_kernel_ready_s", coldKernel);
+            document.getElementById("m-info").textContent =
+              "Python " + s.python + " · pandoc: " + (s.pandoc_found ? "已找到" : "未找到");
+            return s;
+          }
+        } catch (e) { /* 尚未就绪 */ }
+        await new Promise(res => setTimeout(res, 100));
+      }
+      setMetric("m-kernel", null);
+      document.getElementById("m-info").textContent = "内核 120s 未就绪";
+      return null;
+    }
+
+    (async () => {
+      const tauri = window.__TAURI__;
+      const processStartMs = tauri
+        ? Number(await tauri.core.invoke("get_process_start_ms"))
+        : t_dom_ready;
+      const coldUi = (t_dom_ready - processStartMs) / 1000;
+      setMetric("m-ui", coldUi, 2.0);
+      await report("cold_start_to_ui_visible_s", coldUi);
+      waitForKernel(processStartMs);
+    })();
+
+    document.getElementById("btn-pandoc").addEventListener("click", async () => {
+      const out = document.getElementById("pandoc-out");
+      out.textContent = "转换中…";
+      try {
+        const r = await fetch(KERNEL + "/pandoc?text=" +
+          encodeURIComponent("# 标题\n\n**SciMate spike**：这段 HTML 由随安装包分发的 pandoc 3.11 生成。"));
+        const j = await r.json();
+        if (j.ok) {
+          out.innerHTML = j.html + '<div class="legend">耗时 ' + j.elapsed_ms + ' ms · ' + j.pandoc + "</div>";
+          await report("pandoc_ok", true);
+        } else {
+          out.textContent = "失败：" + j.error;
+          await report("pandoc_ok", false);
+        }
+      } catch (e) {
+        out.textContent = "请求失败：" + e;
+      }
+    });
+  </script>
+</body>
+</html>
